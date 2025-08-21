@@ -26,4 +26,5 @@ In this chapter, we categorize DiT-based image generation methods into four repr
 |Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |--------------|------|-------|------------|-------------|-----------|--------------|
 |**Text-Image**|      |       |            |             |           |              |
-|&emsp;-       |2023  |       |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[code](https://github.com/sail-sg/MDT)|
+|&emsp;-       |2023  |ICCV       |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[code](https://github.com/sail-sg/MDT)|
+|&emsp;-       |2023  |       |DiffFit       |[DiffFit: Unlocking Transferability of Large Diffusion Models via Simple Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2304.06648)|Parameter-efficient finetuning via low-rank adaptation of DiT layers|[code](https://github.com/mkshing/DiffFit-pytorch)|
