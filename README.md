@@ -7,3 +7,7 @@
       <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&' alt='arXiv PDF'>
     </a>
   </p>
+
+✨ Welcome to the official repository of our survey paper. 
+
+Please feel free to [open issues](https://github.com/IIAU-ZhangLu/DiT-AllInGen/issues) for any possibly missed wonderful work related to Diffusion Transformers (DiT)
