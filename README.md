@@ -10,13 +10,20 @@
 
 ⭐ Welcome to the official repository of our survey paper. 
 
-💗Please feel free to [open issues](https://github.com/IIAU-ZhangLu/DiT-AllInGen/issues) for any possibly missed wonderful work related to Diffusion Transformers (DiT)
+💗Please feel free to [open issues](https://github.com/IIAU-ZhangLu/DiT-AllInGen/issues) for any possibly missed wonderful work related to Diffusion Transformers (DiT).
 
 
 ## ✨ Introduction
 Our survey provides a comprehensive overview of recent advances in DiT, with a focus on their application across diverse generative tasks.We categorize existing methods by domain, including image generation, video synthesis, 3D content creation, audio generation, and other specialized tasks. 
 
-## 📜 Table of Contents 
+## 📜 Table of Contents Diagram
 <p align="center">
   <img src="figs/survey.png" width="100%">
 </p>
+
+## 📷 DiT for Image Generation
+In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
+|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|--------------|------|-------|------------|-------------|-----------|--------------|
+|**Text-Image**|      |       |            |             |           |              |
+|&emsp;-       |2023  |       |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[code](https://github.com/sail-sg/MDT)|
