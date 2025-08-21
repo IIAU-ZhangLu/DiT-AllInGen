@@ -8,6 +8,6 @@
     </a>
   </p>
 
-✨ Welcome to the official repository of our survey paper. 
+⭐ Welcome to the official repository of our survey paper. 
 
-Please feel free to [open issues](https://github.com/IIAU-ZhangLu/DiT-AllInGen/issues) for any possibly missed wonderful work related to Diffusion Transformers (DiT)
+💗Please feel free to [open issues](https://github.com/IIAU-ZhangLu/DiT-AllInGen/issues) for any possibly missed wonderful work related to Diffusion Transformers (DiT)
