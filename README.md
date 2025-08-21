@@ -1,6 +1,6 @@
 #  🔍 A Survey on Diffusion Transformers: Models, Applications, and Advances
 <p align="center">
-     <strong>LU ZHANG</strong> · <strong>RUNHAO YANG</strong> · <strong>YUNZHI ZHUGE</strong> · <strong>PING HU</strong> · <strong>XU JIA</strong> · <strong>PINGPING ZHANG</strong> · <strong>DONG WANG</strong> · <strong>HUCHUAN LU</strong> · <strong>YOU HE</strong>
+     <strong>Lu Zhang</strong>·<strong>Runhao Yang</strong>·<strong>Yunzhi Zhuge</strong>·<strong>Ping Hu</strong>·<strong>Xu Jia</strong>·<strong>Pingping Zhang</strong>·<strong>Dong Wang</strong>·<strong>Huchuan Lu</strong>·<strong>You He</strong>
     </p>
   <p align="center">
     <a href="">
