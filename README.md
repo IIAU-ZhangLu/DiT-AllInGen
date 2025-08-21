@@ -15,6 +15,8 @@
 
 ## ✨ Introduction
 Our survey provides a comprehensive overview of recent advances in DiT, with a focus on their application across diverse generative tasks.We categorize existing methods by domain, including image generation, video synthesis, 3D content creation, audio generation, and other specialized tasks. 
+
+## 📜 Table of Contents 
 <p align="center">
   <img src="figs/survey.png" width="100%">
 </p>
