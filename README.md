@@ -22,7 +22,9 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 </p>
 
 ## 📷 DiT for Image Generation
+
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
+
 |Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |--------------|------|-------|------------|-------------|-----------|--------------|
 |**Text-to-Image**|2023  |ICCV      |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[Code](https://github.com/sail-sg/MDT)|
@@ -57,7 +59,9 @@ In this chapter, we categorize DiT-based image generation methods into four repr
 |     |2025  |ICCV|UniCombine |[UniCombine: Unified Multi-Conditional Combination with Diffusion Transformer](https://arxiv.org/abs/2503.09277)|Unified DiT with LoRA-based attention for multi-condition compositional synthesis|[Code](https://github.com/Xuan-World/UniCombine)|
 
 ## 📽️ DiT for Video Generation
+
 In this sections, we categorize DiT-based video generation methods into several subgroups based on their input conditions and generative goals, including Text-to-video generation, Image-to-video generation, and Multi-modal controllable video generation.
+
 |Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |--------------|------|-------|------------|-------------|-----------|--------------|
 |**Text-to-Video**|2024  |TMLR|Latte |[Latte: Latent Diffusion Transformer for Video Generation](https://arxiv.org/abs/2401.03048)|A latent diffusion transformer for video generation|[Project](https://maxin-cn.github.io/latte_project/)|
@@ -106,3 +110,31 @@ In this sections, we categorize DiT-based video generation methods into several 
 |     |2025  |ArXiv|DreamRelation |[DreamRelation: Relation-Centric Video Customization](https://arxiv.org/abs/2503.07602)|Relation-centric DiT for video customization|[Project](https://dreamrelation.github.io/)|
 |     |2025  |SIGGRAPH|CineMaster |[CineMaster: A 3D-Aware and Controllable Framework for Cinematic Text-to-Video Generation](https://arxiv.org/abs/2502.08639)|3D box + camera + text‑conditioned DiT for controllable scene video|[Project](https://cinemaster-dev.github.io/)|
 
+## 🎲 DiT for 3D Generation
+
+ In this section, we categorize existing DiT-based 3D methods into four subgroups: 3D shape generation,which focuses on single-object modeling from scratch; 3D representation learning, which aims to build effective latent spaces or cross-modal embeddings for 3D data; 3D Controlled Generation, which leverages explicit inputs like text, pose, or geometry for conditional generation; and Large-vocabulary 3D Generation, which targets diverse,multi-instance, or scene-level 3D synthesis across categories.
+ 
+|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|--------------|------|-------|------------|-------------|-----------|--------------|
+|**3D Shape Generation**|2023  |NeurIPS|DiT-3D |[DiT-3D: Exploring Plain Diffusion Transformers for 3D Shape Generation](https://arxiv.org/abs/2307.01831)|Adapts 2D DiTs for 3D point clouds with positional embeddings|[Project](https://dit-3d.github.io/)|
+|     |2024  |ArXiv|DiM-3D |[Efficient 3D Shape Generation via Diffusion Mamba with Bidirectional SSMs](https://arxiv.org/abs/2406.05038)|Improves memory and efficiency for high-resolution 3D shape generation|❌|
+|     |2024  |ECCV|FastDiT-3D |[Fast Training of Diffusion Transformer with Extreme Masking for 3D Point Clouds Generation](https://arxiv.org/abs/2312.07231)|Accelerates 3D diffusion with voxel-aware masking and minimal quality loss|[Project](https://dit-3d.github.io/FastDiT-3D/)|
+|     |2024  |ECCV|DiffSurf |[DiffSurf: A Transformer-based Diffusion Model for Generating and Reconstructing 3D Surfaces in Pose](https://arxiv.org/abs/2408.14860)|Cross-plane attention for diverse 3D category generation|[Code](https://github.com/yusukey03012/DiffSurf)|
+|     |2024  |CVPR|BDM |[Bayesian Diffusion Models for 3D Shape Reconstruction](https://arxiv.org/abs/2403.06973)|Bayesian diffusion model for single-view 3D reconstruction with uncertainty|[Project](https://mlpc-ucsd.github.io/BDM/)|
+|**Representation Learning**|2024  |ILCR|LaGeM |[LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion](https://arxiv.org/abs/2410.01295)|Geometry-based model learns 3D latent codes for conditional generation|[Project](https://1zb.github.io/LaGeM/)|
+|     |2024  |NeurIPS|Direct3D |[Direct3D: Scalable Image-to-3D Generation via 3D Latent Diffusion Transformer](https://arxiv.org/abs/2405.14832)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://nju-3dv.github.io/projects/Direct3D/)|
+|     |2024  |CVPR|3DTopia-XL |[3DTopia-XL: Scaling High-quality 3D Asset Generation via Primitive Diffusion](https://arxiv.org/abs/2409.12957)|2D-to-3D mapping via gradient-based optimization|[Project](https://3dtopia.github.io/3DTopia-XL/)|
+|     |2024  |3DV|Omages |[An Object is Worth 64x64 Pixels: Generating 3D Object via Image Diffusion](https://arxiv.org/abs/2408.03178)|Controls 3D object generation via 64×64 2D image diffusion|[Project](https://omages.github.io/)|
+|     |2024  |ECCV|GOEmbed |[GOEmbed: Gradient Origin Embeddings for Representation Agnostic 3D Feature Learning](https://arxiv.org/abs/2312.08744)|Primitive-based high-resolution 3D generation from text or image inputs|[Project](https://holodiffusion.github.io/goembed/)|
+|     |2025  |CVPR|3DEnhancer |[3DEnhancer: Consistent Multi-View Diffusion for 3D Enhancement](https://arxiv.org/abs/2412.18565)|Multi-view latent diffusion for 3D consistency enhancement|[Project](https://yihangluo.com/projects/3DEnhancer/)|
+|**3D Controlled Generation**|2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
