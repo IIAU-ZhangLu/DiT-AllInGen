@@ -361,3 +361,11 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |NeurIPS|PAD |[Prediction with Action: Visual Policy Learning via Joint Denoising Process](https://arxiv.org/abs/2411.18179)|Predict futures and robot actions through a joint denoising process|[Project](https://sites.google.com/view/pad-paper)|
 |2024  |CoRL|GFC |[Generative Factor Chaining: Coordinated Manipulation with Diffusion-based Factor Graph](https://arxiv.org/abs/2409.16275)|A learning-to-plan method for complex coordinated manipulation tasks|[Project](https://generative-fc.github.io/)|
 |2024  |ArXiv|ARCH |[Hierarchical Hybrid Learning for Long-Horizon Contact-Rich Robotic Assembly](https://arxiv.org/abs/2409.16451)|A hierarchical framework for long-horizon robotic assembly|[Project](https://long-horizon-assembly.github.io/)|
+
+### Motion Generation
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |ICCV|BoDiffusion |[BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis](https://arxiv.org/abs/2304.11118)|A diffusion model for conditional motion synthesis|[Project](https://bcv-uniandes.github.io/bodiffusion-wp/)|
+|2024  |CVPR|OMG |[OMG: Towards Open-vocabulary Motion Generation via Mixture of Controllers](https://arxiv.org/abs/2312.08985v3)|Motion generation from zero-shot open-vocabulary text prompts|[Project](https://tr3e.github.io/omg-page/)|
+|2025  |ArXiv|RDT |[RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864)|A diffusion foundation model for bimanual manipulation|[Project](https://rdt-robotics.github.io/rdt-robotics/)|
+|2024  |ArXiv|RDT |[RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864)|A diffusion foundation model for bimanual manipulation|[Project](https://rdt-robotics.github.io/rdt-robotics/)|
