@@ -327,3 +327,20 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |MIDL|MedDelinea |[Meddelinea: Scalable and efficient medical image segmentation via controllable diffusion transformer](https://openreview.net/pdf?id=6dWhSay45H)|A medical image segmentation model integrated  with ControlNet and DiT|[Code](https://github.com/Onkarsus13/MedDelinea)|
 |2025  |ArXiv|RLAD |[Enhancing Retinal Vessel Segmentation Generalization via Layout-Aware Generative Modelling](https://arxiv.org/abs/2503.01190v2)|A diffusion-based framework to generate controllable retinal fundus images|❌|
 |2025  |IEEE|EchoFlow |[EchoFlow: A Foundation Model for Cardiac Ultrasound Image and Video Generation](https://arxiv.org/abs/2503.22357)|A model for cardiac ultrasound image/video generation|❌|
+
+### Chemistry Section
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |NeurIPS|Graph DiT |[Graph Diffusion Transformers for Multi-Conditional Molecular Generation](https://arxiv.org/abs/2401.13858)|A model for multi-conditional molecular generation|[Code](https://github.com/liugangcode/Graph-DiT)|
+|2025  |ArXiv|ChemBFN |[A Bayesian Flow Network Framework for Chemistry Tasks](https://arxiv.org/abs/2407.20294v2)|A Bayesian flow network for chemistry tasks|[Code](https://github.com/Augus1999/bayesian-flow-network-for-chemistry)|
+|2025  |ArXiv|UAE-3D |[Towards Unified and Lossless Latent Space for 3D Molecular Latent Diffusion Modeling](https://arxiv.org/abs/2503.15567v3)|Compress the multi-modal features of 3D molecules into a unified latent space|❌|
+|2025  |ICML|ADiT |[All-atom Diffusion Transformers: Unified generative modelling of molecules and materials](https://arxiv.org/abs/2503.03965v2)|A unified model for generating both periodic materials and non-periodic molecular systems|[Code](https://github.com/facebookresearch/all-atom-diffusion-transformer)|
+
+### Biology Section
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |PLOS|idpSAM |[Transferable Deep Generative Modeling of Intrinsically Disordered Protein Conformations](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012144)|A latent diffusion model for intrinsically disordered proteins|❌|
+|2024  |ArXiv|SpaDiT |[SpaDiT: Diffusion Transformer for Spatial Gene Expression Prediction using scRNA-seq](https://arxiv.org/abs/2407.13182)|Using a diffusion generative model to integrate scRNA-seq and ST data for the prediction of undetected genes|[Code](https://github.com/lllxxyyy-lxy/SpaDiT)|
+|2025  |bioRxiv|dnaSORA |[dnaSORA- A Unified Diffusion Transformer for DNA point clouds](https://www.biorxiv.org/content/10.1101/2025.01.27.633223v1.full.pdf)|A unified diffusion transformer for DNA point clouds|❌|
+|2025  |ArXiv|scRDiT |[scRDiT: Generating single-cell RNA-seq data by diffusion transformers and accelerating sampling](https://arxiv.org/abs/2404.06153)|Generate virtual scRNA-seq data by leveraging a real dataset|[Code](https://github.com/DongShengze/scRDiT)|
+
