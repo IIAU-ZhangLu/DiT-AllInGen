@@ -111,32 +111,43 @@ In this sections, we categorize DiT-based video generation methods into several 
 ## 🎲 DiT for 3D Generation
 
  In this section, we categorize existing DiT-based 3D methods into four subgroups: 3D shape generation,which focuses on single-object modeling from scratch; 3D representation learning, which aims to build effective latent spaces or cross-modal embeddings for 3D data; 3D Controlled Generation, which leverages explicit inputs like text, pose, or geometry for conditional generation; and Large-vocabulary 3D Generation, which targets diverse,multi-instance, or scene-level 3D synthesis across categories.
- 
-|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|--------------|------|-------|------------|-------------|-----------|--------------|
-|**3D Shape Generation**|2023  |NeurIPS|DiT-3D |[DiT-3D: Exploring Plain Diffusion Transformers for 3D Shape Generation](https://arxiv.org/abs/2307.01831)|Adapts 2D DiTs for 3D point clouds with positional embeddings|[Project](https://dit-3d.github.io/)|
-|     |2024  |ArXiv|DiM-3D |[Efficient 3D Shape Generation via Diffusion Mamba with Bidirectional SSMs](https://arxiv.org/abs/2406.05038)|Improves memory and efficiency for high-resolution 3D shape generation|❌|
-|     |2024  |ECCV|FastDiT-3D |[Fast Training of Diffusion Transformer with Extreme Masking for 3D Point Clouds Generation](https://arxiv.org/abs/2312.07231)|Accelerates 3D diffusion with voxel-aware masking and minimal quality loss|[Project](https://dit-3d.github.io/FastDiT-3D/)|
-|     |2024  |ECCV|DiffSurf |[DiffSurf: A Transformer-based Diffusion Model for Generating and Reconstructing 3D Surfaces in Pose](https://arxiv.org/abs/2408.14860)|Cross-plane attention for diverse 3D category generation|[Code](https://github.com/yusukey03012/DiffSurf)|
-|     |2024  |CVPR|BDM |[Bayesian Diffusion Models for 3D Shape Reconstruction](https://arxiv.org/abs/2403.06973)|Bayesian diffusion model for single-view 3D reconstruction with uncertainty|[Project](https://mlpc-ucsd.github.io/BDM/)|
-|**Representation Learning**|2024  |ILCR|LaGeM |[LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion](https://arxiv.org/abs/2410.01295)|Geometry-based model learns 3D latent codes for conditional generation|[Project](https://1zb.github.io/LaGeM/)|
-|     |2024  |NeurIPS|Direct3D |[Direct3D: Scalable Image-to-3D Generation via 3D Latent Diffusion Transformer](https://arxiv.org/abs/2405.14832)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://nju-3dv.github.io/projects/Direct3D/)|
-|     |2024  |CVPR|3DTopia-XL |[3DTopia-XL: Scaling High-quality 3D Asset Generation via Primitive Diffusion](https://arxiv.org/abs/2409.12957)|2D-to-3D mapping via gradient-based optimization|[Project](https://3dtopia.github.io/3DTopia-XL/)|
-|     |2024  |3DV|Omages |[An Object is Worth 64x64 Pixels: Generating 3D Object via Image Diffusion](https://arxiv.org/abs/2408.03178)|Controls 3D object generation via 64×64 2D image diffusion|[Project](https://omages.github.io/)|
-|     |2024  |ECCV|GOEmbed |[GOEmbed: Gradient Origin Embeddings for Representation Agnostic 3D Feature Learning](https://arxiv.org/abs/2312.08744)|Primitive-based high-resolution 3D generation from text or image inputs|[Project](https://holodiffusion.github.io/goembed/)|
-|     |2025  |CVPR|3DEnhancer |[3DEnhancer: Consistent Multi-View Diffusion for 3D Enhancement](https://arxiv.org/abs/2412.18565)|Multi-view latent diffusion for 3D consistency enhancement|[Project](https://yihangluo.com/projects/3DEnhancer/)|
-|**3D Controlled Generation**|2024  |ECCV|LN3Diff |[LN3Diff: Scalable Latent Neural Fields Diffusion for Speedy 3D Generation](https://arxiv.org/abs/2403.12019)|3D-aware latent diffusion for image/text-conditioned generation|[Project](https://nirvanalan.github.io/projects/ln3diff/)|
-|     |2024  |CVPR|DI-PCG |[DI-PCG: Diffusion-based Efficient Inverse Procedural Content Generation for High-quality 3D Asset Creation](https://arxiv.org/abs/2412.15200)|Predicts procedural 3D assets from image-based generator parameters|[Project](https://thuzhaowang.github.io/projects/DI-PCG/)|
-|     |2024  |ArXiv|TriFlow |[Taming Feed-forward Reconstruction Models as Latent Encoders for 3D Generative Models](https://arxiv.org/abs/2501.00651)|Text-image conditioned 3D shape generation via multi-stream transformer|[Project](https://triflow.github.io/)|
-|     |2024  |ArXiv|SHADE |[Human-Aware 3D Scene Generation with Spatially-constrained Diffusion Models](https://arxiv.org/abs/2406.18159)|Human motions+Floor Plans& Human-aware 3D scene generation with motion and spatial constraints|[Project](https://hong-xl.github.io/SHADE/)|
-|     |2025  |ICLR|GaussianAnything |[GaussianAnything: Interactive Point Cloud Flow Matching For 3D Object Generation](https://arxiv.org/abs/2411.08033)|Multi-modal point cloud space for fine-grained 3D control|[Project](https://nirvanalan.github.io/projects/GA/)|
-|     |2025  |CVPR|Turbo3D |[Turbo3D: Ultra-fast Text-to-3D Generation](https://arxiv.org/abs/2412.04470)|Ultra-fast 4-step text-to-3D generation with Gaussian reconstruction|[Project](https://turbo-3d.github.io/)|
-|     |2025  |ArXiv|MeshCraft |[MeshCraft: Exploring Efficient and Controllable Mesh Generation with Flow-based DiTs](https://arxiv.org/abs/2503.23022)|Controllable mesh generation using flow-based diffusion transformer|❌|
-|**Large-vocabulary 3D Generation**|2023  |ILCR|DiffTF |[Large-Vocabulary 3D Diffusion Model with Transformer](https://arxiv.org/abs/2309.07920)|Cross-plane attention for diverse 3D category generation|[Project](https://ziangcao0312.github.io/difftf_pages/)|
-|     |2024  |ArXiv|CityCraft |[CityCraft: A Real Crafter for 3D City Generation](https://arxiv.org/abs/2406.04983)|Text-driven city generation via DiT, LLMs, and asset retrieval|[Code](https://github.com/djFatNerd/CityCraft)|
-|     |2025  |CVPR|MIDI |[MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation](https://arxiv.org/abs/2412.03558)|Single-image multi-object 3D generation with interaction modeling|[Project](https://huanngzh.github.io/MIDI-Page/)|
-|     |2025  |ArXiv|DiffTF++ |[DiffTF++: 3D-aware Diffusion Transformer for Large-Vocabulary 3D Generation](https://arxiv.org/abs/2405.08055)|Coarse-to-fine DiT with enhanced structural 3D attention|❌|
-|     |2024  |ArXiv|Hunyuan3D 2.0 |[Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202v3)|Large-scale 3D shape and texture generation platform|[Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)|
+
+### 3D Shape Generation
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |NeurIPS|DiT-3D |[DiT-3D: Exploring Plain Diffusion Transformers for 3D Shape Generation](https://arxiv.org/abs/2307.01831)|Adapts 2D DiTs for 3D point clouds with positional embeddings|[Project](https://dit-3d.github.io/)|
+|2024  |ArXiv|DiM-3D |[Efficient 3D Shape Generation via Diffusion Mamba with Bidirectional SSMs](https://arxiv.org/abs/2406.05038)|Improves memory and efficiency for high-resolution 3D shape generation|❌|
+|2024  |ECCV|FastDiT-3D |[Fast Training of Diffusion Transformer with Extreme Masking for 3D Point Clouds Generation](https://arxiv.org/abs/2312.07231)|Accelerates 3D diffusion with voxel-aware masking and minimal quality loss|[Project](https://dit-3d.github.io/FastDiT-3D/)|
+|2024  |ECCV|DiffSurf |[DiffSurf: A Transformer-based Diffusion Model for Generating and Reconstructing 3D Surfaces in Pose](https://arxiv.org/abs/2408.14860)|Cross-plane attention for diverse 3D category generation|[Code](https://github.com/yusukey03012/DiffSurf)|
+|2024  |CVPR|BDM |[Bayesian Diffusion Models for 3D Shape Reconstruction](https://arxiv.org/abs/2403.06973)|Bayesian diffusion model for single-view 3D reconstruction with uncertainty|[Project](https://mlpc-ucsd.github.io/BDM/)|
+
+### Representation Learning
+
+||2024  |ILCR|LaGeM |[LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion](https://arxiv.org/abs/2410.01295)|Geometry-based model learns 3D latent codes for conditional generation|[Project](https://1zb.github.io/LaGeM/)|
+|2024  |NeurIPS|Direct3D |[Direct3D: Scalable Image-to-3D Generation via 3D Latent Diffusion Transformer](https://arxiv.org/abs/2405.14832)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://nju-3dv.github.io/projects/Direct3D/)|
+|2024  |CVPR|3DTopia-XL |[3DTopia-XL: Scaling High-quality 3D Asset Generation via Primitive Diffusion](https://arxiv.org/abs/2409.12957)|2D-to-3D mapping via gradient-based optimization|[Project](https://3dtopia.github.io/3DTopia-XL/)|
+|2024  |3DV|Omages |[An Object is Worth 64x64 Pixels: Generating 3D Object via Image Diffusion](https://arxiv.org/abs/2408.03178)|Controls 3D object generation via 64×64 2D image diffusion|[Project](https://omages.github.io/)|
+|2024  |ECCV|GOEmbed |[GOEmbed: Gradient Origin Embeddings for Representation Agnostic 3D Feature Learning](https://arxiv.org/abs/2312.08744)|Primitive-based high-resolution 3D generation from text or image inputs|[Project](https://holodiffusion.github.io/goembed/)|
+|2025  |CVPR|3DEnhancer |[3DEnhancer: Consistent Multi-View Diffusion for 3D Enhancement](https://arxiv.org/abs/2412.18565)|Multi-view latent diffusion for 3D consistency enhancement|[Project](https://yihangluo.com/projects/3DEnhancer/)|
+
+### 3D Controlled Generation
+
+|2024  |ECCV|LN3Diff |[LN3Diff: Scalable Latent Neural Fields Diffusion for Speedy 3D Generation](https://arxiv.org/abs/2403.12019)|3D-aware latent diffusion for image/text-conditioned generation|[Project](https://nirvanalan.github.io/projects/ln3diff/)|
+|2024  |CVPR|DI-PCG |[DI-PCG: Diffusion-based Efficient Inverse Procedural Content Generation for High-quality 3D Asset Creation](https://arxiv.org/abs/2412.15200)|Predicts procedural 3D assets from image-based generator parameters|[Project](https://thuzhaowang.github.io/projects/DI-PCG/)|
+|2024  |ArXiv|TriFlow |[Taming Feed-forward Reconstruction Models as Latent Encoders for 3D Generative Models](https://arxiv.org/abs/2501.00651)|Text-image conditioned 3D shape generation via multi-stream transformer|[Project](https://triflow.github.io/)|
+|2024  |ArXiv|SHADE |[Human-Aware 3D Scene Generation with Spatially-constrained Diffusion Models](https://arxiv.org/abs/2406.18159)|Human motions+Floor Plans& Human-aware 3D scene generation with motion and spatial constraints|[Project](https://hong-xl.github.io/SHADE/)|
+|2025  |ICLR|GaussianAnything |[GaussianAnything: Interactive Point Cloud Flow Matching For 3D Object Generation](https://arxiv.org/abs/2411.08033)|Multi-modal point cloud space for fine-grained 3D control|[Project](https://nirvanalan.github.io/projects/GA/)|
+|2025  |CVPR|Turbo3D |[Turbo3D: Ultra-fast Text-to-3D Generation](https://arxiv.org/abs/2412.04470)|Ultra-fast 4-step text-to-3D generation with Gaussian reconstruction|[Project](https://turbo-3d.github.io/)|
+|2025  |ArXiv|MeshCraft |[MeshCraft: Exploring Efficient and Controllable Mesh Generation with Flow-based DiTs](https://arxiv.org/abs/2503.23022)|Controllable mesh generation using flow-based diffusion transformer|❌|
+
+### Large-vocabulary 3D Generation
+
+|2023  |ILCR|DiffTF |[Large-Vocabulary 3D Diffusion Model with Transformer](https://arxiv.org/abs/2309.07920)|Cross-plane attention for diverse 3D category generation|[Project](https://ziangcao0312.github.io/difftf_pages/)|
+|2024  |ArXiv|CityCraft |[CityCraft: A Real Crafter for 3D City Generation](https://arxiv.org/abs/2406.04983)|Text-driven city generation via DiT, LLMs, and asset retrieval|[Code](https://github.com/djFatNerd/CityCraft)|
+|2025  |CVPR|MIDI |[MIDI: Multi-Instance Diffusion for Single Image to 3D Scene Generation](https://arxiv.org/abs/2412.03558)|Single-image multi-object 3D generation with interaction modeling|[Project](https://huanngzh.github.io/MIDI-Page/)|
+|2025  |ArXiv|DiffTF++ |[DiffTF++: 3D-aware Diffusion Transformer for Large-Vocabulary 3D Generation](https://arxiv.org/abs/2405.08055)|Coarse-to-fine DiT with enhanced structural 3D attention|❌|
+|2024  |ArXiv|Hunyuan3D 2.0 |[Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202v3)|Large-scale 3D shape and texture generation platform|[Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)|
 
 ## 🔊 DiT for Audio Generation
 
@@ -246,3 +257,5 @@ In this section, we provide a comprehensive overview of these developments by gr
 |     |2025  |CVPR|DiG |[DiG: Scalable and Efficient Diffusion Models with Gated Linear Attention](https://arxiv.org/abs/2405.18428v2)|Gated linear attention replaces quadratic form for complexity reduction|[Code](https://github.com/hustvl/DiG)|
 |     |2025  |ArXiv|LiT |[LiT: Delving into a Simplified Linear Diffusion Transformer for Image Generation](https://arxiv.org/abs/2501.12976)|Linear blocks replace transformers to lower attention and inference cost|❌|
 |     |2025  |AAAI|Flash Diffusion |[Flash Diffusion: Accelerating Any Conditional Diffusion Model for Few Steps Image Generation](https://arxiv.org/abs/2406.02347)|LoRA-based distillation preserves quality while reducing overall computation|[Code](https://github.com/gojasper/flash-diffusion)|
+
+##  🎼 Efficient DiTs
