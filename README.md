@@ -264,4 +264,19 @@ In this section, we provide a comprehensive overview of these developments by gr
 |     |2025  |ArXiv|LiT |[LiT: Delving into a Simplified Linear Diffusion Transformer for Image Generation](https://arxiv.org/abs/2501.12976)|Linear blocks replace transformers to lower attention and inference cost|❌|
 |     |2025  |AAAI|Flash Diffusion |[Flash Diffusion: Accelerating Any Conditional Diffusion Model for Few Steps Image Generation](https://arxiv.org/abs/2406.02347)|LoRA-based distillation preserves quality while reducing overall computation|[Code](https://github.com/gojasper/flash-diffusion)|
 
-##  🎼 Efficient DiTs
+##  🎊 Other Application Tasks
+
+### Design aesthetics
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |CVPR|M&M VTO |[M&M VTO: Multi-Garment Virtual Try-On and Editing](https://arxiv.org/abs/2406.04542)|A model for multi-garment virtual try-on and editing|[Project](https://mmvto.github.io/)|
+|2024  |SIGGRAPH|Fashion-VDM |[Fashion-VDM: Video Diffusion Model for Virtual Try-On](https://arxiv.org/abs/2411.00225v2)|Video virtual try-on based DiT|[Project](https://johannakarras.github.io/Fashion-VDM/)|
+|2024  |ArXiv|VITON-DiT |[VITON-DiT: Learning In-the-Wild Video Try-On from Human Dance Videos via Diffusion Transformers](https://arxiv.org/abs/2405.18326)|The first DiT-based video try-on network|[Project](https://zhengjun-ai.github.io/viton-dit-page/)|
+|2024  |ArXiv|FitDiT |[FitDiT: Advancing the Authentic Garment Details for High-fidelity Virtual Try-on](https://arxiv.org/abs/2503.06545)|Virtual try-on based on customized diffusion transformer|[Project](https://byjiang.com/FitDiT/)|
+|2024  |ICCV|SewingLDM |[Multimodal Latent Diffusion Model for Complex Sewing Pattern Generation](https://arxiv.org/abs/2412.14453v2)|Generate complex sewing patterns via text, garment sketches and body shapes|[Project](https://shengqiliu1.github.io/SewingLDM/)|
+|2025  |ArXiv|ITVTON |[ITVTON: Virtual Try-On Diffusion Transformer Based on Integrated Image and Text](https://arxiv.org/abs/2501.16757v2)|A virtual try-on diffusion transformer model|❌|
+|2025  |CVPR|CatV²TON |[CatV²TON: Taming Diffusion Transformers for Vision-Based Virtual Try-On with Temporal Concatenation](https://arxiv.org/abs/2501.11325)|A diffusion transformer framework for both image and video virtual try-on tasks|[Code](https://github.com/Zheng-Chong/CatV2TON)|
+|2025  |ArXiv|MC-VTON |[MC-VTON: Minimal Control Virtual Try-On Diffusion Transformer](https://arxiv.org/abs/2501.03630)|Integrate minimal condition inputs by leveraging DiT backbone|❌|
+|2025  |CVPR|ITA-MDT |[ITA-MDT: Image-Timestep-Adaptive Masked Diffusion Transformer Framework for Image-Based Virtual Try-On](https://arxiv.org/abs/2503.20418v2)|A framework for the image-based virtual try-on (IVTON) task buildt upon MDT-IVTON|[Project](https://jiwoohong93.github.io/ita-mdt/)|
+
