@@ -291,3 +291,11 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |ArXiv|MuVi |[MuVi: Video-to-Music Generation with Semantic Alignment and Rhythmic Synchronization](https://arxiv.org/abs/2410.12957)|A model for video-to-music generation|[Project](https://muvi-v2m.github.io/)|
 |2024  |ArXiv|VMB |[Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation](https://arxiv.org/abs/2412.09428)|A multi-modal music generation system|[Project](https://github.com/wbs2788/VMB)|
 |2025  |AAAI|SongEditor |[SongEditor: Adapting Zero-Shot Song Generation Language Model as a Multi-Task Editor](https://arxiv.org/abs/2412.13786)|A multi - task song editor based on language models|[Project](https://cypress-yang.github.io/SongEditor_demo/)|
+
+### Game Generation
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|PlayGen |[Playable Game Generation](https://arxiv.org/abs/2412.00887)|Interaction-driven playable game generation|[Code](https://github.com/GreatX3/Playable-Game-Generation)|
+|2025  |ArXiv|MaaG |[Model as a Game: On Numerical and Spatial Consistency for Generative Games](https://arxiv.org/abs/2503.21172)|A framework for generative games to enhance numerical and spatial consistency|[❌|
+|2025  |ICCV|GameFactory |[GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325)|A framework using generative interactive videos to create new games|[Project](https://yujiwen.github.io/gamefactory/)|
