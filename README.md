@@ -126,7 +126,7 @@ In this sections, we categorize DiT-based video generation methods into several 
 
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-||2024  |ILCR|LaGeM |[LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion](https://arxiv.org/abs/2410.01295)|Geometry-based model learns 3D latent codes for conditional generation|[Project](https://1zb.github.io/LaGeM/)|
+|2024  |ILCR|LaGeM |[LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion](https://arxiv.org/abs/2410.01295)|Geometry-based model learns 3D latent codes for conditional generation|[Project](https://1zb.github.io/LaGeM/)|
 |2024  |NeurIPS|Direct3D |[Direct3D: Scalable Image-to-3D Generation via 3D Latent Diffusion Transformer](https://arxiv.org/abs/2405.14832)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://nju-3dv.github.io/projects/Direct3D/)|
 |2024  |CVPR|3DTopia-XL |[3DTopia-XL: Scaling High-quality 3D Asset Generation via Primitive Diffusion](https://arxiv.org/abs/2409.12957)|2D-to-3D mapping via gradient-based optimization|[Project](https://3dtopia.github.io/3DTopia-XL/)|
 |2024  |3DV|Omages |[An Object is Worth 64x64 Pixels: Generating 3D Object via Image Diffusion](https://arxiv.org/abs/2408.03178)|Controls 3D object generation via 64×64 2D image diffusion|[Project](https://omages.github.io/)|
