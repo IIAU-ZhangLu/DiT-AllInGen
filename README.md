@@ -297,5 +297,22 @@ In this section, we provide a comprehensive overview of these developments by gr
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|PlayGen |[Playable Game Generation](https://arxiv.org/abs/2412.00887)|Interaction-driven playable game generation|[Code](https://github.com/GreatX3/Playable-Game-Generation)|
-|2025  |ArXiv|MaaG |[Model as a Game: On Numerical and Spatial Consistency for Generative Games](https://arxiv.org/abs/2503.21172)|A framework for generative games to enhance numerical and spatial consistency|[❌|
+|2025  |ArXiv|MaaG |[Model as a Game: On Numerical and Spatial Consistency for Generative Games](https://arxiv.org/abs/2503.21172)|A framework for generative games to enhance numerical and spatial consistency|❌|
 |2025  |ICCV|GameFactory |[GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325)|A framework using generative interactive videos to create new games|[Project](https://yujiwen.github.io/gamefactory/)|
+
+### Intelligent Traffic
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |NeurIPS|Scenediffuser |[SceneDiffuser: Efficient and Controllable Driving Simulation Initialization and Rollout](https://arxiv.org/abs/2412.12129)|A scene-level diffusion prior designed for traffic simulation|❌|
+|2024  |IEEE|SBPV |[Sora-Based Parallel Vision for Smart Sensing of Intelligent Vehicles: From Foundation Models to Foundation Intelligence](https://ieeexplore.ieee.org/document/10470374)|Sora-based parallel vision for Smart Sensing of intelligent vehicles|❌|
+|2024  |ECCV|SLEDGE |[SLEDGE: Synthesizing Driving Environments with Generative Models and Rule-Based Traffic](https://arxiv.org/abs/2403.17933v2)|The first generative simulator for vehicle motion planning trained on real-world driving logs|[Project](https://github.com/autonomousvision/sledge)|
+|2024  |ArXiv|WcDT |[WcDT: World-centric Diffusion Transformer for Traffic Scene Generation](https://arxiv.org/abs/2404.02082v4)|A traffic scene generation framework that optimizes trajectory generation|[Code](https://github.com/yangchen1997/WcDT)|
+|2024  |ArXiv|DriveDiTFit |[DriveDiTFit: Fine-tuning Diffusion Transformers for Autonomous Driving](https://arxiv.org/abs/2407.15661)|A model for generating autonomous Driving data by Fine-tuning DiTs|[Code](https://github.com/TtuHamg/DriveDiTFit)|
+|2024  |ArXiv|InfinityDrive |[InfinityDrive: Breaking Time Limits in Driving World Models](https://arxiv.org/abs/2412.01522)|A driving world model for long-term, high-res video generation|[Project](https://metadrivescape.github.io/papers_project/InfinityDrive/page.html)|
+|2024  |ArXiv|CogDriving |[Seeing Beyond Views: Multi-View Driving Scene Video Generation with Holistic Attention](https://arxiv.org/abs/2412.03520)|4D attention for multi-view driving video generation|[Project](https://luhannan.github.io/CogDrivingPage/)|
+|2025  |CVPR|NWM |[Navigation World Models](https://arxiv.org/abs/2404.02082v4)|A controllable video generation model for navigation|[Project](https://www.amirbar.net/nwm/)|
+|2025  |CVPR|MaskGWM |[MaskGWM: A Generalizable Driving World Model with Video Mask Reconstruction](https://arxiv.org/abs/2502.11663)|A generalizable driving world model with video mask reconstruction|[Code](https://github.com/SenseTime-FVG/OpenDWM)|
+|2025  |ArXiv|DiVE |[DiVE: Efficient Multi-View Driving Scenes Generation Based on Video Diffusion Transformer](https://arxiv.org/abs/2504.19614)|A DiT-based framework for multi-camera driving scene video generation|❌|
+|2025  |ArXiv|DiffAD |[DiffAD: A Unified Diffusion Modeling Approach for Autonomous Driving](https://arxiv.org/abs/2503.12170)|Redefine autonomous driving as a conditional image generation task|[Code](https://github.com/wantsu/DiffAD)|
+|2025  |ICLR|Diffusion Planner |[Diffusion-Based Planning for Autonomous Driving with Flexible Guidance](https://arxiv.org/abs/2501.15564)|A transformer-based diffusion model for autonomous driving planning|[Project](https://zhengyinan-air.github.io/Diffusion-Planner/)|
+|2025  |ArXiv|CoGen |[CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving](https://arxiv.org/abs/2503.22231v2)|A spatial adaptive framework for 3D-consistent driving video generation|[Project](https://xiaomi-research.github.io/cogen/)|
