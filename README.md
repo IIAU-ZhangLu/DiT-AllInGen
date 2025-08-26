@@ -316,3 +316,14 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|DiffAD |[DiffAD: A Unified Diffusion Modeling Approach for Autonomous Driving](https://arxiv.org/abs/2503.12170)|Redefine autonomous driving as a conditional image generation task|[Code](https://github.com/wantsu/DiffAD)|
 |2025  |ICLR|Diffusion Planner |[Diffusion-Based Planning for Autonomous Driving with Flexible Guidance](https://arxiv.org/abs/2501.15564)|A transformer-based diffusion model for autonomous driving planning|[Project](https://zhengyinan-air.github.io/Diffusion-Planner/)|
 |2025  |ArXiv|CoGen |[CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving](https://arxiv.org/abs/2503.22231v2)|A spatial adaptive framework for 3D-consistent driving video generation|[Project](https://xiaomi-research.github.io/cogen/)|
+
+### Medical Section
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|Brain-Net-Diffusion |[Brain Network Diffusion-Driven fMRI Connectivity Augmentation for Enhanced Autism Spectrum Disorder Diagnosis](https://arxiv.org/abs/2409.18967)|A DiT-based model for fMRI functional connectivity augmentation in ASD diagnosis|❌|
+|2024  |MICCAI|Endora |[Endora: Video Generation Models as Endoscopy Simulators](https://arxiv.org/abs/2403.11050)|A framework to generate medical videos that simulate clinical endoscopy scenes|[Code](https://github.com/CUHK-AIM-Group/Endora)|
+|2024  |NeurIPS|AID |[Autoregressive Image Diffusion: Generation of Image Sequence and Application in MRI](https://arxiv.org/abs/2405.14327)|Autoregressive image diffusion (AID) for MRI image sequence generation|[Code](https://github.com/mrirecon/aid)|
+|2025  |IEEE|CATD |[CATD: Unified Representation Learning for EEG-to-fMRI Cross-Modal Generation](https://arxiv.org/abs/2408.00777v3)|A model for the cross-modal conversion of functional neuroimages--synthesis of BOLD signals from EEG signals|❌|
+|2025  |MIDL|MedDelinea |[Meddelinea: Scalable and efficient medical image segmentation via controllable diffusion transformer](https://openreview.net/pdf?id=6dWhSay45H)|A medical image segmentation model integrated  with ControlNet and DiT|[Code](https://github.com/Onkarsus13/MedDelinea)|
+|2025  |ArXiv|RLAD |[Enhancing Retinal Vessel Segmentation Generalization via Layout-Aware Generative Modelling](https://arxiv.org/abs/2503.01190v2)|A diffusion-based framework to generate controllable retinal fundus images|❌|
+|2025  |IEEE|EchoFlow |[EchoFlow: A Foundation Model for Cardiac Ultrasound Image and Video Generation](https://arxiv.org/abs/2503.22357)|A model for cardiac ultrasound image/video generation|❌|
