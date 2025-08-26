@@ -280,3 +280,14 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|MC-VTON |[MC-VTON: Minimal Control Virtual Try-On Diffusion Transformer](https://arxiv.org/abs/2501.03630)|Integrate minimal condition inputs by leveraging DiT backbone|❌|
 |2025  |CVPR|ITA-MDT |[ITA-MDT: Image-Timestep-Adaptive Masked Diffusion Transformer Framework for Image-Based Virtual Try-On](https://arxiv.org/abs/2503.20418v2)|A framework for the image-based virtual try-on (IVTON) task buildt upon MDT-IVTON|[Project](https://jiwoohong93.github.io/ita-mdt/)|
 
+### Music Generation
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|LFM |[Long-form music generation with latent diffusion](https://arxiv.org/abs/2404.10301)|A text-conditioned music generation model|❌|
+|2024  |ICML|SCG |[Symbolic Music Generation with Non-Differentiable Rule Guided Diffusio](https://arxiv.org/abs/2402.14285v4)|Symbolic music generation with high time resolution|[Project](https://scg-rule-guided-music.github.io/)|
+|2024  |ArXiv|MuDiT/MuSiT |[MuDiT & MuSiT: Alignment with Colloquial Expression in Description-to-Song Generation](https://arxiv.org/abs/2407.03188)|A model for colloquial description-to-song generation|❌|
+|2024  |ArXiv|MuCodec |[MuCodec: Ultra Low-Bitrate Music Codec](https://arxiv.org/abs/2409.13216v3)|Ultra low-bitrate music compression and reconstruction|[Project](https://xuyaoxun.github.io/MuCodec_demo/)|
+|2024  |ArXiv|MuVi |[MuVi: Video-to-Music Generation with Semantic Alignment and Rhythmic Synchronization](https://arxiv.org/abs/2410.12957)|A model for video-to-music generation|[Project](https://muvi-v2m.github.io/)|
+|2024  |ArXiv|VMB |[Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation](https://arxiv.org/abs/2412.09428)|A multi-modal music generation system|[Project](https://github.com/wbs2788/VMB)|
+|2025  |AAAI|SongEditor |[SongEditor: Adapting Zero-Shot Song Generation Language Model as a Multi-Task Editor](https://arxiv.org/abs/2412.13786)|A multi - task song editor based on language models|[Project](https://cypress-yang.github.io/SongEditor_demo/)|
