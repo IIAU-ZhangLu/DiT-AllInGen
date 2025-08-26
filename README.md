@@ -344,3 +344,20 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |bioRxiv|dnaSORA |[dnaSORA- A Unified Diffusion Transformer for DNA point clouds](https://www.biorxiv.org/content/10.1101/2025.01.27.633223v1.full.pdf)|A unified diffusion transformer for DNA point clouds|❌|
 |2025  |ArXiv|scRDiT |[scRDiT: Generating single-cell RNA-seq data by diffusion transformers and accelerating sampling](https://arxiv.org/abs/2404.06153)|Generate virtual scRNA-seq data by leveraging a real dataset|[Code](https://github.com/DongShengze/scRDiT)|
 
+### Meteorology Section
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |NeurIPS|Stormer |[Scaling transformer neural networks for skillful and reliable medium-range weather forecasting](https://arxiv.org/abs/2312.03876v2)|Meteorological data & A deep learning model for weather forecasting|[Code](https://github.com/tung-nd/stormer)|
+|2024  |ICML|CasCast |[CasCast: Skillful High-resolution Precipitation Nowcasting via Cascaded Modelling](https://arxiv.org/abs/2402.04290)|A cascaded framework for high-resolution precipitation nowcasting|[Code](https://github.com/OpenEarthLab/CasCast)|
+|2024  |TIP|MWFormer |[MWFormer: Multi-Weather Image Restoration Using Degradation-Aware Transformers](https://ieeexplore.ieee.org/document/10767188)|A model based-DiT for multi-weatherimage restoration|[Code](https://github.com/taco-group/MWFormer)|
+
+### Robotic Section
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|RDT |[RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864)|A diffusion foundation model for bimanual manipulation|[Project](https://rdt-robotics.github.io/rdt-robotics/)|
+|2024  |ICRA|ScaleDP |[Scaling Diffusion Policy in Transformer to 1 Billion Parameters for Robotic Manipulation](https://arxiv.org/abs/2409.14411)|Visual information-driven robot motion generation model|[Project](https://scaling-diffusion-policy.github.io/)|
+|2024  |ArXiv|DTP |[Diffusion Transformer Policy](https://arxiv.org/abs/2410.15959v6)|Diffusion transformer policy(DTP) for general robot learning|[Project](https://robodita.github.io/)|
+|2024  |ArXiv|DiT-Block Policy |[The Ingredients for Robotic Diffusion Transformers](https://arxiv.org/abs/2410.10088)|A unified framework for robot learning|[Project](https://dit-policy.github.io/)|
+|2024  |NeurIPS|PAD |[Prediction with Action: Visual Policy Learning via Joint Denoising Process](https://arxiv.org/abs/2411.18179)|Predict futures and robot actions through a joint denoising process|[Project](https://sites.google.com/view/pad-paper)|
+|2024  |CoRL|GFC |[Generative Factor Chaining: Coordinated Manipulation with Diffusion-based Factor Graph](https://arxiv.org/abs/2409.16275)|A learning-to-plan method for complex coordinated manipulation tasks|[Project](https://generative-fc.github.io/)|
+|2024  |ArXiv|ARCH |[Hierarchical Hybrid Learning for Long-Horizon Contact-Rich Robotic Assembly](https://arxiv.org/abs/2409.16451)|A hierarchical framework for long-horizon robotic assembly|[Project](https://long-horizon-assembly.github.io/)|
