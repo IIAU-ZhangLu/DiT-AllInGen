@@ -483,11 +483,17 @@ In this section, we provide a comprehensive overview of these developments by gr
 ## 🎡 Related Survey
 
 [Personalized Image Generation with Deep Generative Models: A Decade Survey](https://arxiv.org/abs/2502.13081)
+
 [Efficient Diffusion Models: A Comprehensive Survey from Principles to Practices](https://arxiv.org/abs/2410.11795)
+
 [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796v14)
+
 [Diffusion Model for Image Generation - A Survey](https://ieeexplore.ieee.org/document/10505362)
+
 [A Survey on Video Diffusion Models](https://arxiv.org/abs/2310.10647)
+
 [State of the Art on Diffusion Models for Visual Computing](https://arxiv.org/abs/2310.07204)
+
 [Diffusion Models in 3D Vision: A Survey](https://arxiv.org/abs/2410.04738)
 
 ## 📢 Citation
