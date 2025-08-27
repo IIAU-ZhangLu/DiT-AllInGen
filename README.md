@@ -411,3 +411,24 @@ In this section, we provide a comprehensive overview of these developments by gr
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|DMSG |[Prompt-to-Slate: Diffusion Models for Prompt-Conditioned Slate Generation](https://arxiv.org/abs/2408.06883)|A diffusion-based slate recommendation model|❌|
 |2024  |ACM|GDiT |[EDGE-Rec: Efficient and Data-Guided Edge Diffusion For Recommender Systems Graphs](https://arxiv.org/abs/2409.14689)|Generate recommendations by conditioning on user and item features|[Code](https://github.com/upriyam-cmu/EDGE-Rec)|
+
+### Other task
+|Task type| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|---------|------|-------|------------|-------------|-----------|--------------|
+|Fluid dynamics  |2024  |ArXiv|DiffFluid |[DiffFluid: Plain Diffusion Models are Effective Predictors of Flow Dynamics](https://arxiv.org/abs/2409.13665)|The first transformer-based diffusion solver for fluid dynamics equations|❌|
+|Reinforcement Learning|2023  |ICML|HDMI |[Hierarchical Diffusion for Offline Decision Making](https://arxiv.org/abs/2409.16451)|A hierarchical diffusion model for long-horizon offline decision making|❌|
+|Cultural Heritage|2024  |CVPR|GenOV |[Making Visual Sense of Oracle Bones for You and Me](https://ieeexplore.ieee.org/document/10657266)|A framework for oracle bone visual guide generation|❌|
+|Visual Restoration|2024  |CVPR|JPDVT |[Solving Masked Jigsaw Puzzles with Diffusion Vision Transformers](https://arxiv.org/abs/2404.07292)|A method for solving image and temporal puzzles in an unified framework|[Code](https://github.com/JinyangMarkLiu/JPDVT)|
+|Urban Spatio-Temporal Learning|2024  |ArXiv|UrbanDiT |[UrbanDiT: A Foundation Model for Open-World Urban Spatio-Temporal Learning](https://arxiv.org/abs/2411.12164)|A foundation model for open-world urban spatio-temporal learning|[Code](https://github.com/YuanYuan98/UrbanDiT)|
+|Model Generation|2024  |ArXiv|Tina |[Text-to-Model: Text-Conditioned Neural Network Diffusion for Train-Once-for-All Personalization](https://arxiv.org/abs/2405.14132)|A text-to-model neural network diffusion model for train-once-for-all personalization|❌|
+|Transfer learning|2024  |ArXiv|MA2MI |[From Macro to Micro: Boosting micro-expression recognition via pre-training on macro-expression videos](https://arxiv.org/abs/2405.16451v2)|A transfer learning paradigm DiT-based for micro-expression recognition(MER)|❌|
+|Geography|2025  |ArXiv|VegeDiff |[VegeDiff: Latent Diffusion Model for Geospatial Vegetation Forecasting](https://arxiv.org/abs/2407.12592)|A model for the geospatial vegetation forecasting task|[Code](https://github.com/walking-shadow/Official_VegeDiff)|
+|Circuit|2025  |ArXiv|UDiTQC |[UDiTQC: U-Net-Style Diffusion Transformer for Quantum Circuit Synthesis](https://arxiv.org/abs/2501.16380)|A model for quantum circuit synthesis|❌|
+|Touch Generation|2025  |AAAI|TextToucher |[TextToucher: Fine-Grained Text-to-Touch Generation](https://arxiv.org/abs/2409.05427v2)|The first model for text-to-touch generation|[Project](https://github.com/TtuHamg/TextToucher)|
+|Procedural Sequence Generation|2025  |ArXiv|MakeAnything |[MakeAnything: Harnessing Diffusion Transformers for Multi-Domain Procedural Sequence Generation](https://arxiv.org/abs/2502.01572v2)|A framework for generating process sequences using the DiT model with LoRA fine-tuning|[Code](https://github.com/showlab/MakeAnything)|
+|Human-Object Interaction|2025  |CVPR|HOI-IDiff |[An Image-like Diffusion Method for Human-Object Interaction Detection](https://arxiv.org/abs/2503.18134)|An innovative image-diffusion-based HOI detection framework|❌|
+|Astrophysics|2025  |ArXiv|DiTSNe-Ia |[Variational diffusion transformers for conditional sampling of supernovae spectra](https://arxiv.org/abs/2505.03063)|A variational diffusion transformer for SN Ia spectra generation|❌|
+|Target Sound Extraction|2025  |ICASSP|SoloAudio |[SoloAudio: Target Sound Extraction with Language-oriented Audio Diffusion Transformer](https://arxiv.org/abs/2409.08425v2)|A diffusion-based generative model for target sound extraction (TSE)|[Project](https://wanghelin1997.github.io/SoloAudio-Demo/)|
+
+
+
