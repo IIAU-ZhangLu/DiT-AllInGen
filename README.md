@@ -26,7 +26,6 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### Text-to-Image
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV      |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[Code](https://github.com/sail-sg/MDT)|
@@ -45,7 +44,6 @@ In this chapter, we categorize DiT-based image generation methods into four repr
 |2025  |ArXiv  |LDGen   |[LDGen: Enhancing Text-to-Image Synthesis via Large Language Model-Driven Language Representation](https://arxiv.org/abs/2502.18302)|Multilingual T2I enabled by LLM-driven hierarchical text representations|[Project](https://zrealli.github.io/LDGen/)
 
 ### Image-to-Image
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |CVPR  |FoundHand   |[FoundHand: Large-Scale Domain-Specific Learning for Controllable Hand Image Generation](https://arxiv.org/abs/2412.02690)|Domain-specific hand image generation via prompt and geometry control|[Project](https://github.com/arthurchen0518/FoundHand)
@@ -53,7 +51,6 @@ In this chapter, we categorize DiT-based image generation methods into four repr
 |2025  |ArXiv  |U-StyDiT   |[U-StyDiT: Ultra-high Quality Artistic Style Transfer Using Diffusion Transformers](https://arxiv.org/abs/2503.08157)|High-fidelity artistic style transfer with transformer-enhanced latent diffusion|❌|
 
 ### Image-Editing
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv |LazyDiffusion|[Lazy Diffusion Transformer for Interactive Image Editing](https://arxiv.org/abs/2404.12382)|Fast interactive editing via mask-aware DiT with context encoder|[Project](https://lazydiffusion.github.io/)|
@@ -65,7 +62,6 @@ In this chapter, we categorize DiT-based image generation methods into four repr
 |2025  |ArXiv|DCEdit |[DCEdit: Dual-Level Controlled Image Editing via Precisely Localized Semantics](https://arxiv.org/abs/2503.16795)|Semantic localization for dual-level editing at feature and latent scales|❌|
 
 ### Multi-modal Control
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|EMMA |[EMMA: Your Text-to-Image Diffusion Model Can Secretly Accept Multi-Modal Prompts](https://arxiv.org/abs/2406.09162)|Text-image-fusion DiT for human-centric multi-modal generation|[Project](https://tencentqqgylab.github.io/EMMA/)|
