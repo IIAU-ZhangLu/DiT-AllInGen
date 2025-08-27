@@ -234,81 +234,110 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 
 In this chapter, we categorize DiT-based unified models, which can simultaneously accept multimodal inputs and support generating multiple types of outputs within a single model.
 
-|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|--------------|------|-------|------------|-------------|-----------|--------------|
-|**Image Generation**|2024  |ICLR|PixWizard |[PixWizard: Versatile Image-to-Image Visual Assistant with Open-Language Instructions](https://arxiv.org/abs/2409.15278)|Unified framework for diverse image tasks(generation,edit,inpainting)|[Code](https://github.com/AFeng-x/PixWizard)|
-|     |2025  |ACM MM|MIGE |[MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing](https://arxiv.org/abs/2502.21291)|A unified framework combines subject-driven generation and instruction-based editing|[Code](https://github.com/Eureka-Maggie/MIGE)|
-|     |2025  |CVPR|OmniGen |[OmniGen: Unified Image Generation](https://arxiv.org/abs/2409.11340v2)|A diffusion model for unified image generation|[Code](https://github.com/VectorSpaceLab/OmniGen)|
-|     |2025  |CVPR|DreamOmni |[DreamOmni: Unified Image Generation and Editing](https://arxiv.org/abs/2412.17098)|A unified model for image generation and editing|[Project](https://zjbinxia.github.io/DreamOmni-ProjectPage/)|
-|     |2025  |ICCV|RealGeneral |[RealGeneral: Unifying Visual Generation via Temporal In-Context Learning with Video Models](https://arxiv.org/abs/2503.10406)|A unified image generation framework via video models'temporal in-context learning|[Project](https://lyne1.github.io/realgeneral_web/)|
-|     |2025  |ArXiv|UniVG |[UniVG: A Generalist Diffusion Model for Unified Image Generation and Editing](https://arxiv.org/abs/2504.02160)|Treat multi-modal inputs as unified conditions to enable diverse image generation|❌|
-|     |2025  |ICCV|UNO |[Less-to-More Generalization: Unlocking More Controllability by In-Context Generation](https://arxiv.org/abs/2504.02160)|A unified customization framework for multi-subject image generation|[Project](https://bytedance.github.io/UNO/)|
-|     |2025  |ICCV|Lumina-Image 2.0 |[Lumina-Image 2.0: A Unified and Efficient Image Generative Framework](https://arxiv.org/abs/2503.21758)|A unified text-to-image generation framework|[Code](https://github.com/Alpha-VLLM/Lumina-Image-2.0)|
-|**Video Generation**|2025  |ICLR|VACE |[VACE: All-in-One Video Creation and Editing](https://arxiv.org/abs/2503.07598v2)|An all-in-one model for video creation and editing|[Project](https://ali-vilab.github.io/VACE-Page/)|
-|**Cross-modal union**|2024  |ICLR|SyncFlow |[SyncFlow: Toward Temporally Aligned Joint Audio-Video Generation from Text](https://arxiv.org/abs/2412.15220)|Joint audio-video generation text-driven|[Project](https://syncflow-core.github.io/syncflow-demo/)|
-|     |2024  |ICCV|AV-Link |[AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation](https://arxiv.org/abs/2412.15191)|A unified approach for V2A and A2V generation|[Project](https://snap-research.github.io/AVLink/)|
-|     |2024  |ArXiv|AV-DiT |[AV-DiT: Efficient Audio-Visual Diffusion Transformer for Joint Audio and Video Generation](https://arxiv.org/abs/2406.07686)|The first multimodal DiT for joint audio and video generation|❌|
-|**Multi modal/Multi task**|2023  |ArXiv|T1 |[T1: Scaling Diffusion Probabilistic Fields to High-Resolution on Unified Visual Modalities](https://arxiv.org/abs/2305.14674)|Generation images,videos,and 3D via DiT-based unified visual modality handling|[Project](https://t1-diffusion-model.github.io/)|
-|     |2024  |ICLR|Show-o |[Show-o: One Single Transformer to Unify Multimodal Understanding and Generation](https://arxiv.org/abs/2408.12528v6)|A unified transformer to unify multimodal understanding and generation|[Code](https://github.com/showlab/Show-o)|
-|     |2024  |ArXiv|ControlNeXt |[ControlNeXt: Powerful and Efficient Control for Image and Video Generation](https://arxiv.org/abs/2408.06070v3)|Controllable and unified image and video generation|[Project](https://pbihao.github.io/projects/controlnext/index.html)|
-|     |2024  |ICLR & NeurIPS|Lumina-T2X |[Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers](https://arxiv.org/abs/2405.05945)|Transform text instructions into any modality at arbitrary resolution and duration|[Code](https://github.com/Alpha-VLLM/Lumina-T2X)|
-|     |2024  |NeurIPS|OmniTokenizer |[OmniTokenizer: A Joint Image-Video Tokenizer for Visual Generation](https://arxiv.org/abs/2406.09399)|A joint image-video tokenizer for visual generation|[Code](https://github.com/FoundationVision/OmniTokenizer)|
-|     |2024  |ICLR|Qihoo-T2X |[Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005)|A unified model for T2I,T2V and T2MV|[Project](https://360cvgroup.github.io/Qihoo-T2X/)|
-|     |2024  |ArXiv|ACDiT |[ACDiT: Interpolating Autoregressive Conditional Modeling and Diffusion Transformer](https://arxiv.org/abs/2412.07720)|A autoregressive blockwise conditional DiT for image and video generation|❌|
-|     |2024  |ICCV|OminiControl |[OminiControl: Minimal and Universal Control for Diffusion Transformer](https://arxiv.org/abs/2411.15098)|A unified image-conditional control generation framework|[Code](https://github.com/Yuanshi9815/OminiControl)|
-|     |2025  |ArXiv|OminiControl2 |[OminiControl2: Efficient Conditioning for Diffusion Transformers](https://arxiv.org/abs/2503.08280)|An efficient multi-condition control framework based on Ominicontrol|[Code](https://github.com/Yuanshi9815/OminiControl)|
-|     |2025  |ArXiv|D-DiT |[Dual Diffusion for Unified Image Generation and Understanding](https://arxiv.org/pdf/2501.00289v2)|A unified multimodal image understanding and generation model|[Project](https://zijieli-jlee.github.io/dualdiff.github.io/)|
-|     |2025  |CVPR|LaVin-DiT |[LaVin-DiT: Large Vision Diffusion Transformer](https://arxiv.org/abs/2411.11505)|A unified foundation model for computer vision|[Project](https://derrickwang005.github.io/LaVin-DiT/)|
-|     |2025  |ArXiv|DICEPTION |[DICEPTION: A Generalist Diffusion Model for Visual Perceptual Tasks](https://arxiv.org/abs/2502.17157)|A generalist model capable of performing multiple visual perception tasks|[Project](https://aim-uofa.github.io/Diception/)|
-|     |2025  |ArXiv|OmniLV |[Lumina-OmniLV: A Unified Multimodal Framework for General Low-Level Vision](https://arxiv.org/abs/2504.04903)|A universal multimodal multi-task framework for low-level vision|[Project](https://andrew0613.github.io/OmniLV_page/)|
-|     |2025  |ArXiv|UniForm |[UniForm: A Unified Multi-Task Diffusion Transformer for Audio-Video Generation](https://arxiv.org/abs/2502.03897)|A unified multi-task audio-video generation model|[Project](https://uniform-t2av.github.io/)|
+### Image Generation
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ICLR|PixWizard |[PixWizard: Versatile Image-to-Image Visual Assistant with Open-Language Instructions](https://arxiv.org/abs/2409.15278)|Unified framework for diverse image tasks(generation,edit,inpainting)|[Code](https://github.com/AFeng-x/PixWizard)|
+|2025  |ACM MM|MIGE |[MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing](https://arxiv.org/abs/2502.21291)|A unified framework combines subject-driven generation and instruction-based editing|[Code](https://github.com/Eureka-Maggie/MIGE)|
+|2025  |CVPR|OmniGen |[OmniGen: Unified Image Generation](https://arxiv.org/abs/2409.11340v2)|A diffusion model for unified image generation|[Code](https://github.com/VectorSpaceLab/OmniGen)|
+|2025  |CVPR|DreamOmni |[DreamOmni: Unified Image Generation and Editing](https://arxiv.org/abs/2412.17098)|A unified model for image generation and editing|[Project](https://zjbinxia.github.io/DreamOmni-ProjectPage/)|
+|2025  |ICCV|RealGeneral |[RealGeneral: Unifying Visual Generation via Temporal In-Context Learning with Video Models](https://arxiv.org/abs/2503.10406)|A unified image generation framework via video models'temporal in-context learning|[Project](https://lyne1.github.io/realgeneral_web/)|
+|2025  |ArXiv|UniVG |[UniVG: A Generalist Diffusion Model for Unified Image Generation and Editing](https://arxiv.org/abs/2504.02160)|Treat multi-modal inputs as unified conditions to enable diverse image generation|❌|
+|2025  |ICCV|UNO |[Less-to-More Generalization: Unlocking More Controllability by In-Context Generation](https://arxiv.org/abs/2504.02160)|A unified customization framework for multi-subject image generation|[Project](https://bytedance.github.io/UNO/)|
+|2025  |ICCV|Lumina-Image 2.0 |[Lumina-Image 2.0: A Unified and Efficient Image Generative Framework](https://arxiv.org/abs/2503.21758)|A unified text-to-image generation framework|[Code](https://github.com/Alpha-VLLM/Lumina-Image-2.0)|
+
+### Video Generation
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2025  |ICLR|VACE |[VACE: All-in-One Video Creation and Editing](https://arxiv.org/abs/2503.07598v2)|An all-in-one model for video creation and editing|[Project](https://ali-vilab.github.io/VACE-Page/)|
+
+### Cross-modal union
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ICLR|SyncFlow |[SyncFlow: Toward Temporally Aligned Joint Audio-Video Generation from Text](https://arxiv.org/abs/2412.15220)|Joint audio-video generation text-driven|[Project](https://syncflow-core.github.io/syncflow-demo/)|
+|2024  |ICCV|AV-Link |[AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation](https://arxiv.org/abs/2412.15191)|A unified approach for V2A and A2V generation|[Project](https://snap-research.github.io/AVLink/)|
+|2024  |ArXiv|AV-DiT |[AV-DiT: Efficient Audio-Visual Diffusion Transformer for Joint Audio and Video Generation](https://arxiv.org/abs/2406.07686)|The first multimodal DiT for joint audio and video generation|❌|
+
+### Multi modal/Multi task
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |ArXiv|T1 |[T1: Scaling Diffusion Probabilistic Fields to High-Resolution on Unified Visual Modalities](https://arxiv.org/abs/2305.14674)|Generation images,videos,and 3D via DiT-based unified visual modality handling|[Project](https://t1-diffusion-model.github.io/)|
+|2024  |ICLR|Show-o |[Show-o: One Single Transformer to Unify Multimodal Understanding and Generation](https://arxiv.org/abs/2408.12528v6)|A unified transformer to unify multimodal understanding and generation|[Code](https://github.com/showlab/Show-o)|
+|2024  |ArXiv|ControlNeXt |[ControlNeXt: Powerful and Efficient Control for Image and Video Generation](https://arxiv.org/abs/2408.06070v3)|Controllable and unified image and video generation|[Project](https://pbihao.github.io/projects/controlnext/index.html)|
+|2024  |ICLR & NeurIPS|Lumina-T2X |[Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers](https://arxiv.org/abs/2405.05945)|Transform text instructions into any modality at arbitrary resolution and duration|[Code](https://github.com/Alpha-VLLM/Lumina-T2X)|
+|2024  |NeurIPS|OmniTokenizer |[OmniTokenizer: A Joint Image-Video Tokenizer for Visual Generation](https://arxiv.org/abs/2406.09399)|A joint image-video tokenizer for visual generation|[Code](https://github.com/FoundationVision/OmniTokenizer)|
+|2024  |ICLR|Qihoo-T2X |[Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005)|A unified model for T2I,T2V and T2MV|[Project](https://360cvgroup.github.io/Qihoo-T2X/)|
+|2024  |ArXiv|ACDiT |[ACDiT: Interpolating Autoregressive Conditional Modeling and Diffusion Transformer](https://arxiv.org/abs/2412.07720)|A autoregressive blockwise conditional DiT for image and video generation|❌|
+|2024  |ICCV|OminiControl |[OminiControl: Minimal and Universal Control for Diffusion Transformer](https://arxiv.org/abs/2411.15098)|A unified image-conditional control generation framework|[Code](https://github.com/Yuanshi9815/OminiControl)|
+|2025  |ArXiv|OminiControl2 |[OminiControl2: Efficient Conditioning for Diffusion Transformers](https://arxiv.org/abs/2503.08280)|An efficient multi-condition control framework based on Ominicontrol|[Code](https://github.com/Yuanshi9815/OminiControl)|
+|2025  |ArXiv|D-DiT |[Dual Diffusion for Unified Image Generation and Understanding](https://arxiv.org/pdf/2501.00289v2)|A unified multimodal image understanding and generation model|[Project](https://zijieli-jlee.github.io/dualdiff.github.io/)|
+|2025  |CVPR|LaVin-DiT |[LaVin-DiT: Large Vision Diffusion Transformer](https://arxiv.org/abs/2411.11505)|A unified foundation model for computer vision|[Project](https://derrickwang005.github.io/LaVin-DiT/)|
+|2025  |ArXiv|DICEPTION |[DICEPTION: A Generalist Diffusion Model for Visual Perceptual Tasks](https://arxiv.org/abs/2502.17157)|A generalist model capable of performing multiple visual perception tasks|[Project](https://aim-uofa.github.io/Diception/)|
+|2025  |ArXiv|OmniLV |[Lumina-OmniLV: A Unified Multimodal Framework for General Low-Level Vision](https://arxiv.org/abs/2504.04903)|A universal multimodal multi-task framework for low-level vision|[Project](https://andrew0613.github.io/OmniLV_page/)|
+|2025  |ArXiv|UniForm |[UniForm: A Unified Multi-Task Diffusion Transformer for Audio-Video Generation](https://arxiv.org/abs/2502.03897)|A unified multi-task audio-video generation model|[Project](https://uniform-t2av.github.io/)|
 
 ##  🚴‍♂️ Efficient DiTs
 
 In this section, we provide a comprehensive overview of these developments by grouping efficient DiT-based methods into three major categories:training-efficient DiTs, inference-efficient DiTs, and joint training-inference optimization.
 
-|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|--------------|------|-------|------------|-------------|-----------|--------------|
-|**Training-efficient**|2023  |ICLR|PixArt-α |[PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis](https://arxiv.org/abs/2310.00426v3)|Training decomposition with efficient DiT design and high-informative data|[Project](https://pixart-alpha.github.io/)|
-|     |2024  |ArXiv|PixArt-Σ |[PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation](https://arxiv.org/abs/2403.04692)|Weak-to-strong training with token compression for 4K image generation|[Project](https://pixart-alpha.github.io/PixArt-sigma-project/)|
-|     |2024  |NeurIPS|FasterDiT |[FasterDiT: Towards Faster Diffusion Transformers Training without Architecture Modification](https://arxiv.org/abs/2410.10356v2)|SNR-PDF based supervision improves training speed and stability of DiTs|[Project](https://deep-diver.github.io/neurips2024/posters/cqrgodfagn/)|
-|     |2024  |ICLR|PFM |[Pyramidal Flow Matching for Efficient Video Generative Modeling](https://arxiv.org/abs/2410.05954v2)|Spatial-temporal pyramids enable end-to-end efficient video DiT training|[Project](https://pyramid-flow.github.io/)|
-|     |2025  |ArXiv|DSV |[DSV: Exploiting Dynamic Sparsity to Accelerate Large-Scale Video DiT Training](https://arxiv.org/abs/2502.07590v3)|Dynamic sparsity with key-value pruning boosts video DiT training throughput|❌|
-|     |2025  |ArXiv|DiT-μP |[Scaling Diffusion Transformers Efficiently via μP](https://arxiv.org/abs/2505.15270)|Applies maximal update parametrization to accelerate scalable DiT training|[Code](https://github.com/ML-GSAI/Scaling-Diffusion-Transformers-muP)|
-|**Test-efficient**|2023  |NeurIPS|GET |[One-Step Diffusion Distillation via Deep Equilibrium Models](https://arxiv.org/abs/2401.08639)|One-step distillation with deep equilibrium model for fast sampling|[Code](https://github.com/locuslab/get)|
-|     |2024  |ICML|ASE |[A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models](https://arxiv.org/abs/2408.05927v1)|Adaptive early exiting to skip redundant denoising blocks during inference|[Code](https://github.com/taehong-moon/ee-diffusion)|
-|     |2024  |CVPR|CausVid |[From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](https://arxiv.org/abs/2412.07772v3)|Autoregressive generation with DMD distillation \& asymmetric teacher-student learning|[Project](https://causvid.github.io/)|
-|     |2025  |ACM/SIGDA|FlightVGM |[FlightVGM: Efficient Video Generation Model Inference with Online Sparsification and Hybrid Precision on FPGAs](https://dai.sjtu.edu.cn/my_file/pdf/83b404ee-15a2-456f-a173-9d260ad2409f.pdf)|Distills bidirectional model into 4-step autoregressive generator via DMD framework|❌|
-|     |2024  |ICML|AsymRnR |[AsymRnR: Video Diffusion Transformers Acceleration with Asymmetric Reduction and Restoration](https://arxiv.org/abs/2412.11706v3)|Improved head compression for high-dimensional multi-modal DiT attention|[Code](https://github.com/wenhao728/AsymRnR)|
-|     |2024  |ICLR|PAB |[Real-Time Video Generation with Pyramid Attention Broadcast](https://arxiv.org/abs/2408.12588)|Asymmetric sequence reduction-restoration for efficient attention computation|[Code](https://github.com/NUS-HPC-AI-Lab/VideoSys)|
-|     |2024  |NeurIPS|DiTFastAttn |[DiTFastAttn: Attention Compression for Diffusion Transformer Models](https://arxiv.org/abs/2406.08552v2)|Compresses spatial, temporal, and conditional heads for efficient attention|[Project](https://nics-effalg.com/DiTFastAttn)|
-|     |2025  |ArXiv|DiTFastAttnV2 |[DiTFastAttnV2: Head-wise Attention Compression for Multi-Modality Diffusion Transformers](https://arxiv.org/abs/2503.22796)|Training-free sparse attention with profiling and inference optimization|[Code](https://github.com/thu-nics/DiTFastAttnV2)|
-|     |2025  |ICML|SVG |[Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity](https://arxiv.org/abs/2502.01776v2)|Sliding tile attention with hardware-aware scheduling to lower FLOPs|[Code](https://github.com/svg-project/Sparse-VideoGen)|
-|     |2025  |ICML|STA |[Fast Video Generation with Sliding Tile Attention](https://arxiv.org/abs/2502.04507v3)|Sliding tile attention to accelerate video generation in DiTs|[Project](https://github.com/hao-ai-lab/FastVideo)|
-|     |2024  |NeurIPS |L2C |[Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching](https://arxiv.org/abs/2406.01733)|Learns routing to cache and reuse redundant layers dynamically|[Code](https://github.com/horseee/learning-to-cache)|
-|     |2024  |ArXiv|Δ-DiT: |[Δ-DiT: A Training-Free Acceleration Method Tailored for Diffusion Transformers](https://arxiv.org/abs/2406.01125)|Caches and accelerates DiT blocks based on sampling stage|❌|
-|     |2024  |ICCV|Skip-DiT |[Towards Stabilized and Efficient Diffusion Transformers through Long-Skip-Connections with Spectral Constraints](https://arxiv.org/abs/2411.17616v4)|Reuses features across time steps via skip-branch mechanism|[Code](https://github.com/OpenSparseLLMs/Skip-DiT)|
-|     |2024  |ArXiv|PipeFusion |[PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference](https://arxiv.org/abs/2405.14430v3)|Patch-level pipeline parallelism with feature reuse for efficient DiT inference|[Code](https://github.com/xdit-project/xDiT)|
-|     |2024  |ICLR|ToCa |[Accelerating Diffusion Transformers with Token-wise Feature Caching](https://arxiv.org/abs/2412.09611)|Token-wise feature caching for informative token prioritization|[Code](https://github.com/Shenyi-Z/ToCa)|
-|     |2024  |ArXiv|xDiT |[xDiT: an Inference Engine for Diffusion Transformers (DiTs) with Massive Parallelism](https://arxiv.org/abs/2411.01738)|Hybrid parallel inference with sequence, patch-level, and CFG strategies|[Code](https://github.com/xdit-project/xDiT)|
-|     |2025  |AAAI|LazyDiT |[LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers](https://arxiv.org/abs/2412.12444v3)|Skips redundant computation with intermediate result caching|[Code](https://github.com/shawnricecake/lazydit)|
-|     |2025  |ICCV|QuantCache |[QuantCache: Adaptive Importance-Guided Quantization with Hierarchical Latent and Layer Caching for Video Generation](https://arxiv.org/abs/2503.06545)|Combines quantization and hierarchical caching for faster inference|[Code](https://github.com/JunyiWuCode/QuantCache)|
-|     |2025  |ArXiv|UniCP |[UniCP: A Unified Caching and Pruning Framework for Efficient Video Generation](https://arxiv.org/abs/2502.04393)|Unified caching and pruning to enhance DiT video generation|❌|
-|     |2024  |AAAI|VQ4DiT |[VQ4DiT: Efficient Post-Training Vector Quantization for Diffusion Transformers](https://arxiv.org/abs/2408.17131)|Vector quantization method to reduce DiT bit-width post-training|❌|
-|     |2024  |NeurIPS|PTQ4DiT |[PTQ4DiT: Post-training Quantization for Diffusion Transformers](https://arxiv.org/abs/2405.16005v3)|Performs post-training quantization on DiTs without retraining overhead|[Code](https://github.com/adreamwu/PTQ4DiT)|
-|     |2024  |ArXiv|HQ-DiT |[HQ-DiT: Efficient Diffusion Transformer with FP4 Hybrid Quantization](https://arxiv.org/abs/2405.19751v2)|Uses 4-bit floating-point quantization for weights and activations|❌|
-|     |2024  |WACV|DiTAS |[DiTAS: Quantizing Diffusion Transformers via Enhanced Activation Smoothing](https://arxiv.org/abs/2409.07756v2)|Data-free post-training quantization using temporal smoothing and grid search|[Code](https://github.com/DZY122/DiTAS)|
-|     |2025  |IEEE|MixDiT |[MixDiT: Accelerating Image Diffusion Transformer Inference with Mixed-Precision MX Quantization](https://arxiv.org/abs/2504.08398)|Applies mixed-scale microscaling to quantize DiT activations precisely|❌|
-|     |2025  |ArXiv|QC |[Q&C: When Quantization Meets Cache in Efficient Image Generation](https://arxiv.org/abs/2503.02508)|Hierarchical quantization with caching to balance latency and precision|[Code](https://github.com/xinding-sys/Quant-Cache)|
-|     |2025  |ArXiv|HTG |[Post-Training Quantization for Diffusion Transformer via Hierarchical Timestep Grouping](https://arxiv.org/abs/2503.06930)|Timestep grouping-based quantization to maintain temporal fidelity|❌|
-|     |2025  |ArXiv|TQ-DiT |[TQ-DiT: Efficient Time-Aware Quantization for Diffusion Transformers](https://arxiv.org/abs/2502.04056)|Time-aware quantization strategy to improve DiT inference efficiency|❌|
-|**Joint-stage Acceleration**|2024  |ICLR|CMD |[Efficient Video Diffusion Models via Content-Frame Motion-Latent Decomposition](https://arxiv.org/abs/2403.14148)|Factorizes content and motion latents for efficient training and sampling|[Project](https://sihyun.me/CMD/)|
-|     |2024  |ArXiv|DiT-MoE |[Scaling Diffusion Transformers to 16 Billion Parameters](https://arxiv.org/abs/2407.11633v3)|Sparse expert routing reduces redundancy and cost across both stages|[Code](https://github.com/feizc/DiT-MoE)|
-|     |2024  |NeurIPS|EDT |[EDT: An Efficient Diffusion Transformer Framework Inspired by Human-like Sketching](https://arxiv.org/abs/2410.23788)|Lightweight DiT with modulation and token-relation masking for efficiency|[Code](https://github.com/xinwangChen/EDT)|
-|     |2024  |ICML|HarmoniCa |[HarmoniCa: Harmonizing Training and Inference for Better Feature Caching in Diffusion Transformer Acceleration](https://arxiv.org/abs/2410.01723v6)|Caching and denoising protocol enable accurate sampling with fewer steps|[Code](https://github.com/ModelTC/HarmoniCa)|
-|     |2025  |CVPR|DiG |[DiG: Scalable and Efficient Diffusion Models with Gated Linear Attention](https://arxiv.org/abs/2405.18428v2)|Gated linear attention replaces quadratic form for complexity reduction|[Code](https://github.com/hustvl/DiG)|
-|     |2025  |ArXiv|LiT |[LiT: Delving into a Simplified Linear Diffusion Transformer for Image Generation](https://arxiv.org/abs/2501.12976)|Linear blocks replace transformers to lower attention and inference cost|❌|
-|     |2025  |AAAI|Flash Diffusion |[Flash Diffusion: Accelerating Any Conditional Diffusion Model for Few Steps Image Generation](https://arxiv.org/abs/2406.02347)|LoRA-based distillation preserves quality while reducing overall computation|[Code](https://github.com/gojasper/flash-diffusion)|
+### Training-efficient
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |ICLR|PixArt-α |[PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis](https://arxiv.org/abs/2310.00426v3)|Training decomposition with efficient DiT design and high-informative data|[Project](https://pixart-alpha.github.io/)|
+|2024  |ArXiv|PixArt-Σ |[PixArt-Σ: Weak-to-Strong Training of Diffusion Transformer for 4K Text-to-Image Generation](https://arxiv.org/abs/2403.04692)|Weak-to-strong training with token compression for 4K image generation|[Project](https://pixart-alpha.github.io/PixArt-sigma-project/)|
+|2024  |NeurIPS|FasterDiT |[FasterDiT: Towards Faster Diffusion Transformers Training without Architecture Modification](https://arxiv.org/abs/2410.10356v2)|SNR-PDF based supervision improves training speed and stability of DiTs|[Project](https://deep-diver.github.io/neurips2024/posters/cqrgodfagn/)|
+|2024  |ICLR|PFM |[Pyramidal Flow Matching for Efficient Video Generative Modeling](https://arxiv.org/abs/2410.05954v2)|Spatial-temporal pyramids enable end-to-end efficient video DiT training|[Project](https://pyramid-flow.github.io/)|
+|2025  |ArXiv|DSV |[DSV: Exploiting Dynamic Sparsity to Accelerate Large-Scale Video DiT Training](https://arxiv.org/abs/2502.07590v3)|Dynamic sparsity with key-value pruning boosts video DiT training throughput|❌|
+|2025  |ArXiv|DiT-μP |[Scaling Diffusion Transformers Efficiently via μP](https://arxiv.org/abs/2505.15270)|Applies maximal update parametrization to accelerate scalable DiT training|[Code](https://github.com/ML-GSAI/Scaling-Diffusion-Transformers-muP)|
+
+### Test-efficient
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |NeurIPS|GET |[One-Step Diffusion Distillation via Deep Equilibrium Models](https://arxiv.org/abs/2401.08639)|One-step distillation with deep equilibrium model for fast sampling|[Code](https://github.com/locuslab/get)|
+|2024  |ICML|ASE |[A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models](https://arxiv.org/abs/2408.05927v1)|Adaptive early exiting to skip redundant denoising blocks during inference|[Code](https://github.com/taehong-moon/ee-diffusion)|
+|2024  |CVPR|CausVid |[From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](https://arxiv.org/abs/2412.07772v3)|Autoregressive generation with DMD distillation \& asymmetric teacher-student learning|[Project](https://causvid.github.io/)|
+|2025  |ACM/SIGDA|FlightVGM |[FlightVGM: Efficient Video Generation Model Inference with Online Sparsification and Hybrid Precision on FPGAs](https://dai.sjtu.edu.cn/my_file/pdf/83b404ee-15a2-456f-a173-9d260ad2409f.pdf)|Distills bidirectional model into 4-step autoregressive generator via DMD framework|❌|
+|2024  |ICML|AsymRnR |[AsymRnR: Video Diffusion Transformers Acceleration with Asymmetric Reduction and Restoration](https://arxiv.org/abs/2412.11706v3)|Improved head compression for high-dimensional multi-modal DiT attention|[Code](https://github.com/wenhao728/AsymRnR)|
+|2024  |ICLR|PAB |[Real-Time Video Generation with Pyramid Attention Broadcast](https://arxiv.org/abs/2408.12588)|Asymmetric sequence reduction-restoration for efficient attention computation|[Code](https://github.com/NUS-HPC-AI-Lab/VideoSys)|
+|2024  |NeurIPS|DiTFastAttn |[DiTFastAttn: Attention Compression for Diffusion Transformer Models](https://arxiv.org/abs/2406.08552v2)|Compresses spatial, temporal, and conditional heads for efficient attention|[Project](https://nics-effalg.com/DiTFastAttn)|
+|2025  |ArXiv|DiTFastAttnV2 |[DiTFastAttnV2: Head-wise Attention Compression for Multi-Modality Diffusion Transformers](https://arxiv.org/abs/2503.22796)|Training-free sparse attention with profiling and inference optimization|[Code](https://github.com/thu-nics/DiTFastAttnV2)|
+|2025  |ICML|SVG |[Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity](https://arxiv.org/abs/2502.01776v2)|Sliding tile attention with hardware-aware scheduling to lower FLOPs|[Code](https://github.com/svg-project/Sparse-VideoGen)|
+|2025  |ICML|STA |[Fast Video Generation with Sliding Tile Attention](https://arxiv.org/abs/2502.04507v3)|Sliding tile attention to accelerate video generation in DiTs|[Project](https://github.com/hao-ai-lab/FastVideo)|
+|2024  |NeurIPS |L2C |[Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching](https://arxiv.org/abs/2406.01733)|Learns routing to cache and reuse redundant layers dynamically|[Code](https://github.com/horseee/learning-to-cache)|
+|2024  |ArXiv|Δ-DiT: |[Δ-DiT: A Training-Free Acceleration Method Tailored for Diffusion Transformers](https://arxiv.org/abs/2406.01125)|Caches and accelerates DiT blocks based on sampling stage|❌|
+|2024  |ICCV|Skip-DiT |[Towards Stabilized and Efficient Diffusion Transformers through Long-Skip-Connections with Spectral Constraints](https://arxiv.org/abs/2411.17616v4)|Reuses features across time steps via skip-branch mechanism|[Code](https://github.com/OpenSparseLLMs/Skip-DiT)|
+|2024  |ArXiv|PipeFusion |[PipeFusion: Patch-level Pipeline Parallelism for Diffusion Transformers Inference](https://arxiv.org/abs/2405.14430v3)|Patch-level pipeline parallelism with feature reuse for efficient DiT inference|[Code](https://github.com/xdit-project/xDiT)|
+|2024  |ICLR|ToCa |[Accelerating Diffusion Transformers with Token-wise Feature Caching](https://arxiv.org/abs/2412.09611)|Token-wise feature caching for informative token prioritization|[Code](https://github.com/Shenyi-Z/ToCa)|
+|2024  |ArXiv|xDiT |[xDiT: an Inference Engine for Diffusion Transformers (DiTs) with Massive Parallelism](https://arxiv.org/abs/2411.01738)|Hybrid parallel inference with sequence, patch-level, and CFG strategies|[Code](https://github.com/xdit-project/xDiT)|
+|2025  |AAAI|LazyDiT |[LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers](https://arxiv.org/abs/2412.12444v3)|Skips redundant computation with intermediate result caching|[Code](https://github.com/shawnricecake/lazydit)|
+|2025  |ICCV|QuantCache |[QuantCache: Adaptive Importance-Guided Quantization with Hierarchical Latent and Layer Caching for Video Generation](https://arxiv.org/abs/2503.06545)|Combines quantization and hierarchical caching for faster inference|[Code](https://github.com/JunyiWuCode/QuantCache)|
+|2025  |ArXiv|UniCP |[UniCP: A Unified Caching and Pruning Framework for Efficient Video Generation](https://arxiv.org/abs/2502.04393)|Unified caching and pruning to enhance DiT video generation|❌|
+|2024  |AAAI|VQ4DiT |[VQ4DiT: Efficient Post-Training Vector Quantization for Diffusion Transformers](https://arxiv.org/abs/2408.17131)|Vector quantization method to reduce DiT bit-width post-training|❌|
+|2024  |NeurIPS|PTQ4DiT |[PTQ4DiT: Post-training Quantization for Diffusion Transformers](https://arxiv.org/abs/2405.16005v3)|Performs post-training quantization on DiTs without retraining overhead|[Code](https://github.com/adreamwu/PTQ4DiT)|
+|2024  |ArXiv|HQ-DiT |[HQ-DiT: Efficient Diffusion Transformer with FP4 Hybrid Quantization](https://arxiv.org/abs/2405.19751v2)|Uses 4-bit floating-point quantization for weights and activations|❌|
+|2024  |WACV|DiTAS |[DiTAS: Quantizing Diffusion Transformers via Enhanced Activation Smoothing](https://arxiv.org/abs/2409.07756v2)|Data-free post-training quantization using temporal smoothing and grid search|[Code](https://github.com/DZY122/DiTAS)|
+|2025  |IEEE|MixDiT |[MixDiT: Accelerating Image Diffusion Transformer Inference with Mixed-Precision MX Quantization](https://arxiv.org/abs/2504.08398)|Applies mixed-scale microscaling to quantize DiT activations precisely|❌|
+|2025  |ArXiv|QC |[Q&C: When Quantization Meets Cache in Efficient Image Generation](https://arxiv.org/abs/2503.02508)|Hierarchical quantization with caching to balance latency and precision|[Code](https://github.com/xinding-sys/Quant-Cache)|
+|2025  |ArXiv|HTG |[Post-Training Quantization for Diffusion Transformer via Hierarchical Timestep Grouping](https://arxiv.org/abs/2503.06930)|Timestep grouping-based quantization to maintain temporal fidelity|❌|
+|2025  |ArXiv|TQ-DiT |[TQ-DiT: Efficient Time-Aware Quantization for Diffusion Transformers](https://arxiv.org/abs/2502.04056)|Time-aware quantization strategy to improve DiT inference efficiency|❌|
+
+### Joint-stage Acceleration
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ICLR|CMD |[Efficient Video Diffusion Models via Content-Frame Motion-Latent Decomposition](https://arxiv.org/abs/2403.14148)|Factorizes content and motion latents for efficient training and sampling|[Project](https://sihyun.me/CMD/)|
+|2024  |ArXiv|DiT-MoE |[Scaling Diffusion Transformers to 16 Billion Parameters](https://arxiv.org/abs/2407.11633v3)|Sparse expert routing reduces redundancy and cost across both stages|[Code](https://github.com/feizc/DiT-MoE)|
+|2024  |NeurIPS|EDT |[EDT: An Efficient Diffusion Transformer Framework Inspired by Human-like Sketching](https://arxiv.org/abs/2410.23788)|Lightweight DiT with modulation and token-relation masking for efficiency|[Code](https://github.com/xinwangChen/EDT)|
+|2024  |ICML|HarmoniCa |[HarmoniCa: Harmonizing Training and Inference for Better Feature Caching in Diffusion Transformer Acceleration](https://arxiv.org/abs/2410.01723v6)|Caching and denoising protocol enable accurate sampling with fewer steps|[Code](https://github.com/ModelTC/HarmoniCa)|
+|2025  |CVPR|DiG |[DiG: Scalable and Efficient Diffusion Models with Gated Linear Attention](https://arxiv.org/abs/2405.18428v2)|Gated linear attention replaces quadratic form for complexity reduction|[Code](https://github.com/hustvl/DiG)|
+|2025  |ArXiv|LiT |[LiT: Delving into a Simplified Linear Diffusion Transformer for Image Generation](https://arxiv.org/abs/2501.12976)|Linear blocks replace transformers to lower attention and inference cost|❌|
+|2025  |AAAI|Flash Diffusion |[Flash Diffusion: Accelerating Any Conditional Diffusion Model for Few Steps Image Generation](https://arxiv.org/abs/2406.02347)|LoRA-based distillation preserves quality while reducing overall computation|[Code](https://github.com/gojasper/flash-diffusion)|
 
 ##  🎊 Other Application Tasks
 
@@ -364,6 +393,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|CoGen |[CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving](https://arxiv.org/abs/2503.22231v2)|A spatial adaptive framework for 3D-consistent driving video generation|[Project](https://xiaomi-research.github.io/cogen/)|
 
 ### Medical Section
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|Brain-Net-Diffusion |[Brain Network Diffusion-Driven fMRI Connectivity Augmentation for Enhanced Autism Spectrum Disorder Diagnosis](https://arxiv.org/abs/2409.18967)|A DiT-based model for fMRI functional connectivity augmentation in ASD diagnosis|❌|
@@ -375,6 +405,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |IEEE|EchoFlow |[EchoFlow: A Foundation Model for Cardiac Ultrasound Image and Video Generation](https://arxiv.org/abs/2503.22357)|A model for cardiac ultrasound image/video generation|❌|
 
 ### Chemistry Section
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |NeurIPS|Graph DiT |[Graph Diffusion Transformers for Multi-Conditional Molecular Generation](https://arxiv.org/abs/2401.13858)|A model for multi-conditional molecular generation|[Code](https://github.com/liugangcode/Graph-DiT)|
@@ -383,6 +414,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ICML|ADiT |[All-atom Diffusion Transformers: Unified generative modelling of molecules and materials](https://arxiv.org/abs/2503.03965v2)|A unified model for generating both periodic materials and non-periodic molecular systems|[Code](https://github.com/facebookresearch/all-atom-diffusion-transformer)|
 
 ### Biology Section
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |PLOS|idpSAM |[Transferable Deep Generative Modeling of Intrinsically Disordered Protein Conformations](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012144)|A latent diffusion model for intrinsically disordered proteins|❌|
@@ -391,6 +423,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|scRDiT |[scRDiT: Generating single-cell RNA-seq data by diffusion transformers and accelerating sampling](https://arxiv.org/abs/2404.06153)|Generate virtual scRNA-seq data by leveraging a real dataset|[Code](https://github.com/DongShengze/scRDiT)|
 
 ### Meteorology Section
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |NeurIPS|Stormer |[Scaling transformer neural networks for skillful and reliable medium-range weather forecasting](https://arxiv.org/abs/2312.03876v2)|Meteorological data & A deep learning model for weather forecasting|[Code](https://github.com/tung-nd/stormer)|
@@ -398,6 +431,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |TIP|MWFormer |[MWFormer: Multi-Weather Image Restoration Using Degradation-Aware Transformers](https://ieeexplore.ieee.org/document/10767188)|A model based-DiT for multi-weatherimage restoration|[Code](https://github.com/taco-group/MWFormer)|
 
 ### Robotic Section
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|RDT |[RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864)|A diffusion foundation model for bimanual manipulation|[Project](https://rdt-robotics.github.io/rdt-robotics/)|
@@ -409,6 +443,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |ArXiv|ARCH |[Hierarchical Hybrid Learning for Long-Horizon Contact-Rich Robotic Assembly](https://arxiv.org/abs/2409.16451)|A hierarchical framework for long-horizon robotic assembly|[Project](https://long-horizon-assembly.github.io/)|
 
 ### Motion Generation
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV|BoDiffusion |[BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis](https://arxiv.org/abs/2304.11118)|A diffusion model for conditional motion synthesis|[Project](https://bcv-uniandes.github.io/bodiffusion-wp/)|
@@ -417,6 +452,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |CVPR|SimMotionEdit |[SimMotionEdit: Text-Based Human Motion Editing with Motion Similarity Prediction](https://arxiv.org/abs/2503.18211)|A text-based human motion editing framework|[Code](https://github.com/lzhyu/SimMotionEdit)|
 
 ### Text Generation
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |NeurIPS 2023|PLANNER |[PLANNER: Generating Diversified Paragraph via Latent Language Diffusion Model](https://arxiv.org/abs/2410.15959v6)|A two-stage latent text diffusion model|[Code](https://github.com/apple/ml-planner)|
@@ -425,6 +461,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|TextCrafter |[TextCrafter: Accurately Rendering Multiple Texts in Complex Visual Scenes](https://arxiv.org/abs/2503.23461)|A model for complex visual text generation (CVTG)|[Code](https://github.com/NJU-PCALab/TextCrafter)|
 
 ### Time Series Task
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|TimeDiT |[TimeDiT: General-purpose Diffusion Transformers for Time Series Foundation Model](https://arxiv.org/abs/2409.02322)|A foundation model for time series tasks|❌|
@@ -432,6 +469,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |AAAI|PaD-TS |[Population Aware Diffusion for Time Series Generation](https://arxiv.org/abs/2501.00910)|Population aware diffusion for time series generation|[Code](https://github.com/wmd3i/PaD-TS)|
 
 ### Talking Head Synthesis
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ArXiv|DiT-Head |[DiT-Head: High-Resolution Talking Head Synthesis using Diffusion Transformers](https://arxiv.org/abs/2312.06400)|A model DiT-based for talking head synthesis|❌|
@@ -439,6 +477,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|OmniTalker |[OmniTalker: One-shot Real-time Text-Driven Talking Audio-Video Generation With Multimodal Style Mimicking](https://arxiv.org/abs/2504.02433v2)|A unified framework for text-driven talking head generation|[Project](https://humanaigc.github.io/omnitalker/)|
 
 ### Image Super-Resolution
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|PatchScaler |[PatchScaler: An Efficient Patch-Independent Diffusion Model for Image Super-Resolution](https://arxiv.org/abs/2405.17158v4)|A patch-independent diffusion pipeline for single image super-resolution|[Code](https://github.com/yongliuy/PatchScaler)|
@@ -447,18 +486,21 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ICCV|DiT4SR |[DiT4SR: Taming Diffusion Transformer for Real-World Image Super-Resolution](https://arxiv.org/abs/2503.23580v2)|A method to tame the large-scale DiT model for Real-ISR|[Project](https://adam-duan.github.io/projects/dit4sr/)|
 
 ### Classification Task
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV|DDAE |[Denoising Diffusion Autoencoders are Unified Self-supervised Learners](https://arxiv.org/abs/2303.09769v2)|A diffusion-based self-supervised learner|[Code](https://github.com/FutureXiang/ddae)|
 |2023  |NeurIPS|Diffusion-TTA |[Diffusion-TTA: Test-time Adaptation of Discriminative Models via Generative Feedback](https://arxiv.org/abs/2311.16102v2)|Enhance the classification model with DiT|[Project](https://diffusion-tta.github.io/)|
 
 ### Recommendation System
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|DMSG |[Prompt-to-Slate: Diffusion Models for Prompt-Conditioned Slate Generation](https://arxiv.org/abs/2408.06883)|A diffusion-based slate recommendation model|❌|
 |2024  |ACM|GDiT |[EDGE-Rec: Efficient and Data-Guided Edge Diffusion For Recommender Systems Graphs](https://arxiv.org/abs/2409.14689)|Generate recommendations by conditioning on user and item features|[Code](https://github.com/upriyam-cmu/EDGE-Rec)|
 
 ### Other task
+
 |Task type| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |---------|------|-------|------------|-------------|-----------|--------------|
 |Fluid dynamics  |2024  |ArXiv|DiffFluid |[DiffFluid: Plain Diffusion Models are Effective Predictors of Flow Dynamics](https://arxiv.org/abs/2409.13665)|The first transformer-based diffusion solver for fluid dynamics equations|❌|
