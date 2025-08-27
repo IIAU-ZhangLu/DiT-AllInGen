@@ -26,6 +26,9 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### Text-to-Image
+
+
+
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV      |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[Code](https://github.com/sail-sg/MDT)|
