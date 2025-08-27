@@ -367,5 +367,47 @@ In this section, we provide a comprehensive overview of these developments by gr
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV|BoDiffusion |[BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis](https://arxiv.org/abs/2304.11118)|A diffusion model for conditional motion synthesis|[Project](https://bcv-uniandes.github.io/bodiffusion-wp/)|
 |2024  |CVPR|OMG |[OMG: Towards Open-vocabulary Motion Generation via Mixture of Controllers](https://arxiv.org/abs/2312.08985v3)|Motion generation from zero-shot open-vocabulary text prompts|[Project](https://tr3e.github.io/omg-page/)|
-|2025  |ArXiv|RDT |[RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864)|A diffusion foundation model for bimanual manipulation|[Project](https://rdt-robotics.github.io/rdt-robotics/)|
-|2024  |ArXiv|RDT |[RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864)|A diffusion foundation model for bimanual manipulation|[Project](https://rdt-robotics.github.io/rdt-robotics/)|
+|2025  |ArXiv|PackDiT |[PackDiT: Joint Human Motion and Text Generation via Mutual Prompting](https://arxiv.org/abs/2501.16551)|A diffusion-based framework for joint human motion and text generation|❌|
+|2025  |CVPR|SimMotionEdit |[SimMotionEdit: Text-Based Human Motion Editing with Motion Similarity Prediction](https://arxiv.org/abs/2503.18211)|A text-based human motion editing framework|[Code](https://github.com/lzhyu/SimMotionEdit)|
+
+### Text Generation
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |NeurIPS 2023|PLANNER |[PLANNER: Generating Diversified Paragraph via Latent Language Diffusion Model](https://arxiv.org/abs/2410.15959v6)|A two-stage latent text diffusion model|[Code](https://github.com/apple/ml-planner)|
+|2024  |NeurIPS|MDLM |[Simple and Effective Masked Diffusion Language Models](https://arxiv.org/abs/2406.07524)|A masked diffusion language model for text generation|[Project](https://s-sahoo.com/mdlm/)|
+|2024  |ACL|DGLM |[Diffusion Guided Language Modeling](https://arxiv.org/abs/2408.04220)|A integration of auto-regression and diffusion that enables attribute-guided text generation|[Code](https://github.com/justinlovelace/Diffusion-Guided-LM)|
+|2025  |ArXiv|TextCrafter |[TextCrafter: Accurately Rendering Multiple Texts in Complex Visual Scenes](https://arxiv.org/abs/2503.23461)|A model for complex visual text generation (CVTG)|[Code](https://github.com/NJU-PCALab/TextCrafter)|
+
+### Time Series Task
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|TimeDiT |[TimeDiT: General-purpose Diffusion Transformers for Time Series Foundation Model](https://arxiv.org/abs/2409.02322)|A foundation model for time series tasks|❌|
+|2025  |ICLR|TabDiT |[Diffusion Transformers for Tabular Data Time Series Generation](https://arxiv.org/abs/2504.07566v2)|A DiT-based method for tabular time series generation|❌|
+|2025  |AAAI|PaD-TS |[Population Aware Diffusion for Time Series Generation](https://arxiv.org/abs/2501.00910)|Population aware diffusion for time series generation|[Code](https://github.com/wmd3i/PaD-TS)|
+
+### Talking Head Synthesis
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |ArXiv|DiT-Head |[DiT-Head: High-Resolution Talking Head Synthesis using Diffusion Transformers](https://arxiv.org/abs/2312.06400)|A model DiT-based for talking head synthesis|❌|
+|2024  |ArXiv|IF-MDM |[IF-MDM: Implicit Face Motion Diffusion Model for High-Fidelity Realtime Talking Head Generation](https://arxiv.org/abs/2412.04000)|A methodology for controllable talking head generation using implicit motion|❌|
+|2025  |ArXiv|OmniTalker |[OmniTalker: One-shot Real-time Text-Driven Talking Audio-Video Generation With Multimodal Style Mimicking](https://arxiv.org/abs/2504.02433v2)|A unified framework for text-driven talking head generation|[Project](https://humanaigc.github.io/omnitalker/)|
+
+### Image Super-Resolution
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|PatchScaler |[PatchScaler: An Efficient Patch-Independent Diffusion Model for Image Super-Resolution](https://arxiv.org/abs/2405.17158v4)|A patch-independent diffusion pipeline for single image super-resolution|[Code](https://github.com/yongliuy/PatchScaler)|
+|2025  |AAAI|DiT-SR |[Effective Diffusion Transformer Architecture for Image Super-Resolution](https://arxiv.org/abs/2409.19589)|A diffusion transformer specifically designed for image super-resolution|[Code](https://github.com/kunncheng/DiT-SR)|
+|2025  |ArXiv|QDM |[QDM: Quadtree-Based Region-Adaptive Sparse Diffusion Models for Efficient Image Super-Resolution](https://arxiv.org/abs/2503.12015)|Quadtree-based region-adaptive sparse diffusion models for image super-resolution|[Code](https://github.com/linYDTHU/QDM)|
+|2025  |ICCV|DiT4SR |[DiT4SR: Taming Diffusion Transformer for Real-World Image Super-Resolution](https://arxiv.org/abs/2503.23580v2)|A method to tame the large-scale DiT model for Real-ISR|[Project](https://adam-duan.github.io/projects/dit4sr/)|
+
+### Classification Task
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |ICCV|DDAE |[Denoising Diffusion Autoencoders are Unified Self-supervised Learners](https://arxiv.org/abs/2303.09769v2)|A diffusion-based self-supervised learner|[Code](https://github.com/FutureXiang/ddae)|
+|2023  |NeurIPS|Diffusion-TTA |[Diffusion-TTA: Test-time Adaptation of Discriminative Models via Generative Feedback](https://arxiv.org/abs/2311.16102v2)|Enhance the classification model with DiT|[Project](https://diffusion-tta.github.io/)|
+
+### Recommendation System
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|DMSG |[Prompt-to-Slate: Diffusion Models for Prompt-Conditioned Slate Generation](https://arxiv.org/abs/2408.06883)|A diffusion-based slate recommendation model|❌|
+|2024  |ACM|GDiT |[EDGE-Rec: Efficient and Data-Guided Edge Diffusion For Recommender Systems Graphs](https://arxiv.org/abs/2409.14689)|Generate recommendations by conditioning on user and item features|[Code](https://github.com/upriyam-cmu/EDGE-Rec)|
