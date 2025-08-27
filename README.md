@@ -26,9 +26,6 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### Text-to-Image
-
-
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV      |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[Code](https://github.com/sail-sg/MDT)|
@@ -77,7 +74,6 @@ In this chapter, we categorize DiT-based image generation methods into four repr
 In this sections, we categorize DiT-based video generation methods into several subgroups based on their input conditions and generative goals, including Text-to-video generation, Image-to-video generation, and Multi-modal controllable video generation.
 
 ### Text-to-Video
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |TMLR|Latte |[Latte: Latent Diffusion Transformer for Video Generation](https://arxiv.org/abs/2401.03048)|A latent diffusion transformer for video generation|[Project](https://maxin-cn.github.io/latte_project/)|
@@ -95,7 +91,6 @@ In this sections, we categorize DiT-based video generation methods into several 
 |2025  |ArXiv|Vchitect-2.0 |[Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models](https://arxiv.org/abs/2501.08453)|Parallel transformer architecture for efficient T2V generation|[Code](https://github.com/Vchitect/Vchitect-2.0)|
 
 ### Image-to-Video
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ICLR|TA |[Trajectory Attention for Fine-grained Video Motion Control](https://arxiv.org/abs/2411.19324)|Trajectory‑aware attention in DiT for precise camera motion control|[Project](https://xizaoqu.github.io/trajattn/)|
@@ -109,7 +104,6 @@ In this sections, we categorize DiT-based video generation methods into several 
 |2025  |ArXiv|CameraCtrl II |[CameraCtrl II: Dynamic Scene Exploration via Camera-controlled Video Diffusion Models](https://arxiv.org/abs/2503.10592)|Camera controllable DiT for I2V generation|[Project](https://hehao13.github.io/Projects-CameraCtrl-II/)|
 
 ### Multi-modal Control
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|Sora |[Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models](https://arxiv.org/abs/2402.17177)|Foundation video synthesis models supporting multimodal input|❌|
@@ -141,7 +135,6 @@ In this sections, we categorize DiT-based video generation methods into several 
  In this section, we categorize existing DiT-based 3D methods into four subgroups: 3D shape generation,which focuses on single-object modeling from scratch; 3D representation learning, which aims to build effective latent spaces or cross-modal embeddings for 3D data; 3D Controlled Generation, which leverages explicit inputs like text, pose, or geometry for conditional generation; and Large-vocabulary 3D Generation, which targets diverse,multi-instance, or scene-level 3D synthesis across categories.
 
 ### 3D Shape Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |NeurIPS|DiT-3D |[DiT-3D: Exploring Plain Diffusion Transformers for 3D Shape Generation](https://arxiv.org/abs/2307.01831)|Adapts 2D DiTs for 3D point clouds with positional embeddings|[Project](https://dit-3d.github.io/)|
@@ -151,7 +144,6 @@ In this sections, we categorize DiT-based video generation methods into several 
 |2024  |CVPR|BDM |[Bayesian Diffusion Models for 3D Shape Reconstruction](https://arxiv.org/abs/2403.06973)|Bayesian diffusion model for single-view 3D reconstruction with uncertainty|[Project](https://mlpc-ucsd.github.io/BDM/)|
 
 ### Representation Learning
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ILCR|LaGeM |[LaGeM: A Large Geometry Model for 3D Representation Learning and Diffusion](https://arxiv.org/abs/2410.01295)|Geometry-based model learns 3D latent codes for conditional generation|[Project](https://1zb.github.io/LaGeM/)|
@@ -162,7 +154,6 @@ In this sections, we categorize DiT-based video generation methods into several 
 |2025  |CVPR|3DEnhancer |[3DEnhancer: Consistent Multi-View Diffusion for 3D Enhancement](https://arxiv.org/abs/2412.18565)|Multi-view latent diffusion for 3D consistency enhancement|[Project](https://yihangluo.com/projects/3DEnhancer/)|
 
 ### 3D Controlled Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ECCV|LN3Diff |[LN3Diff: Scalable Latent Neural Fields Diffusion for Speedy 3D Generation](https://arxiv.org/abs/2403.12019)|3D-aware latent diffusion for image/text-conditioned generation|[Project](https://nirvanalan.github.io/projects/ln3diff/)|
@@ -174,7 +165,6 @@ In this sections, we categorize DiT-based video generation methods into several 
 |2025  |ArXiv|MeshCraft |[MeshCraft: Exploring Efficient and Controllable Mesh Generation with Flow-based DiTs](https://arxiv.org/abs/2503.23022)|Controllable mesh generation using flow-based diffusion transformer|❌|
 
 ### Large-vocabulary 3D Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ILCR|DiffTF |[Large-Vocabulary 3D Diffusion Model with Transformer](https://arxiv.org/abs/2309.07920)|Cross-plane attention for diverse 3D category generation|[Project](https://ziangcao0312.github.io/difftf_pages/)|
@@ -188,7 +178,6 @@ In this sections, we categorize DiT-based video generation methods into several 
 In this chapter, we categorize DiT-based Audio generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### Cross-modal generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |InterSpeech|EzAudio |[EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer](https://arxiv.org/abs/2409.10819)|A text-to-audio(T2A) generation framework based DiTs|❌|
@@ -203,20 +192,17 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 |2025  |ICASSP|VoiceDiT |[VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/abs/2412.19259)|Producing environment-aware speech and audio from text and visual prompts|[Project](https://mm.kaist.ac.kr/projects/voicedit/)|
 
 ### Audio Enhancement
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |InterSpeech|CIGDTN |[Complex Image-Generative Diffusion Transformer for Audio Denoising](https://arxiv.org/abs/2406.09161)|A image-generative diffusion transformer network model for audio denoising|❌|
 
 ### Voice Conversion
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2025  |AAAI|StableVC |[StableVC: Style Controllable Zero-Shot Voice Conversion with Conditional Flow Matching](https://arxiv.org/abs/2412.04724)|A style-controllable zero-shot voice conversion model|[Project](https://yaoxunji.github.io/stablevc/)|
 |2025  |ICASSP|VoicePrompter |[VoicePrompter: Robust Zero-Shot Voice Conversion with Voice Prompt and Conditional Flow Matching](https://arxiv.org/abs/2501.17612)|A zero-shot voice conversion model based DiT|[Project](https://hayeong0.github.io/VoicePrompter-demo/)|
 
 ### Text-to-Speech
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |EMNLP|ViT-TTS |[ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer](https://arxiv.org/abs/2305.12708)|The first visual text-to-speech model with vision-text fusion|[Project](https://vit-tts.github.io/)|
@@ -234,7 +220,6 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 In this chapter, we categorize DiT-based unified models, which can simultaneously accept multimodal inputs and support generating multiple types of outputs within a single model.
 
 ### Image Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ICLR|PixWizard |[PixWizard: Versatile Image-to-Image Visual Assistant with Open-Language Instructions](https://arxiv.org/abs/2409.15278)|Unified framework for diverse image tasks(generation,edit,inpainting)|[Code](https://github.com/AFeng-x/PixWizard)|
@@ -247,13 +232,11 @@ In this chapter, we categorize DiT-based unified models, which can simultaneousl
 |2025  |ICCV|Lumina-Image 2.0 |[Lumina-Image 2.0: A Unified and Efficient Image Generative Framework](https://arxiv.org/abs/2503.21758)|A unified text-to-image generation framework|[Code](https://github.com/Alpha-VLLM/Lumina-Image-2.0)|
 
 ### Video Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2025  |ICLR|VACE |[VACE: All-in-One Video Creation and Editing](https://arxiv.org/abs/2503.07598v2)|An all-in-one model for video creation and editing|[Project](https://ali-vilab.github.io/VACE-Page/)|
 
 ### Cross-modal union
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ICLR|SyncFlow |[SyncFlow: Toward Temporally Aligned Joint Audio-Video Generation from Text](https://arxiv.org/abs/2412.15220)|Joint audio-video generation text-driven|[Project](https://syncflow-core.github.io/syncflow-demo/)|
@@ -261,7 +244,6 @@ In this chapter, we categorize DiT-based unified models, which can simultaneousl
 |2024  |ArXiv|AV-DiT |[AV-DiT: Efficient Audio-Visual Diffusion Transformer for Joint Audio and Video Generation](https://arxiv.org/abs/2406.07686)|The first multimodal DiT for joint audio and video generation|❌|
 
 ### Multi modal/Multi task
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ArXiv|T1 |[T1: Scaling Diffusion Probabilistic Fields to High-Resolution on Unified Visual Modalities](https://arxiv.org/abs/2305.14674)|Generation images,videos,and 3D via DiT-based unified visual modality handling|[Project](https://t1-diffusion-model.github.io/)|
@@ -284,7 +266,6 @@ In this chapter, we categorize DiT-based unified models, which can simultaneousl
 In this section, we provide a comprehensive overview of these developments by grouping efficient DiT-based methods into three major categories:training-efficient DiTs, inference-efficient DiTs, and joint training-inference optimization.
 
 ### Training-efficient
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICLR|PixArt-α |[PixArt-α: Fast Training of Diffusion Transformer for Photorealistic Text-to-Image Synthesis](https://arxiv.org/abs/2310.00426v3)|Training decomposition with efficient DiT design and high-informative data|[Project](https://pixart-alpha.github.io/)|
@@ -295,7 +276,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|DiT-μP |[Scaling Diffusion Transformers Efficiently via μP](https://arxiv.org/abs/2505.15270)|Applies maximal update parametrization to accelerate scalable DiT training|[Code](https://github.com/ML-GSAI/Scaling-Diffusion-Transformers-muP)|
 
 ### Test-efficient
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |NeurIPS|GET |[One-Step Diffusion Distillation via Deep Equilibrium Models](https://arxiv.org/abs/2401.08639)|One-step distillation with deep equilibrium model for fast sampling|[Code](https://github.com/locuslab/get)|
@@ -327,7 +307,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|TQ-DiT |[TQ-DiT: Efficient Time-Aware Quantization for Diffusion Transformers](https://arxiv.org/abs/2502.04056)|Time-aware quantization strategy to improve DiT inference efficiency|❌|
 
 ### Joint-stage Acceleration
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ICLR|CMD |[Efficient Video Diffusion Models via Content-Frame Motion-Latent Decomposition](https://arxiv.org/abs/2403.14148)|Factorizes content and motion latents for efficient training and sampling|[Project](https://sihyun.me/CMD/)|
@@ -341,7 +320,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 ##  🎊 Other Application Tasks
 
 ### Design aesthetics
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |CVPR|M&M VTO |[M&M VTO: Multi-Garment Virtual Try-On and Editing](https://arxiv.org/abs/2406.04542)|A model for multi-garment virtual try-on and editing|[Project](https://mmvto.github.io/)|
@@ -355,7 +333,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |CVPR|ITA-MDT |[ITA-MDT: Image-Timestep-Adaptive Masked Diffusion Transformer Framework for Image-Based Virtual Try-On](https://arxiv.org/abs/2503.20418v2)|A framework for the image-based virtual try-on (IVTON) task buildt upon MDT-IVTON|[Project](https://jiwoohong93.github.io/ita-mdt/)|
 
 ### Music Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|LFM |[Long-form music generation with latent diffusion](https://arxiv.org/abs/2404.10301)|A text-conditioned music generation model|❌|
@@ -367,7 +344,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |AAAI|SongEditor |[SongEditor: Adapting Zero-Shot Song Generation Language Model as a Multi-Task Editor](https://arxiv.org/abs/2412.13786)|A multi - task song editor based on language models|[Project](https://cypress-yang.github.io/SongEditor_demo/)|
 
 ### Game Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|PlayGen |[Playable Game Generation](https://arxiv.org/abs/2412.00887)|Interaction-driven playable game generation|[Code](https://github.com/GreatX3/Playable-Game-Generation)|
@@ -392,7 +368,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|CoGen |[CoGen: 3D Consistent Video Generation via Adaptive Conditioning for Autonomous Driving](https://arxiv.org/abs/2503.22231v2)|A spatial adaptive framework for 3D-consistent driving video generation|[Project](https://xiaomi-research.github.io/cogen/)|
 
 ### Medical Section
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|Brain-Net-Diffusion |[Brain Network Diffusion-Driven fMRI Connectivity Augmentation for Enhanced Autism Spectrum Disorder Diagnosis](https://arxiv.org/abs/2409.18967)|A DiT-based model for fMRI functional connectivity augmentation in ASD diagnosis|❌|
@@ -404,7 +379,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |IEEE|EchoFlow |[EchoFlow: A Foundation Model for Cardiac Ultrasound Image and Video Generation](https://arxiv.org/abs/2503.22357)|A model for cardiac ultrasound image/video generation|❌|
 
 ### Chemistry Section
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |NeurIPS|Graph DiT |[Graph Diffusion Transformers for Multi-Conditional Molecular Generation](https://arxiv.org/abs/2401.13858)|A model for multi-conditional molecular generation|[Code](https://github.com/liugangcode/Graph-DiT)|
@@ -413,7 +387,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ICML|ADiT |[All-atom Diffusion Transformers: Unified generative modelling of molecules and materials](https://arxiv.org/abs/2503.03965v2)|A unified model for generating both periodic materials and non-periodic molecular systems|[Code](https://github.com/facebookresearch/all-atom-diffusion-transformer)|
 
 ### Biology Section
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |PLOS|idpSAM |[Transferable Deep Generative Modeling of Intrinsically Disordered Protein Conformations](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012144)|A latent diffusion model for intrinsically disordered proteins|❌|
@@ -422,7 +395,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|scRDiT |[scRDiT: Generating single-cell RNA-seq data by diffusion transformers and accelerating sampling](https://arxiv.org/abs/2404.06153)|Generate virtual scRNA-seq data by leveraging a real dataset|[Code](https://github.com/DongShengze/scRDiT)|
 
 ### Meteorology Section
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |NeurIPS|Stormer |[Scaling transformer neural networks for skillful and reliable medium-range weather forecasting](https://arxiv.org/abs/2312.03876v2)|Meteorological data & A deep learning model for weather forecasting|[Code](https://github.com/tung-nd/stormer)|
@@ -430,7 +402,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |TIP|MWFormer |[MWFormer: Multi-Weather Image Restoration Using Degradation-Aware Transformers](https://ieeexplore.ieee.org/document/10767188)|A model based-DiT for multi-weatherimage restoration|[Code](https://github.com/taco-group/MWFormer)|
 
 ### Robotic Section
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|RDT |[RDT-1B: a Diffusion Foundation Model for Bimanual Manipulation](https://arxiv.org/abs/2410.07864)|A diffusion foundation model for bimanual manipulation|[Project](https://rdt-robotics.github.io/rdt-robotics/)|
@@ -442,7 +413,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |ArXiv|ARCH |[Hierarchical Hybrid Learning for Long-Horizon Contact-Rich Robotic Assembly](https://arxiv.org/abs/2409.16451)|A hierarchical framework for long-horizon robotic assembly|[Project](https://long-horizon-assembly.github.io/)|
 
 ### Motion Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV|BoDiffusion |[BoDiffusion: Diffusing Sparse Observations for Full-Body Human Motion Synthesis](https://arxiv.org/abs/2304.11118)|A diffusion model for conditional motion synthesis|[Project](https://bcv-uniandes.github.io/bodiffusion-wp/)|
@@ -451,7 +421,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |CVPR|SimMotionEdit |[SimMotionEdit: Text-Based Human Motion Editing with Motion Similarity Prediction](https://arxiv.org/abs/2503.18211)|A text-based human motion editing framework|[Code](https://github.com/lzhyu/SimMotionEdit)|
 
 ### Text Generation
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |NeurIPS 2023|PLANNER |[PLANNER: Generating Diversified Paragraph via Latent Language Diffusion Model](https://arxiv.org/abs/2410.15959v6)|A two-stage latent text diffusion model|[Code](https://github.com/apple/ml-planner)|
@@ -460,7 +429,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|TextCrafter |[TextCrafter: Accurately Rendering Multiple Texts in Complex Visual Scenes](https://arxiv.org/abs/2503.23461)|A model for complex visual text generation (CVTG)|[Code](https://github.com/NJU-PCALab/TextCrafter)|
 
 ### Time Series Task
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|TimeDiT |[TimeDiT: General-purpose Diffusion Transformers for Time Series Foundation Model](https://arxiv.org/abs/2409.02322)|A foundation model for time series tasks|❌|
@@ -468,7 +436,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |AAAI|PaD-TS |[Population Aware Diffusion for Time Series Generation](https://arxiv.org/abs/2501.00910)|Population aware diffusion for time series generation|[Code](https://github.com/wmd3i/PaD-TS)|
 
 ### Talking Head Synthesis
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ArXiv|DiT-Head |[DiT-Head: High-Resolution Talking Head Synthesis using Diffusion Transformers](https://arxiv.org/abs/2312.06400)|A model DiT-based for talking head synthesis|❌|
@@ -476,7 +443,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|OmniTalker |[OmniTalker: One-shot Real-time Text-Driven Talking Audio-Video Generation With Multimodal Style Mimicking](https://arxiv.org/abs/2504.02433v2)|A unified framework for text-driven talking head generation|[Project](https://humanaigc.github.io/omnitalker/)|
 
 ### Image Super-Resolution
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|PatchScaler |[PatchScaler: An Efficient Patch-Independent Diffusion Model for Image Super-Resolution](https://arxiv.org/abs/2405.17158v4)|A patch-independent diffusion pipeline for single image super-resolution|[Code](https://github.com/yongliuy/PatchScaler)|
@@ -485,21 +451,18 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ICCV|DiT4SR |[DiT4SR: Taming Diffusion Transformer for Real-World Image Super-Resolution](https://arxiv.org/abs/2503.23580v2)|A method to tame the large-scale DiT model for Real-ISR|[Project](https://adam-duan.github.io/projects/dit4sr/)|
 
 ### Classification Task
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV|DDAE |[Denoising Diffusion Autoencoders are Unified Self-supervised Learners](https://arxiv.org/abs/2303.09769v2)|A diffusion-based self-supervised learner|[Code](https://github.com/FutureXiang/ddae)|
 |2023  |NeurIPS|Diffusion-TTA |[Diffusion-TTA: Test-time Adaptation of Discriminative Models via Generative Feedback](https://arxiv.org/abs/2311.16102v2)|Enhance the classification model with DiT|[Project](https://diffusion-tta.github.io/)|
 
 ### Recommendation System
-
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ArXiv|DMSG |[Prompt-to-Slate: Diffusion Models for Prompt-Conditioned Slate Generation](https://arxiv.org/abs/2408.06883)|A diffusion-based slate recommendation model|❌|
 |2024  |ACM|GDiT |[EDGE-Rec: Efficient and Data-Guided Edge Diffusion For Recommender Systems Graphs](https://arxiv.org/abs/2409.14689)|Generate recommendations by conditioning on user and item features|[Code](https://github.com/upriyam-cmu/EDGE-Rec)|
 
 ### Other task
-
 |Task type| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |---------|------|-------|------------|-------------|-----------|--------------|
 |Fluid dynamics  |2024  |ArXiv|DiffFluid |[DiffFluid: Plain Diffusion Models are Effective Predictors of Flow Dynamics](https://arxiv.org/abs/2409.13665)|The first transformer-based diffusion solver for fluid dynamics equations|❌|
