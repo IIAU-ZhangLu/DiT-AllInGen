@@ -25,88 +25,117 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
-|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|--------------|------|-------|------------|-------------|-----------|--------------|
-|**Text-to-Image**|2023  |ICCV      |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[Code](https://github.com/sail-sg/MDT)|
-|     |2023  |ArXiv   |DiffFit       |[DiffFit: Unlocking Transferability of Large Diffusion Models via Simple Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2304.06648)|Parameter-efficient finetuning via low-rank adaptation of DiT layers|[Code](https://github.com/mkshing/DiffFit-pytorch)|
-|     |2024  |ICML   |HDiT    |[Scalable High-Resolution Pixel-Space Image Synthesis with Hourglass Diffusion Transformers](https://arxiv.org/abs/2401.11605)|Hourglass architecture enabling multi-scale context aggregation in DiT|[Project](https://github.com/crowsonkb/k-diffusion)|
-|     |2025  | ArXiv  |D²iT      |[D²iT: Dynamic Diffusion Transformer for Accurate Image Generation](https://arxiv.org/abs/2504.09454)|Dynamic VAE and DiT to embed multi-grained latent codes and noises|❌|
-|     |2024  | ICML   |SD3     |[Scaling rectified flow transformers for high-resolution image synthesis](https://arxiv.org/abs/2403.03206)|DiT framework for high-fidelity, prompt-aligned image generation|❌|
-|     |2024  |    |FLUX     |-|Unified foundation model for scalable and compositional T2I generation|[Code](https://github.com/black-forest-labs/flux)|
-|     |2024  | ICLR |DART   |[DART: Denoising Autoregressive Transformer for Scalable Text-to-Image Generation](https://arxiv.org/abs/2410.08159)|Integrating retrogressive decoding into DiT for improved visual consistency|❌|
-|     |2024  | ACCV |PSG-Adapter   |[PSG-Adapter: Controllable Planning Scene Graph for Improving Text-to-Image Diffusion](https://openaccess.thecvf.com/content/ACCV2024/papers/Gao_PSG-Adapter_Controllable_Planning_Scene_Graph_for_Improving_Text-to-Image_Diffusion_ACCV_2024_paper.pdf)|Scene graph-conditioned DiT with plug-and-play cross-attention adapters|❌|
-|     |2024  | CVPR |TexTok   |[Language-Guided Image Tokenization for Generation](https://arxiv.org/abs/2412.05796)|Text-conditioned tokenization to enhance semantic representation in generation|[Project](https://kaiwenzha.github.io/textok/)|
-|     |2024  | NeurIPS |LI-DiT   |[Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models](https://arxiv.org/abs/2406.11831)|LLM-integrated DiT for language-aware and compositional image synthesis|❌|
-|     |2024  | NeurIPS |EvolveDirector   |[EvolveDirector: Approaching Advanced Text-to-Image Generation with Large Vision-Language Models](https://arxiv.org/abs/2410.07133)|Vision-language model-guided DiT with evolutionary prompt planning|[Code](https://github.com/showlab/EvolveDirector)|
-|     |2025  | ArXiv |Zuo et al. |[Zero-Shot Subject-Centric Generation for Creative Application Using Entropy Fusion](https://arxiv.org/abs/2503.10697)|Entropy-based fusion for zero-shot subject-centric image generation|❌|
-|     |2025  |ICASSP  |DiTPipe   |[Enhancing Image Generation Fidelity via Progressive Prompts](https://arxiv.org/abs/2501.07070)|Region-aware prompt-following generation without extra finetuning|[Code](https://github.com/ZhenXiong-dl/ICASSP2025-RCAC)
-|     |2025  |ArXiv  |LDGen   |[LDGen: Enhancing Text-to-Image Synthesis via Large Language Model-Driven Language Representation](https://arxiv.org/abs/2502.18302)|Multilingual T2I enabled by LLM-driven hierarchical text representations|[Project](https://zrealli.github.io/LDGen/)
-|**Image-to-Image**|2024  |CVPR  |FoundHand   |[FoundHand: Large-Scale Domain-Specific Learning for Controllable Hand Image Generation](https://arxiv.org/abs/2412.02690)|Domain-specific hand image generation via prompt and geometry control|[Project](https://github.com/arthurchen0518/FoundHand)
-|     |2024  |ICML  |MDPT   |[Cross-view Masked Diffusion Transformers for Person Image Synthesis](https://arxiv.org/abs/2402.01516)|Cross-view masked diffusion for pose-guided person image synthesis|[Code](https://github.com/trungpx/xmdpt)
-|     |2025  |ArXiv  |U-StyDiT   |[U-StyDiT: Ultra-high Quality Artistic Style Transfer Using Diffusion Transformers](https://arxiv.org/abs/2503.08157)|High-fidelity artistic style transfer with transformer-enhanced latent diffusion|❌|
-| **Image-Editing**|2024  |ArXiv |LazyDiffusion|[Lazy Diffusion Transformer for Interactive Image Editing](https://arxiv.org/abs/2404.12382)|Fast interactive editing via mask-aware DiT with context encoder|[Project](https://lazydiffusion.github.io/)|
-|     |2024  |CVPR |LayerDecomp |[Generative Image Layer Decomposition with Visual Effects](https://arxiv.org/abs/2411.17864)|Layer-wise RGB-alpha decomposition guided by masks in DiT framework|[Project](https://rayjryang.github.io/LayerDecomp/)|
-|     |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
-|     |2025  |CVPR|ObjectMover |[ObjectMover: Generative Object Movement with Video Prior](https://arxiv.org/abs/2503.08037)|Unified object manipulation using video-trained DiT with multiple instructions|[Project](https://xinyu-andy.github.io/ObjMover/)|
-|     |2024  |ArXiv|DiT4Edit |[DiT4Edit: Diffusion Transformer for Image Editing](https://arxiv.org/abs/2411.03286)|Patch-wise attention control across generation and reconstruction branches|❌|
-|     |2025  |ICCV|KV-Edit |[KV-Edit: Training-Free Image Editing for Precise Background Preservation](https://arxiv.org/abs/2502.17363)|Key-Value caching for consistent background preservation during editing|[Project](https://xilluill.github.io/projectpages/KV-Edit/)|
-|     |2025  |ArXiv|DCEdit |[DCEdit: Dual-Level Controlled Image Editing via Precisely Localized Semantics](https://arxiv.org/abs/2503.16795)|Semantic localization for dual-level editing at feature and latent scales|❌|
-| **Multi-modal Control**|2024  |ArXiv|EMMA |[EMMA: Your Text-to-Image Diffusion Model Can Secretly Accept Multi-Modal Prompts](https://arxiv.org/abs/2406.09162)|Text-image-fusion DiT for human-centric multi-modal generation|[Project](https://tencentqqgylab.github.io/EMMA/)|
-|     |2024  |ICCV|InfU|[InfiniteYou: Flexible Photo Recrafting While Preserving Your Identity](https://arxiv.org/abs/2503.16418)|Identity-preserving generation via diffusion-based subject guidance|[Project](https://bytedance.github.io/InfiniteYou/)|
-|     |2025  |ArXiv|XVerse |[XVerse: Consistent Multi-Subject Control of Identity and Semantic Attributes via DiT Modulation](https://arxiv.org/abs/2506.21416)|Multi-subject, attribute-controllable generation via token-wise DiT modulation|[Project](https://bytedance.github.io/XVerse/)|
-|     |2025  |ICCV|UniCombine |[UniCombine: Unified Multi-Conditional Combination with Diffusion Transformer](https://arxiv.org/abs/2503.09277)|Unified DiT with LoRA-based attention for multi-condition compositional synthesis|[Code](https://github.com/Xuan-World/UniCombine)|
+### Text-to-Image
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |ICCV      |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|A mask latent modeling scheme to enhance context relation learning|[Code](https://github.com/sail-sg/MDT)|
+|2023  |ArXiv   |DiffFit       |[DiffFit: Unlocking Transferability of Large Diffusion Models via Simple Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2304.06648)|Parameter-efficient finetuning via low-rank adaptation of DiT layers|[Code](https://github.com/mkshing/DiffFit-pytorch)|
+|2024  |ICML   |HDiT    |[Scalable High-Resolution Pixel-Space Image Synthesis with Hourglass Diffusion Transformers](https://arxiv.org/abs/2401.11605)|Hourglass architecture enabling multi-scale context aggregation in DiT|[Project](https://github.com/crowsonkb/k-diffusion)|
+|2025  | ArXiv  |D²iT      |[D²iT: Dynamic Diffusion Transformer for Accurate Image Generation](https://arxiv.org/abs/2504.09454)|Dynamic VAE and DiT to embed multi-grained latent codes and noises|❌|
+|2024  | ICML   |SD3     |[Scaling rectified flow transformers for high-resolution image synthesis](https://arxiv.org/abs/2403.03206)|DiT framework for high-fidelity, prompt-aligned image generation|❌|
+|2024  |    |FLUX     |-|Unified foundation model for scalable and compositional T2I generation|[Code](https://github.com/black-forest-labs/flux)|
+|2024  | ICLR |DART   |[DART: Denoising Autoregressive Transformer for Scalable Text-to-Image Generation](https://arxiv.org/abs/2410.08159)|Integrating retrogressive decoding into DiT for improved visual consistency|❌|
+|2024  | ACCV |PSG-Adapter   |[PSG-Adapter: Controllable Planning Scene Graph for Improving Text-to-Image Diffusion](https://openaccess.thecvf.com/content/ACCV2024/papers/Gao_PSG-Adapter_Controllable_Planning_Scene_Graph_for_Improving_Text-to-Image_Diffusion_ACCV_2024_paper.pdf)|Scene graph-conditioned DiT with plug-and-play cross-attention adapters|❌|
+|2024  | CVPR |TexTok   |[Language-Guided Image Tokenization for Generation](https://arxiv.org/abs/2412.05796)|Text-conditioned tokenization to enhance semantic representation in generation|[Project](https://kaiwenzha.github.io/textok/)|
+|2024  | NeurIPS |LI-DiT   |[Exploring the Role of Large Language Models in Prompt Encoding for Diffusion Models](https://arxiv.org/abs/2406.11831)|LLM-integrated DiT for language-aware and compositional image synthesis|❌|
+|2024  | NeurIPS |EvolveDirector   |[EvolveDirector: Approaching Advanced Text-to-Image Generation with Large Vision-Language Models](https://arxiv.org/abs/2410.07133)|Vision-language model-guided DiT with evolutionary prompt planning|[Code](https://github.com/showlab/EvolveDirector)|
+|2025  | ArXiv |Zuo et al. |[Zero-Shot Subject-Centric Generation for Creative Application Using Entropy Fusion](https://arxiv.org/abs/2503.10697)|Entropy-based fusion for zero-shot subject-centric image generation|❌|
+|2025  |ICASSP  |DiTPipe   |[Enhancing Image Generation Fidelity via Progressive Prompts](https://arxiv.org/abs/2501.07070)|Region-aware prompt-following generation without extra finetuning|[Code](https://github.com/ZhenXiong-dl/ICASSP2025-RCAC)
+|2025  |ArXiv  |LDGen   |[LDGen: Enhancing Text-to-Image Synthesis via Large Language Model-Driven Language Representation](https://arxiv.org/abs/2502.18302)|Multilingual T2I enabled by LLM-driven hierarchical text representations|[Project](https://zrealli.github.io/LDGen/)
+
+### Image-to-Image
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |CVPR  |FoundHand   |[FoundHand: Large-Scale Domain-Specific Learning for Controllable Hand Image Generation](https://arxiv.org/abs/2412.02690)|Domain-specific hand image generation via prompt and geometry control|[Project](https://github.com/arthurchen0518/FoundHand)
+|2024  |ICML  |MDPT   |[Cross-view Masked Diffusion Transformers for Person Image Synthesis](https://arxiv.org/abs/2402.01516)|Cross-view masked diffusion for pose-guided person image synthesis|[Code](https://github.com/trungpx/xmdpt)
+|2025  |ArXiv  |U-StyDiT   |[U-StyDiT: Ultra-high Quality Artistic Style Transfer Using Diffusion Transformers](https://arxiv.org/abs/2503.08157)|High-fidelity artistic style transfer with transformer-enhanced latent diffusion|❌|
+
+### Image-Editing
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv |LazyDiffusion|[Lazy Diffusion Transformer for Interactive Image Editing](https://arxiv.org/abs/2404.12382)|Fast interactive editing via mask-aware DiT with context encoder|[Project](https://lazydiffusion.github.io/)|
+|2024  |CVPR |LayerDecomp |[Generative Image Layer Decomposition with Visual Effects](https://arxiv.org/abs/2411.17864)|Layer-wise RGB-alpha decomposition guided by masks in DiT framework|[Project](https://rayjryang.github.io/LayerDecomp/)|
+|2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for localized and subject-consistent editing|[Project](https://fluxspace.github.io/)|
+|2025  |CVPR|ObjectMover |[ObjectMover: Generative Object Movement with Video Prior](https://arxiv.org/abs/2503.08037)|Unified object manipulation using video-trained DiT with multiple instructions|[Project](https://xinyu-andy.github.io/ObjMover/)|
+|2024  |ArXiv|DiT4Edit |[DiT4Edit: Diffusion Transformer for Image Editing](https://arxiv.org/abs/2411.03286)|Patch-wise attention control across generation and reconstruction branches|❌|
+|2025  |ICCV|KV-Edit |[KV-Edit: Training-Free Image Editing for Precise Background Preservation](https://arxiv.org/abs/2502.17363)|Key-Value caching for consistent background preservation during editing|[Project](https://xilluill.github.io/projectpages/KV-Edit/)|
+|2025  |ArXiv|DCEdit |[DCEdit: Dual-Level Controlled Image Editing via Precisely Localized Semantics](https://arxiv.org/abs/2503.16795)|Semantic localization for dual-level editing at feature and latent scales|❌|
+
+### Multi-modal Control
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|EMMA |[EMMA: Your Text-to-Image Diffusion Model Can Secretly Accept Multi-Modal Prompts](https://arxiv.org/abs/2406.09162)|Text-image-fusion DiT for human-centric multi-modal generation|[Project](https://tencentqqgylab.github.io/EMMA/)|
+|2024  |ICCV|InfU|[InfiniteYou: Flexible Photo Recrafting While Preserving Your Identity](https://arxiv.org/abs/2503.16418)|Identity-preserving generation via diffusion-based subject guidance|[Project](https://bytedance.github.io/InfiniteYou/)|
+|2025  |ArXiv|XVerse |[XVerse: Consistent Multi-Subject Control of Identity and Semantic Attributes via DiT Modulation](https://arxiv.org/abs/2506.21416)|Multi-subject, attribute-controllable generation via token-wise DiT modulation|[Project](https://bytedance.github.io/XVerse/)|
+|2025  |ICCV|UniCombine |[UniCombine: Unified Multi-Conditional Combination with Diffusion Transformer](https://arxiv.org/abs/2503.09277)|Unified DiT with LoRA-based attention for multi-condition compositional synthesis|[Code](https://github.com/Xuan-World/UniCombine)|
 
 ## 📽️ DiT for Video Generation
 
 In this sections, we categorize DiT-based video generation methods into several subgroups based on their input conditions and generative goals, including Text-to-video generation, Image-to-video generation, and Multi-modal controllable video generation.
 
-|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|--------------|------|-------|------------|-------------|-----------|--------------|
-|**Text-to-Video**|2024  |TMLR|Latte |[Latte: Latent Diffusion Transformer for Video Generation](https://arxiv.org/abs/2401.03048)|A latent diffusion transformer for video generation|[Project](https://maxin-cn.github.io/latte_project/)|
-|     |2024  |ICLR|CogVideoX |[CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer](https://arxiv.org/abs/2408.06072)|Motion-aware DiT with 3D VAE for scalable T2V generation|[Code](https://github.com/zai-org/CogVideo)|
-|     |2024  |NeurIPS|FIFO-Diffusion |[FIFO-Diffusion: Generating Infinite Videos from Text without Training](https://arxiv.org/abs/2405.11473)|A training-free framework for long video generation from text|[Project](https://jjihwan.github.io/projects/FIFO-Diffusion)|
-|     |2024  |CVPR|GenTron |[GenTron: Diffusion Transformers for Image and Video Generation](https://arxiv.org/abs/2312.04557)|Motion-free guidance integrated into DiT for controllable T2V generation|[Project](https://www.shoufachen.com/gentron_website/)|
-|     |2024  |CVPR|DiTCtrl |[DiTCtrl: Exploring Attention Control in Multi-Modal Diffusion Transformer for Tuning-Free Multi-Prompt Longer Video Generation](https://arxiv.org/abs/2412.18597)|A training-free MM-Dit-based framework for multi-prompt video generation|[Project](https://onevfall.github.io/project_page/ditctrl/)|
-|     |2025  |ArXiv|On-device Sora |[On-device Sora: Enabling Training-Free Diffusion-based Text-to-Video Generation for Mobile Devices](https://arxiv.org/abs/2502.04363)|Lightweight DiT adaption for mobile-wise video generation|[Code](https://github.com/eai-lab/On-device-Sora)|
-|     |2025  |ArXiv|CascadeV |[CascadeV: An Implementation of Wurstchen Architecture for Video Generation](https://arxiv.org/abs/2501.16612)|A cascaded latent DiT for coarse-to-fine T2V generation|[Code](https://github.com/bytedance/CascadeV)|
-|     |2025  |ArXiv|RepVideo |[RepVideo: Rethinking Cross-Layer Representation for Video Generation](https://arxiv.org/abs/2501.08994)|Aggregate and stabilize intermediate representations for T2V generation|[Project](https://vchitect.github.io/RepVid-Webpage/)|
-|     |2025  |CVPR|BlobGEN-Vid |[BlobGEN-Vid: Compositional Text-to-Video Generation with Blob Video Representations](https://arxiv.org/abs/2501.07647)|Implicit blob representations for fine-grained motion or appearance control|[Project](https://blobgen-vid.github.io/)|
-|     |2025  |ArXiv|APT |[Diffusion Adversarial Post-Training for One-Step Video Generation](https://arxiv.org/abs/2501.08316)|Unified DiT for single-step image and video generation|[Project](https://seaweed-apt.com/)|
-|     |2025  |CVPR|HumanDreamer |[HumanDreamer: Generating Controllable Human-Motion Videos via Decoupled Generation](https://arxiv.org/abs/2503.24026)|DiT-based human-centric T2V with pose-aware modeling|[Project](https://humandreamer.github.io/)|
-|     |2025  |CVPR|Mask²DiT |[Mask²DiT: Dual Mask-based Diffusion Transformer for Multi-Scene Long Video Generation](https://arxiv.org/abs/2503.19881)|Dual masked-DiT for multi-scene long video generation|[Project](https://tianhao-qi.github.io/Mask2DiTProject/)|
-|     |2025  |ArXiv|Vchitect-2.0 |[Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models](https://arxiv.org/abs/2501.08453)|Parallel transformer architecture for efficient T2V generation|[Code](https://github.com/Vchitect/Vchitect-2.0)|
-|**Image-to-Video**|2024  |ICLR|TA |[Trajectory Attention for Fine-grained Video Motion Control](https://arxiv.org/abs/2411.19324)|Trajectory‑aware attention in DiT for precise camera motion control|[Project](https://xizaoqu.github.io/trajattn/)|
-|     |2024  |CVPR|KFC-W |[Generating 3D-Consistent Videos from Unposed Internet Photos](https://arxiv.org/abs/2411.13549)|Generating 3D-consistent videos from unposed internet photos|[Project](https://genechou.com/kfcw/)|
-|     |2024  |SIGGRAPH|Human4DiT |[Human4DiT: 360-degree Human Video Generation with 4D Diffusion Transformer](https://arxiv.org/abs/2405.17405)|360-Degree human video generation with 4D DiT|[Project](https://human4dit.github.io/)|
-|     |2024  |CVPR|AnimateAnything |[AnimateAnything: Consistent and Controllable Animation for Video Generation](https://arxiv.org/abs/2411.10836)|Animate any subject with camera signal and optical flow as guidance|[Code](https://github.com/yu-shaonian/AnimateAnything)|
-|     |2025  |SIGGRAPH|DaS |[Diffusion as Shader: 3D-aware Video Diffusion for Versatile Video Generation Control](https://arxiv.org/abs/2501.03847)|Versatile video generation with 3D-aware motion guidance|[Project](https://igl-hkust.github.io/das/)|
-|     |2025  |ICCV|MagicMotion |[MagicMotion: Controllable Video Generation with Dense-to-Sparse Trajectory Guidance](https://arxiv.org/abs/2503.16421)|Multi-granularity controlled I2V generation|[Project](https://quanhaol.github.io/magicmotion-site/)|
-|     |2025  |ArXiv|UniAnimate-DiT |[UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer](https://arxiv.org/abs/2504.11289)|Human image nomination with image and pose guidance|[Code](https://github.com/ali-vilab/UniAnimate-DiT)|
-|     |2025  |ICCV|ReCamMaster |[ReCamMaster: Camera-Controlled Generative Rendering from A Single Video](https://arxiv.org/abs/2503.11647)|Re-shooting a source video with novel camera trajectories|[Project](https://jianhongbai.github.io/ReCamMaster/)|
-|     |2025  |ArXiv|CameraCtrl II |[CameraCtrl II: Dynamic Scene Exploration via Camera-controlled Video Diffusion Models](https://arxiv.org/abs/2503.10592)|Camera controllable DiT for I2V generation|[Project](https://hehao13.github.io/Projects-CameraCtrl-II/)|
-|**Multi-modal Control**|2024  |ArXiv|Sora |[Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models](https://arxiv.org/abs/2402.17177)|Foundation video synthesis models supporting multimodal input|❌|
-|     |2024  |ArXiv|Open-Sora |[Open-Sora: Democratizing Efficient Video Production for All](https://arxiv.org/abs/2412.20404)|Open-source implementation of spatial-temporal DiT for video|[Code](https://github.com/hpcaitech/Open-Sora)|
-|     |2024  |ArXiv|InTraGen |[InTraGen: Trajectory-controlled Video Generation for Object Interactions](https://arxiv.org/abs/2411.16804)|Trajectory-controlled T2V with explicit path control|[Code](https://github.com/insait-institute/InTraGen)|
-|     |2024  |ICLR|3DTrajMaster |[3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation](https://arxiv.org/abs/2412.07759)|Identity-specific motion control with text and 3D trajectory|[Project](https://fuxiao0719.github.io/projects/3dtrajmaster/)|
-|     |2024  |ArXiv|MotionStone |[MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation](https://arxiv.org/abs/2412.05848)|Decouples motion intensity in DiT for text+image video control|❌|
-|     |2024  |CVPR|StyleMaster |[StyleMaster: Stylize Your Video with Artistic Generation and Translation](https://arxiv.org/abs/2412.07744)|A unified DiT for video style transfer and stylized video generation|[Project](https://zixuan-ye.github.io/stylemaster/)|
-|     |2024  |ArXiv|STIV |[STIV: Scalable Text and Image Conditioned Video Generation](https://arxiv.org/abs/2412.07730)|DiT for joint text-and-image video generation|❌|
-|     |2024  |CVPR|Hallo3|[Hallo3: Highly Dynamic and Realistic Portrait Image Animation with Video Diffusion Transformer](https://arxiv.org/abs/2412.00733)|Human animation with text, image, and audio as guidance|[Project](https://fudan-generative-vision.github.io/hallo3/#/)|
-|     |2024  |CVPR|Tora |[Tora: Trajectory-oriented Diffusion Transformer for Video Generation](https://arxiv.org/abs/2407.21705)|Multi‑modal DiT with text, image & audio for talking character animation|[Code](https://github.com/alibaba/Tora)|
-|     |2024  |ArXiv|DiVE |[DiVE: DiT-based Video Generation with Enhanced Control](https://arxiv.org/abs/2409.01595)|BEV-conditional DiT for driving‑scenario video synthesis|[Project](https://liautoad.github.io/DIVE/)|
-|     |2024  |ArXiv|LTX-Video |[LTX-Video: Realtime Video Latent Diffusion](https://arxiv.org/abs/2501.00103)|Scalable video latent diffusion for T2V and I2V generation|[Code](https://github.com/Lightricks/LTX-Video)|
-|     |2025  |ArXiv|FullDiT |[FullDiT: Multi-Task Video Generative Foundation Model with Full Attention](https://arxiv.org/abs/2503.19907)|Multi-task video generation with composited conditions|[Project](https://fulldit.github.io/)|
-|     |2025  |ArXiv|LCT |[Long Context Tuning for Video Generation](https://arxiv.org/abs/2503.10589)|Long‑context DiT with sequential video conditioning for longer output|[Project](https://guoyww.github.io/projects/long-context-video/)|
-|     |2025  |ArXiv|Phantom |[Phantom: Subject-consistent video generation via cross-modal alignment](https://arxiv.org/abs/2502.11079)|Subject-consistent video generation with multi-modal alignment|[Project](https://phantom-video.github.io/Phantom/)|
-|     |2025  |ArXiv|ChatAnyone |[ChatAnyone: Stylized Real-time Portrait Video Generation with Hierarchical Motion Diffusion Model](https://arxiv.org/abs/2503.21144)|Talking head synthesis conditioned on image, audio, and expression control|[Project](https://humanaigc.github.io/chat-anyone/)|
-|     |2025  |CVPR|AudCast |[AudCast: Audio-Driven Human Video Generation by Cascaded Diffusion Transformers](https://arxiv.org/abs/2503.19824)|Audio-guided DiT for subject-consistent human video generation|[Project](https://guanjz20.github.io/projects/AudCast/)|
-|     |2025  |ArXiv|Cosh-DiT |[Cosh-DiT: Co-Speech Gesture Video Synthesis via Hybrid Audio-Visual Diffusion Transformers](https://arxiv.org/abs/2503.09942)|Co-speed motion and video synthesis with hybrid DiTs|[Project](https://sunyasheng.github.io/projects/COSH-DIT)|
-|     |2025  |ArXiv|MoCha |[MoCha: Towards Movie-Grade Talking Character Synthesis](https://arxiv.org/abs/2503.23307)|Audio-text guided movie-grade talking character synthesis|[Project](https://congwei1230.github.io/MoCha/)|
-|     |2025  |ArXiv|SeMo |[A Self-supervised Motion Representation for Portrait Video Generation](https://arxiv.org/abs/2503.10096)|Audio-image conditioned DiT human video generation|❌|
-|     |2025  |ArXiv|CINEMA |[CINEMA: Coherent Multi-Subject Video Generation via MLLM-Based Guidance](https://arxiv.org/abs/2503.10391)|MLLM-guided DiT for multi-subject video generation|❌|
-|     |2025  |ArXiv|Set-and-Sequence |[Dynamic Concepts Personalization from Single Videos](https://arxiv.org/abs/2502.14844)|Single‑video conditioned DiT for custom sequence generation|[Project](https://snap-research.github.io/dynamic_concepts/)|
-|     |2025  |ArXiv|DreamRelation |[DreamRelation: Relation-Centric Video Customization](https://arxiv.org/abs/2503.07602)|Relation-centric DiT for video customization|[Project](https://dreamrelation.github.io/)|
-|     |2025  |SIGGRAPH|CineMaster |[CineMaster: A 3D-Aware and Controllable Framework for Cinematic Text-to-Video Generation](https://arxiv.org/abs/2502.08639)|3D box + camera + text‑conditioned DiT for controllable scene video|[Project](https://cinemaster-dev.github.io/)|
+### Text-to-Video
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |TMLR|Latte |[Latte: Latent Diffusion Transformer for Video Generation](https://arxiv.org/abs/2401.03048)|A latent diffusion transformer for video generation|[Project](https://maxin-cn.github.io/latte_project/)|
+|2024  |ICLR|CogVideoX |[CogVideoX: Text-to-Video Diffusion Models with An Expert Transformer](https://arxiv.org/abs/2408.06072)|Motion-aware DiT with 3D VAE for scalable T2V generation|[Code](https://github.com/zai-org/CogVideo)|
+|2024  |NeurIPS|FIFO-Diffusion |[FIFO-Diffusion: Generating Infinite Videos from Text without Training](https://arxiv.org/abs/2405.11473)|A training-free framework for long video generation from text|[Project](https://jjihwan.github.io/projects/FIFO-Diffusion)|
+|2024  |CVPR|GenTron |[GenTron: Diffusion Transformers for Image and Video Generation](https://arxiv.org/abs/2312.04557)|Motion-free guidance integrated into DiT for controllable T2V generation|[Project](https://www.shoufachen.com/gentron_website/)|
+|2024  |CVPR|DiTCtrl |[DiTCtrl: Exploring Attention Control in Multi-Modal Diffusion Transformer for Tuning-Free Multi-Prompt Longer Video Generation](https://arxiv.org/abs/2412.18597)|A training-free MM-Dit-based framework for multi-prompt video generation|[Project](https://onevfall.github.io/project_page/ditctrl/)|
+|2025  |ArXiv|On-device Sora |[On-device Sora: Enabling Training-Free Diffusion-based Text-to-Video Generation for Mobile Devices](https://arxiv.org/abs/2502.04363)|Lightweight DiT adaption for mobile-wise video generation|[Code](https://github.com/eai-lab/On-device-Sora)|
+|2025  |ArXiv|CascadeV |[CascadeV: An Implementation of Wurstchen Architecture for Video Generation](https://arxiv.org/abs/2501.16612)|A cascaded latent DiT for coarse-to-fine T2V generation|[Code](https://github.com/bytedance/CascadeV)|
+|2025  |ArXiv|RepVideo |[RepVideo: Rethinking Cross-Layer Representation for Video Generation](https://arxiv.org/abs/2501.08994)|Aggregate and stabilize intermediate representations for T2V generation|[Project](https://vchitect.github.io/RepVid-Webpage/)|
+|2025  |CVPR|BlobGEN-Vid |[BlobGEN-Vid: Compositional Text-to-Video Generation with Blob Video Representations](https://arxiv.org/abs/2501.07647)|Implicit blob representations for fine-grained motion or appearance control|[Project](https://blobgen-vid.github.io/)|
+|2025  |ArXiv|APT |[Diffusion Adversarial Post-Training for One-Step Video Generation](https://arxiv.org/abs/2501.08316)|Unified DiT for single-step image and video generation|[Project](https://seaweed-apt.com/)|
+|2025  |CVPR|HumanDreamer |[HumanDreamer: Generating Controllable Human-Motion Videos via Decoupled Generation](https://arxiv.org/abs/2503.24026)|DiT-based human-centric T2V with pose-aware modeling|[Project](https://humandreamer.github.io/)|
+|2025  |CVPR|Mask²DiT |[Mask²DiT: Dual Mask-based Diffusion Transformer for Multi-Scene Long Video Generation](https://arxiv.org/abs/2503.19881)|Dual masked-DiT for multi-scene long video generation|[Project](https://tianhao-qi.github.io/Mask2DiTProject/)|
+|2025  |ArXiv|Vchitect-2.0 |[Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models](https://arxiv.org/abs/2501.08453)|Parallel transformer architecture for efficient T2V generation|[Code](https://github.com/Vchitect/Vchitect-2.0)|
+
+### Image-to-Video
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ICLR|TA |[Trajectory Attention for Fine-grained Video Motion Control](https://arxiv.org/abs/2411.19324)|Trajectory‑aware attention in DiT for precise camera motion control|[Project](https://xizaoqu.github.io/trajattn/)|
+|2024  |CVPR|KFC-W |[Generating 3D-Consistent Videos from Unposed Internet Photos](https://arxiv.org/abs/2411.13549)|Generating 3D-consistent videos from unposed internet photos|[Project](https://genechou.com/kfcw/)|
+|2024  |SIGGRAPH|Human4DiT |[Human4DiT: 360-degree Human Video Generation with 4D Diffusion Transformer](https://arxiv.org/abs/2405.17405)|360-Degree human video generation with 4D DiT|[Project](https://human4dit.github.io/)|
+|2024  |CVPR|AnimateAnything |[AnimateAnything: Consistent and Controllable Animation for Video Generation](https://arxiv.org/abs/2411.10836)|Animate any subject with camera signal and optical flow as guidance|[Code](https://github.com/yu-shaonian/AnimateAnything)|
+|2025  |SIGGRAPH|DaS |[Diffusion as Shader: 3D-aware Video Diffusion for Versatile Video Generation Control](https://arxiv.org/abs/2501.03847)|Versatile video generation with 3D-aware motion guidance|[Project](https://igl-hkust.github.io/das/)|
+|2025  |ICCV|MagicMotion |[MagicMotion: Controllable Video Generation with Dense-to-Sparse Trajectory Guidance](https://arxiv.org/abs/2503.16421)|Multi-granularity controlled I2V generation|[Project](https://quanhaol.github.io/magicmotion-site/)|
+|2025  |ArXiv|UniAnimate-DiT |[UniAnimate-DiT: Human Image Animation with Large-Scale Video Diffusion Transformer](https://arxiv.org/abs/2504.11289)|Human image nomination with image and pose guidance|[Code](https://github.com/ali-vilab/UniAnimate-DiT)|
+|2025  |ICCV|ReCamMaster |[ReCamMaster: Camera-Controlled Generative Rendering from A Single Video](https://arxiv.org/abs/2503.11647)|Re-shooting a source video with novel camera trajectories|[Project](https://jianhongbai.github.io/ReCamMaster/)|
+|2025  |ArXiv|CameraCtrl II |[CameraCtrl II: Dynamic Scene Exploration via Camera-controlled Video Diffusion Models](https://arxiv.org/abs/2503.10592)|Camera controllable DiT for I2V generation|[Project](https://hehao13.github.io/Projects-CameraCtrl-II/)|
+
+### Multi-modal Control
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|Sora |[Sora: A Review on Background, Technology, Limitations, and Opportunities of Large Vision Models](https://arxiv.org/abs/2402.17177)|Foundation video synthesis models supporting multimodal input|❌|
+|2024  |ArXiv|Open-Sora |[Open-Sora: Democratizing Efficient Video Production for All](https://arxiv.org/abs/2412.20404)|Open-source implementation of spatial-temporal DiT for video|[Code](https://github.com/hpcaitech/Open-Sora)|
+|2024  |ArXiv|InTraGen |[InTraGen: Trajectory-controlled Video Generation for Object Interactions](https://arxiv.org/abs/2411.16804)|Trajectory-controlled T2V with explicit path control|[Code](https://github.com/insait-institute/InTraGen)|
+|2024  |ICLR|3DTrajMaster |[3DTrajMaster: Mastering 3D Trajectory for Multi-Entity Motion in Video Generation](https://arxiv.org/abs/2412.07759)|Identity-specific motion control with text and 3D trajectory|[Project](https://fuxiao0719.github.io/projects/3dtrajmaster/)|
+|2024  |ArXiv|MotionStone |[MotionStone: Decoupled Motion Intensity Modulation with Diffusion Transformer for Image-to-Video Generation](https://arxiv.org/abs/2412.05848)|Decouples motion intensity in DiT for text+image video control|❌|
+|2024  |CVPR|StyleMaster |[StyleMaster: Stylize Your Video with Artistic Generation and Translation](https://arxiv.org/abs/2412.07744)|A unified DiT for video style transfer and stylized video generation|[Project](https://zixuan-ye.github.io/stylemaster/)|
+|2024  |ArXiv|STIV |[STIV: Scalable Text and Image Conditioned Video Generation](https://arxiv.org/abs/2412.07730)|DiT for joint text-and-image video generation|❌|
+|2024  |CVPR|Hallo3|[Hallo3: Highly Dynamic and Realistic Portrait Image Animation with Video Diffusion Transformer](https://arxiv.org/abs/2412.00733)|Human animation with text, image, and audio as guidance|[Project](https://fudan-generative-vision.github.io/hallo3/#/)|
+|2024  |CVPR|Tora |[Tora: Trajectory-oriented Diffusion Transformer for Video Generation](https://arxiv.org/abs/2407.21705)|Multi‑modal DiT with text, image & audio for talking character animation|[Code](https://github.com/alibaba/Tora)|
+|2024  |ArXiv|DiVE |[DiVE: DiT-based Video Generation with Enhanced Control](https://arxiv.org/abs/2409.01595)|BEV-conditional DiT for driving‑scenario video synthesis|[Project](https://liautoad.github.io/DIVE/)|
+|2024  |ArXiv|LTX-Video |[LTX-Video: Realtime Video Latent Diffusion](https://arxiv.org/abs/2501.00103)|Scalable video latent diffusion for T2V and I2V generation|[Code](https://github.com/Lightricks/LTX-Video)|
+|2025  |ArXiv|FullDiT |[FullDiT: Multi-Task Video Generative Foundation Model with Full Attention](https://arxiv.org/abs/2503.19907)|Multi-task video generation with composited conditions|[Project](https://fulldit.github.io/)|
+|2025  |ArXiv|LCT |[Long Context Tuning for Video Generation](https://arxiv.org/abs/2503.10589)|Long‑context DiT with sequential video conditioning for longer output|[Project](https://guoyww.github.io/projects/long-context-video/)|
+|2025  |ArXiv|Phantom |[Phantom: Subject-consistent video generation via cross-modal alignment](https://arxiv.org/abs/2502.11079)|Subject-consistent video generation with multi-modal alignment|[Project](https://phantom-video.github.io/Phantom/)|
+|2025  |ArXiv|ChatAnyone |[ChatAnyone: Stylized Real-time Portrait Video Generation with Hierarchical Motion Diffusion Model](https://arxiv.org/abs/2503.21144)|Talking head synthesis conditioned on image, audio, and expression control|[Project](https://humanaigc.github.io/chat-anyone/)|
+|2025  |CVPR|AudCast |[AudCast: Audio-Driven Human Video Generation by Cascaded Diffusion Transformers](https://arxiv.org/abs/2503.19824)|Audio-guided DiT for subject-consistent human video generation|[Project](https://guanjz20.github.io/projects/AudCast/)|
+|2025  |ArXiv|Cosh-DiT |[Cosh-DiT: Co-Speech Gesture Video Synthesis via Hybrid Audio-Visual Diffusion Transformers](https://arxiv.org/abs/2503.09942)|Co-speed motion and video synthesis with hybrid DiTs|[Project](https://sunyasheng.github.io/projects/COSH-DIT)|
+|2025  |ArXiv|MoCha |[MoCha: Towards Movie-Grade Talking Character Synthesis](https://arxiv.org/abs/2503.23307)|Audio-text guided movie-grade talking character synthesis|[Project](https://congwei1230.github.io/MoCha/)|
+|2025  |ArXiv|SeMo |[A Self-supervised Motion Representation for Portrait Video Generation](https://arxiv.org/abs/2503.10096)|Audio-image conditioned DiT human video generation|❌|
+|2025  |ArXiv|CINEMA |[CINEMA: Coherent Multi-Subject Video Generation via MLLM-Based Guidance](https://arxiv.org/abs/2503.10391)|MLLM-guided DiT for multi-subject video generation|❌|
+|2025  |ArXiv|Set-and-Sequence |[Dynamic Concepts Personalization from Single Videos](https://arxiv.org/abs/2502.14844)|Single‑video conditioned DiT for custom sequence generation|[Project](https://snap-research.github.io/dynamic_concepts/)|
+|2025  |ArXiv|DreamRelation |[DreamRelation: Relation-Centric Video Customization](https://arxiv.org/abs/2503.07602)|Relation-centric DiT for video customization|[Project](https://dreamrelation.github.io/)|
+|2025  |SIGGRAPH|CineMaster |[CineMaster: A 3D-Aware and Controllable Framework for Cinematic Text-to-Video Generation](https://arxiv.org/abs/2502.08639)|3D box + camera + text‑conditioned DiT for controllable scene video|[Project](https://cinemaster-dev.github.io/)|
 
 ## 🎲 DiT for 3D Generation
 
@@ -159,30 +188,47 @@ In this sections, we categorize DiT-based video generation methods into several 
 
 In this chapter, we categorize DiT-based Audio generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
-|Task Setting  | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|--------------|------|-------|------------|-------------|-----------|--------------|
-|**Cross-modal generation**|2024  |InterSpeech|EzAudio |[EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer](https://arxiv.org/abs/2409.10819)|A text-to-audio(T2A) generation framework based DiTs|❌|
-|     |2024  |ArXiv|SILA |[SILA: Signal-to-Language Augmentation for Enhanced Control in Text-to-Audio Generation](https://arxiv.org/abs/2412.09789)|Signal-to-language for text-to-audio generation|[Project](https://sonalkum.github.io/SILA/)|
-|     |2024  |ICLR|SpatialSonic |[Both Ears Wide Open: Towards Language-Driven Spatial Audio Generation](https://arxiv.org/abs/2410.10676)|A model for controllable spatial audio generation|[Project](https://peiwensun2000.github.io/bewo/)|
-|     |2025  |AAAI|Tri-Ergon |[Tri-Ergon: Fine-grained Video-to-Audio Generation with Multi-modal Conditions and LUFS Control](https://arxiv.org/abs/2412.20378)|A framework for video-to-audio(V2A) generation|[Project](https://tri-ergon.github.io/Tri-Ergon/)|
-|     |2025  |ICASSP|SAP |[Stable Audio Open](https://arxiv.org/abs/2407.14358)|A open weights text-to-audio model trained with Creative Commons data|[Code](https://github.com/Stability-AI/stable-audio-tools)|
-|     |2025  |ICASSP|AudioComposer |[AudioComposer: Towards Fine-grained Audio Generation with Natural Language Descriptions](https://arxiv.org/abs/2409.12560)|Only using natural language descriptions to control audio generation|[Project](https://lavendery.github.io/AudioComposer/)|
-|     |2025  |ArXiv|CAFA |[CAFA: a Controllable Automatic Foley Artist](https://arxiv.org/abs/2504.06778)|A controllable automatic foley artist for video-and-text-to-audio task|[Project](https://cafa-vt2a.github.io/CAFA/)|
-|     |2025  |ICASSP|MSN |[Make Some Noise: Towards LLM audio reasoning and generation using sound tokens](https://arxiv.org/abs/2503.22275)|Audio inference and generation based on pre-trained LLMS|❌|
-|     |2025  |CVPR|MultiFoley |[Video-Guided Foley Sound Generation with Multimodal Controls](https://arxiv.org/abs/2411.17698)|A model for video-guided sound generation supporting multimodal condition|[Project](https://ificl.github.io/MultiFoley/)|
-|     |2025  |ICASSP|VoiceDiT |[VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/abs/2412.19259)|Producing environment-aware speech and audio from text and visual prompts|[Project](https://mm.kaist.ac.kr/projects/voicedit/)|
-|**Audio Enhancement**|2024  |InterSpeech|CIGDTN |[Complex Image-Generative Diffusion Transformer for Audio Denoising](https://arxiv.org/abs/2406.09161)|A image-generative diffusion transformer network model for audio denoising|❌|
-|**Voice Conversion**|2025  |AAAI|StableVC |[StableVC: Style Controllable Zero-Shot Voice Conversion with Conditional Flow Matching](https://arxiv.org/abs/2412.04724)|A style-controllable zero-shot voice conversion model|[Project](https://yaoxunji.github.io/stablevc/)|
-|     |2025  |ICASSP|VoicePrompter |[VoicePrompter: Robust Zero-Shot Voice Conversion with Voice Prompt and Conditional Flow Matching](https://arxiv.org/abs/2501.17612)|A zero-shot voice conversion model based DiT|[Project](https://hayeong0.github.io/VoicePrompter-demo/)|
-|**Text-to-Speech**|2023  |EMNLP|ViT-TTS |[ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer](https://arxiv.org/abs/2305.12708)|The first visual text-to-speech model with vision-text fusion|[Project](https://vit-tts.github.io/)|
-|     |2023  |ArXiv|U-DiT |[U-DiT TTS: U-Diffusion Vision Transformer for Text-to-Speech](https://arxiv.org/abs/2305.13195)|A mel spectrogram-based acoustic model|[Project](https://eihw.github.io/u-dit-tts/)|
-|     |2023  |ArXiv|Adaptive TTS |[Diffusion Transformer for Adaptive Text-to-Speech](https://openreview.net/pdf?id=hRHX6XW9_Gu)|Diffusion transformer for TTS integrated with adaptive layer norm|[Project](https://recherchetts.github.io/dit/)|
-|     |2024  |ArXiv|F5-TTS |[F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching](https://arxiv.org/abs/2410.06885)|A fully non-autoregressive text-to-speech model based on flow matching with DiT|[Project](https://swivid.github.io/F5-TTS/)|
-|     |2024  |ICLR|DiTTo-TTS |[DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors](https://arxiv.org/abs/2406.11427)|A latent diffusion model(LDM) based-DiT for text-to-speech|[Project](https://ditto-tts.github.io/)|
-|     |2024  |InterSpeech|SimpleSpeech |[SimpleSpeech: Towards Simple and Efficient Text-to-Speech with Scalar Latent Transformer Diffusion Models](https://arxiv.org/abs/2406.02328)|A non-autoregressive text-to-speech model integrated with LLMs|[Project](https://simplespeech.github.io/simplespeechDemo/)|
-|     |2024  |ArXiv|ARDiT |[Autoregressive Diffusion Transformer for Text-to-Speech Synthesis](https://arxiv.org/abs/2406.05551)|A decoder-only autoregressive difussion transformer for TTS|[Project](https://zjlww.github.io/ardit-web/)|
-|     |2024  |InterSpeech|DualSpeech |[DualSpeech: Enhancing Speaker-Fidelity and Text-Intelligibility Through Dual Classifier-Free Guidance](https://arxiv.org/abs/2408.14423)|A text-to-speech model combined a phoneme-level latent diffusion model with dual CFG|[Project](https://bit.ly/48Ewoib.)|
-|     |2025  |ICML|DiTAR |[DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation](https://arxiv.org/abs/2502.03930)|A patch-based autoregressive model integrated with LM and DiT for TTS|[Project](https://spicyresearch.github.io/ditar/)|
+### Cross-modal generation
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |InterSpeech|EzAudio |[EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer](https://arxiv.org/abs/2409.10819)|A text-to-audio(T2A) generation framework based DiTs|❌|
+|2024  |ArXiv|SILA |[SILA: Signal-to-Language Augmentation for Enhanced Control in Text-to-Audio Generation](https://arxiv.org/abs/2412.09789)|Signal-to-language for text-to-audio generation|[Project](https://sonalkum.github.io/SILA/)|
+|2024  |ICLR|SpatialSonic |[Both Ears Wide Open: Towards Language-Driven Spatial Audio Generation](https://arxiv.org/abs/2410.10676)|A model for controllable spatial audio generation|[Project](https://peiwensun2000.github.io/bewo/)|
+|2025  |AAAI|Tri-Ergon |[Tri-Ergon: Fine-grained Video-to-Audio Generation with Multi-modal Conditions and LUFS Control](https://arxiv.org/abs/2412.20378)|A framework for video-to-audio(V2A) generation|[Project](https://tri-ergon.github.io/Tri-Ergon/)|
+|2025  |ICASSP|SAP |[Stable Audio Open](https://arxiv.org/abs/2407.14358)|A open weights text-to-audio model trained with Creative Commons data|[Code](https://github.com/Stability-AI/stable-audio-tools)|
+|2025  |ICASSP|AudioComposer |[AudioComposer: Towards Fine-grained Audio Generation with Natural Language Descriptions](https://arxiv.org/abs/2409.12560)|Only using natural language descriptions to control audio generation|[Project](https://lavendery.github.io/AudioComposer/)|
+|2025  |ArXiv|CAFA |[CAFA: a Controllable Automatic Foley Artist](https://arxiv.org/abs/2504.06778)|A controllable automatic foley artist for video-and-text-to-audio task|[Project](https://cafa-vt2a.github.io/CAFA/)|
+|2025  |ICASSP|MSN |[Make Some Noise: Towards LLM audio reasoning and generation using sound tokens](https://arxiv.org/abs/2503.22275)|Audio inference and generation based on pre-trained LLMS|❌|
+|2025  |CVPR|MultiFoley |[Video-Guided Foley Sound Generation with Multimodal Controls](https://arxiv.org/abs/2411.17698)|A model for video-guided sound generation supporting multimodal condition|[Project](https://ificl.github.io/MultiFoley/)|
+|2025  |ICASSP|VoiceDiT |[VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/abs/2412.19259)|Producing environment-aware speech and audio from text and visual prompts|[Project](https://mm.kaist.ac.kr/projects/voicedit/)|
+
+### Audio Enhancement
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |InterSpeech|CIGDTN |[Complex Image-Generative Diffusion Transformer for Audio Denoising](https://arxiv.org/abs/2406.09161)|A image-generative diffusion transformer network model for audio denoising|❌|
+
+### Voice Conversion
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2025  |AAAI|StableVC |[StableVC: Style Controllable Zero-Shot Voice Conversion with Conditional Flow Matching](https://arxiv.org/abs/2412.04724)|A style-controllable zero-shot voice conversion model|[Project](https://yaoxunji.github.io/stablevc/)|
+|2025  |ICASSP|VoicePrompter |[VoicePrompter: Robust Zero-Shot Voice Conversion with Voice Prompt and Conditional Flow Matching](https://arxiv.org/abs/2501.17612)|A zero-shot voice conversion model based DiT|[Project](https://hayeong0.github.io/VoicePrompter-demo/)|
+
+### Text-to-Speech
+
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2023  |EMNLP|ViT-TTS |[ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer](https://arxiv.org/abs/2305.12708)|The first visual text-to-speech model with vision-text fusion|[Project](https://vit-tts.github.io/)|
+|2023  |ArXiv|U-DiT |[U-DiT TTS: U-Diffusion Vision Transformer for Text-to-Speech](https://arxiv.org/abs/2305.13195)|A mel spectrogram-based acoustic model|[Project](https://eihw.github.io/u-dit-tts/)|
+|2023  |ArXiv|Adaptive TTS |[Diffusion Transformer for Adaptive Text-to-Speech](https://openreview.net/pdf?id=hRHX6XW9_Gu)|Diffusion transformer for TTS integrated with adaptive layer norm|[Project](https://recherchetts.github.io/dit/)|
+|2024  |ArXiv|F5-TTS |[F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching](https://arxiv.org/abs/2410.06885)|A fully non-autoregressive text-to-speech model based on flow matching with DiT|[Project](https://swivid.github.io/F5-TTS/)|
+|2024  |ICLR|DiTTo-TTS |[DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors](https://arxiv.org/abs/2406.11427)|A latent diffusion model(LDM) based-DiT for text-to-speech|[Project](https://ditto-tts.github.io/)|
+|2024  |InterSpeech|SimpleSpeech |[SimpleSpeech: Towards Simple and Efficient Text-to-Speech with Scalar Latent Transformer Diffusion Models](https://arxiv.org/abs/2406.02328)|A non-autoregressive text-to-speech model integrated with LLMs|[Project](https://simplespeech.github.io/simplespeechDemo/)|
+|2024  |ArXiv|ARDiT |[Autoregressive Diffusion Transformer for Text-to-Speech Synthesis](https://arxiv.org/abs/2406.05551)|A decoder-only autoregressive difussion transformer for TTS|[Project](https://zjlww.github.io/ardit-web/)|
+|2024  |InterSpeech|DualSpeech |[DualSpeech: Enhancing Speaker-Fidelity and Text-Intelligibility Through Dual Classifier-Free Guidance](https://arxiv.org/abs/2408.14423)|A text-to-speech model combined a phoneme-level latent diffusion model with dual CFG|[Project](https://bit.ly/48Ewoib.)|
+|2025  |ICML|DiTAR |[DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation](https://arxiv.org/abs/2502.03930)|A patch-based autoregressive model integrated with LM and DiT for TTS|[Project](https://spicyresearch.github.io/ditar/)|
 
 ##  🎈 Unified DiTs
 
