@@ -209,7 +209,7 @@ In this sections, we categorize DiT-based video generation methods into several 
 In this chapter, we categorize DiT-based Audio generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### General Audio generation
-#### Uni-modal Condition
+#### 💜Uni-modal Condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |InterSpeech|EzAudio |[EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer](https://arxiv.org/abs/2409.10819)|Latent DiT with waveform tokenization for efficient T2A|❌|
@@ -220,7 +220,7 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 |2025  |ICASSP|SAP |[Stable Audio Open](https://arxiv.org/abs/2407.14358)|Open-weight T2A model trained on CC data|[Code](https://github.com/Stability-AI/stable-audio-tools)|
 |2025  |ICASSP|AudioComposer |[AudioComposer: Towards Fine-grained Audio Generation with Natural Language Descriptions](https://arxiv.org/abs/2409.12560)|Text-only controllable audio generation|[Project](https://lavendery.github.io/AudioComposer/)|
 
-#### Multi-modal Condition
+#### 💜Multi-modal Condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ICLR|SpatialSonic |[Both Ears Wide Open: Towards Language-Driven Spatial Audio Generation](https://arxiv.org/abs/2410.10676)|Spatial encoders for controllable spatial audio|[Project](https://peiwensun2000.github.io/bewo/)|
@@ -229,7 +229,7 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 |2025  |CVPR|MultiFoley |[Video-Guided Foley Sound Generation with Multimodal Controls](https://arxiv.org/abs/2411.17698)|Multimodal video-guided sound synthesis|[Project](https://ificl.github.io/MultiFoley/)|
 |2025  |ICASSP|VoiceDiT |[VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/abs/2412.19259)|Text–audio–visual fusion for environment-aware speech|[Project](https://mm.kaist.ac.kr/projects/voicedit/)|
 
-#### Voice Conversion
+#### 💜Voice Conversion
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2025  |AAAI|StableVC |[StableVC: Style Controllable Zero-Shot Voice Conversion with Conditional Flow Matching](https://arxiv.org/abs/2412.04724)|Style-controllable zero-shot voice conversion with DiT|[Project](https://yaoxunji.github.io/stablevc/)|
@@ -263,47 +263,43 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 
 In this chapter, we categorize DiT-based unified models, which can simultaneously accept multimodal inputs and support generating multiple types of outputs within a single model.
 
-### Image Generation
+### Uni-modal Generation
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-|2024  |ICLR|PixWizard |[PixWizard: Versatile Image-to-Image Visual Assistant with Open-Language Instructions](https://arxiv.org/abs/2409.15278)|Unified framework for diverse image tasks(generation,edit,inpainting)|[Code](https://github.com/AFeng-x/PixWizard)|
-|2025  |ACM MM|MIGE |[MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing](https://arxiv.org/abs/2502.21291)|A unified framework combines subject-driven generation and instruction-based editing|[Code](https://github.com/Eureka-Maggie/MIGE)|
-|2025  |CVPR|OmniGen |[OmniGen: Unified Image Generation](https://arxiv.org/abs/2409.11340v2)|A diffusion model for unified image generation|[Code](https://github.com/VectorSpaceLab/OmniGen)|
-|2025  |CVPR|DreamOmni |[DreamOmni: Unified Image Generation and Editing](https://arxiv.org/abs/2412.17098)|A unified model for image generation and editing|[Project](https://zjbinxia.github.io/DreamOmni-ProjectPage/)|
-|2025  |ICCV|RealGeneral |[RealGeneral: Unifying Visual Generation via Temporal In-Context Learning with Video Models](https://arxiv.org/abs/2503.10406)|A unified image generation framework via video models'temporal in-context learning|[Project](https://lyne1.github.io/realgeneral_web/)|
-|2025  |ArXiv|UniVG |[UniVG: A Generalist Diffusion Model for Unified Image Generation and Editing](https://arxiv.org/abs/2504.02160)|Treat multi-modal inputs as unified conditions to enable diverse image generation|❌|
-|2025  |ICCV|UNO |[Less-to-More Generalization: Unlocking More Controllability by In-Context Generation](https://arxiv.org/abs/2504.02160)|A unified customization framework for multi-subject image generation|[Project](https://bytedance.github.io/UNO/)|
-|2025  |ICCV|Lumina-Image 2.0 |[Lumina-Image 2.0: A Unified and Efficient Image Generative Framework](https://arxiv.org/abs/2503.21758)|A unified text-to-image generation framework|[Code](https://github.com/Alpha-VLLM/Lumina-Image-2.0)|
+|2024  |ICLR|PixWizard |[PixWizard: Versatile Image-to-Image Visual Assistant with Open-Language Instructions](https://arxiv.org/abs/2409.15278)|Instruction-tuned DiT for generation, restoration, grounding, and editing|[Code](https://github.com/AFeng-x/PixWizard)|
+|2025  |ACM MM|MIGE |[MIGE: Mutually Enhanced Multimodal Instruction-Based Image Generation and Editing](https://arxiv.org/abs/2502.21291)|LLM-guided DiT enables subject/text-based image generation and editing|[Code](https://github.com/Eureka-Maggie/MIGE)|
+|2025  |CVPR|DreamOmni |[DreamOmni: Unified Image Generation and Editing](https://arxiv.org/abs/2412.17098)|Unified DiT jointly trained for generation and multi-type editing|[Project](https://zjbinxia.github.io/DreamOmni-ProjectPage/)|
+|2025  |ICCV|RealGeneral |[RealGeneral: Unifying Visual Generation via Temporal In-Context Learning with Video Models](https://arxiv.org/abs/2503.10406)|DiT reformulated as sequential prediction for image generation tasks|[Project](https://lyne1.github.io/realgeneral_web/)|
+|2025  |ArXiv|UniVG |[UniVG: A Generalist Diffusion Model for Unified Image Generation and Editing](https://arxiv.org/abs/2504.02160)|Single DiT handles generation, editing, segmentation, and depth estimation|❌|
+|2025  |ICCV|Lumina-Image 2.0 |[Lumina-Image 2.0: A Unified and Efficient Image Generative Framework](https://arxiv.org/abs/2503.21758)|Efficient bilingual DiT for text-to-image and multi-modal generation|[Code](https://github.com/Alpha-VLLM/Lumina-Image-2.0)|
+|2025  |ICLR|VACE |[VACE: All-in-One Video Creation and Editing](https://arxiv.org/abs/2503.07598v2)|All-in-one DiT for unified video generation and editing composition|[Project](https://ali-vilab.github.io/VACE-Page/)|
 
-### Video Generation
+### Multi-modal Generation
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-|2025  |ICLR|VACE |[VACE: All-in-One Video Creation and Editing](https://arxiv.org/abs/2503.07598v2)|An all-in-one model for video creation and editing|[Project](https://ali-vilab.github.io/VACE-Page/)|
-
-### Cross-modal union
-| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|------|-------|------------|-------------|-----------|--------------|
-|2024  |ICLR|SyncFlow |[SyncFlow: Toward Temporally Aligned Joint Audio-Video Generation from Text](https://arxiv.org/abs/2412.15220)|Joint audio-video generation text-driven|[Project](https://syncflow-core.github.io/syncflow-demo/)|
-|2024  |ICCV|AV-Link |[AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation](https://arxiv.org/abs/2412.15191)|A unified approach for V2A and A2V generation|[Project](https://snap-research.github.io/AVLink/)|
-|2024  |ArXiv|AV-DiT |[AV-DiT: Efficient Audio-Visual Diffusion Transformer for Joint Audio and Video Generation](https://arxiv.org/abs/2406.07686)|The first multimodal DiT for joint audio and video generation|❌|
-
-### Multi modal/Multi task
-| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|------|-------|------------|-------------|-----------|--------------|
-|2023  |ArXiv|T1 |[T1: Scaling Diffusion Probabilistic Fields to High-Resolution on Unified Visual Modalities](https://arxiv.org/abs/2305.14674)|Generation images,videos,and 3D via DiT-based unified visual modality handling|[Project](https://t1-diffusion-model.github.io/)|
-|2024  |ICLR|Show-o |[Show-o: One Single Transformer to Unify Multimodal Understanding and Generation](https://arxiv.org/abs/2408.12528v6)|A unified transformer to unify multimodal understanding and generation|[Code](https://github.com/showlab/Show-o)|
-|2024  |ArXiv|ControlNeXt |[ControlNeXt: Powerful and Efficient Control for Image and Video Generation](https://arxiv.org/abs/2408.06070v3)|Controllable and unified image and video generation|[Project](https://pbihao.github.io/projects/controlnext/index.html)|
-|2024  |ICLR & NeurIPS|Lumina-T2X |[Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers](https://arxiv.org/abs/2405.05945)|Transform text instructions into any modality at arbitrary resolution and duration|[Code](https://github.com/Alpha-VLLM/Lumina-T2X)|
-|2024  |NeurIPS|OmniTokenizer |[OmniTokenizer: A Joint Image-Video Tokenizer for Visual Generation](https://arxiv.org/abs/2406.09399)|A joint image-video tokenizer for visual generation|[Code](https://github.com/FoundationVision/OmniTokenizer)|
-|2024  |ICLR|Qihoo-T2X |[Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005)|A unified model for T2I,T2V and T2MV|[Project](https://360cvgroup.github.io/Qihoo-T2X/)|
+|2024  |ICLR|SyncFlow |[SyncFlow: Toward Temporally Aligned Joint Audio-Video Generation from Text](https://arxiv.org/abs/2412.15220)|Text-driven joint audio-video generation withtemporal semantic synchronization|[Project](https://syncflow-core.github.io/syncflow-demo/)|
+|2024  |ArXiv|AV-DiT |[AV-DiT: Efficient Audio-Visual Diffusion Transformer for Joint Audio and Video Generation](https://arxiv.org/abs/2406.07686)|Shared-latent DiT for joint text-to-AV synthesis|❌|
+|2024  |ICLR & NeurIPS|Lumina-T2X |[Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers](https://arxiv.org/abs/2405.05945)|Arbitrary-modality generation with resolution and duration control|[Code](https://github.com/Alpha-VLLM/Lumina-T2X)|
+|2024  |ICLR|Qihoo-T2X |[Qihoo-T2X: An Efficient Proxy-Tokenized Diffusion Transformer for Text-to-Any-Task](https://arxiv.org/abs/2409.04005)|A unified model for text-to-image/video/multiview generation|[Project](https://360cvgroup.github.io/Qihoo-T2X/)|
 |2024  |ArXiv|ACDiT |[ACDiT: Interpolating Autoregressive Conditional Modeling and Diffusion Transformer](https://arxiv.org/abs/2412.07720)|A autoregressive blockwise conditional DiT for image and video generation|❌|
+|2025  |CVPR|LaVin-DiT |[LaVin-DiT: Large Vision Diffusion Transformer](https://arxiv.org/abs/2411.11505)|A unified foundation model for vision understanding|[Project](https://derrickwang005.github.io/LaVin-DiT/)|
+|2024  |ICCV|AV-Link |[AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation](https://arxiv.org/abs/2412.15191)|Bidirectional A2V/V2A generation with mutual conditioning|[Project](https://snap-research.github.io/AVLink/)|
+|2024  |ICLR|Show-o |[Show-o: One Single Transformer to Unify Multimodal Understanding and Generation](https://arxiv.org/abs/2408.12528v6)|Autoregressive-diffusion hybrid for universal vision-language tasks|[Code](https://github.com/showlab/Show-o)|
+|2025  |ArXiv|OminiControl2 |[OminiControl2: Efficient Conditioning for Diffusion Transformers](https://arxiv.org/abs/2503.08280)|Multi-granularity control via conditional reuse and compression|[Code](https://github.com/Yuanshi9815/OminiControl)|
+|2025  |ArXiv|D-DiT |[Dual Diffusion for Unified Image Generation and Understanding](https://arxiv.org/pdf/2501.00289v2)|Dual-pathway DiT for joint vision understanding and generation|[Project](https://zijieli-jlee.github.io/dualdiff.github.io/)|
+|2025  |ArXiv|DICEPTION |[DICEPTION: A Generalist Diffusion Model for Visual Perceptual Tasks](https://arxiv.org/abs/2502.17157)|A unified model for classification, segmentation, and generation|[Project](https://aim-uofa.github.io/Diception/)|
+|2025  |ArXiv|Lumina-OmniLV |[Lumina-OmniLV: A Unified Multimodal Framework for General Low-Level Vision](https://arxiv.org/abs/2504.04903)|Multimodal LLV restoration with RGB-IR-depth fusion|[Project](https://andrew0613.github.io/OmniLV_page/)|
+|2025  |ArXiv|UniForm |[UniForm: A Unified Multi-Task Diffusion Transformer for Audio-Video Generation](https://arxiv.org/abs/2502.03897)|Multimodal DiT for synchronized audio-video generation and editing|[Project](https://uniform-t2av.github.io/)|
+
+
+|2023  |ArXiv|T1 |[T1: Scaling Diffusion Probabilistic Fields to High-Resolution on Unified Visual Modalities](https://arxiv.org/abs/2305.14674)|Generation images,videos,and 3D via DiT-based unified visual modality handling|[Project](https://t1-diffusion-model.github.io/)|
+|2024  |ArXiv|ControlNeXt |[ControlNeXt: Powerful and Efficient Control for Image and Video Generation](https://arxiv.org/abs/2408.06070v3)|Controllable and unified image and video generation|[Project](https://pbihao.github.io/projects/controlnext/index.html)|
+|2024  |NeurIPS|OmniTokenizer |[OmniTokenizer: A Joint Image-Video Tokenizer for Visual Generation](https://arxiv.org/abs/2406.09399)|A joint image-video tokenizer for visual generation|[Code](https://github.com/FoundationVision/OmniTokenizer)|
 |2024  |ICCV|OminiControl |[OminiControl: Minimal and Universal Control for Diffusion Transformer](https://arxiv.org/abs/2411.15098)|A unified image-conditional control generation framework|[Code](https://github.com/Yuanshi9815/OminiControl)|
-|2025  |ArXiv|OminiControl2 |[OminiControl2: Efficient Conditioning for Diffusion Transformers](https://arxiv.org/abs/2503.08280)|An efficient multi-condition control framework based on Ominicontrol|[Code](https://github.com/Yuanshi9815/OminiControl)|
-|2025  |ArXiv|D-DiT |[Dual Diffusion for Unified Image Generation and Understanding](https://arxiv.org/pdf/2501.00289v2)|A unified multimodal image understanding and generation model|[Project](https://zijieli-jlee.github.io/dualdiff.github.io/)|
-|2025  |CVPR|LaVin-DiT |[LaVin-DiT: Large Vision Diffusion Transformer](https://arxiv.org/abs/2411.11505)|A unified foundation model for computer vision|[Project](https://derrickwang005.github.io/LaVin-DiT/)|
-|2025  |ArXiv|DICEPTION |[DICEPTION: A Generalist Diffusion Model for Visual Perceptual Tasks](https://arxiv.org/abs/2502.17157)|A generalist model capable of performing multiple visual perception tasks|[Project](https://aim-uofa.github.io/Diception/)|
-|2025  |ArXiv|OmniLV |[Lumina-OmniLV: A Unified Multimodal Framework for General Low-Level Vision](https://arxiv.org/abs/2504.04903)|A universal multimodal multi-task framework for low-level vision|[Project](https://andrew0613.github.io/OmniLV_page/)|
-|2025  |ArXiv|UniForm |[UniForm: A Unified Multi-Task Diffusion Transformer for Audio-Video Generation](https://arxiv.org/abs/2502.03897)|A unified multi-task audio-video generation model|[Project](https://uniform-t2av.github.io/)|
+|2025  |CVPR|OmniGen |[OmniGen: Unified Image Generation](https://arxiv.org/abs/2409.11340v2)|A diffusion model for unified image generation|[Code](https://github.com/VectorSpaceLab/OmniGen)|
+|2025  |ICCV|UNO |[Less-to-More Generalization: Unlocking More Controllability by In-Context Generation](https://arxiv.org/abs/2504.02160)|A unified customization framework for multi-subject image generation|[Project](https://bytedance.github.io/UNO/)|
+
+
 
 ##  🚴‍♂️ Efficient DiTs
 
