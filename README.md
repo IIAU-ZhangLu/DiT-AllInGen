@@ -26,12 +26,17 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### Text-to-Image
+#### <span style="color: #E6E6FA;">Class-condition</span>
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |ICCV      |MDTv2       |[Mdtv2: Masked diffusion transformer is a strong image synthesize](https://arxiv.org/abs/2303.14389)|Mask latent modeling to enhance context relation learning|[Code](https://github.com/sail-sg/MDT)|
 |2023  |ArXiv   |DiffFit       |[DiffFit: Unlocking Transferability of Large Diffusion Models via Simple Parameter-Efficient Fine-Tuning](https://arxiv.org/abs/2304.06648)|Parameter-efficient finetuning via low-rank DiT layers|[Code](https://github.com/mkshing/DiffFit-pytorch)|
 |2024  |ICML   |HDiT    |[Scalable High-Resolution Pixel-Space Image Synthesis with Hourglass Diffusion Transformers](https://arxiv.org/abs/2401.11605)|Hourglass DiT for multi-scale context aggregation|[Project](https://github.com/crowsonkb/k-diffusion)|
 |2025  | ArXiv  |D²iT      |[D²iT: Dynamic Diffusion Transformer for Accurate Image Generation](https://arxiv.org/abs/2504.09454)|Dynamic VAE-DiT for multi-grained latent codes|❌|
+
+#### <span style="color: #E6E6FA;">Free-form Text</span>
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
 |2024  | ICML   |SD3     |[Scaling rectified flow transformers for high-resolution image synthesis](https://arxiv.org/abs/2403.03206)|Scalable DiT framework for prompt-aligned image generation|❌|
 |2024  |    |FLUX     |-|Unified foundation model for compositional T2I|[Code](https://github.com/black-forest-labs/flux)|
 |2024  | ICLR |DART   |[DART: Denoising Autoregressive Transformer for Scalable Text-to-Image Generation](https://arxiv.org/abs/2410.08159)|Retrogressive decoding for improved consistency|❌|
