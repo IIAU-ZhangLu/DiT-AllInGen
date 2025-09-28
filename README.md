@@ -18,7 +18,7 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 
 ## 📜 Table of Contents Diagram
 <p align="center">
-  <img src="figs/survey.png" width="100%">
+  <img src="figs/contents.png" width="100%">
 </p>
 
 ## 📷 DiT for Image Generation
