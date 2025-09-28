@@ -63,19 +63,19 @@ In this chapter, we categorize DiT-based image generation methods into four repr
 |2024  |ArXiv |LazyDiffusion|[Lazy Diffusion Transformer for Interactive Image Editing](https://arxiv.org/abs/2404.12382)|Fast editing via mask-aware DiT|[Project](https://lazydiffusion.github.io/)|
 |2024  |CVPR |LayerDecomp |[Generative Image Layer Decomposition with Visual Effects](https://arxiv.org/abs/2411.17864)|RGB-alpha decomposition guided by masks|[Project](https://rayjryang.github.io/LayerDecomp/)|
 |2024  |ArXiv|FluxSpace |[FluxSpace: Disentangled Semantic Editing in Rectified Flow Transformers](https://arxiv.org/abs/2412.09611)|Semantic disentanglement for editing|[Project](https://fluxspace.github.io/)|
-|2025  |CVPR|ObjectMover |[ObjectMover: Generative Object Movement with Video Prior](https://arxiv.org/abs/2503.08037)|Object manipulation with video-trained Dit|[Project](https://xinyu-andy.github.io/ObjMover/)|
 |2024  |ArXiv|DiT4Edit |[DiT4Edit: Diffusion Transformer for Image Editing](https://arxiv.org/abs/2411.03286)|Patch-wise attention control for editing|❌|
+|2025  |CVPR|ObjectMover |[ObjectMover: Generative Object Movement with Video Prior](https://arxiv.org/abs/2503.08037)|Object manipulation with video-trained Dit|[Project](https://xinyu-andy.github.io/ObjMover/)|
 |2025  |ICCV|KV-Edit |[KV-Edit: Training-Free Image Editing for Precise Background Preservation](https://arxiv.org/abs/2502.17363)|Key-Value caching for background consistency|[Project](https://xilluill.github.io/projectpages/KV-Edit/)|
 |2025  |ArXiv|DCEdit |[DCEdit: Dual-Level Controlled Image Editing via Precisely Localized Semantics](https://arxiv.org/abs/2503.16795)|Dual-level semantic editing|❌|
 
 ### Multi-modal Control
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-|2024  |ArXiv|EMMA |[EMMA: Your Text-to-Image Diffusion Model Can Secretly Accept Multi-Modal Prompts](https://arxiv.org/abs/2406.09162)|Human-centric text-image fusion|[Project](https://tencentqqgylab.github.io/EMMA/)|
 |2023  |ArXiv|DiT-Head |[DiT-Head: High-Resolution Talking Head Synthesis using Diffusion Transformers](https://arxiv.org/abs/2312.06400)|Talking head with image+audio input|❌|
+|2024  |ArXiv|EMMA |[EMMA: Your Text-to-Image Diffusion Model Can Secretly Accept Multi-Modal Prompts](https://arxiv.org/abs/2406.09162)|Human-centric text-image fusion|[Project](https://tencentqqgylab.github.io/EMMA/)|
 |2024  |ArXiv|IF-MDM |[IF-MDM: Implicit Face Motion Diffusion Model for High-Fidelity Realtime Talking Head Generation](https://arxiv.org/abs/2412.04000)|Implicit motion for controllable talking head|❌|
 |2025  |ArXiv|OmniTalker |[OmniTalker: One-shot Real-time Text-Driven Talking Audio-Video Generation With Multimodal Style Mimicking](https://arxiv.org/abs/2504.02433v2)|Text-driven talking head with reference video|[Project](https://humanaigc.github.io/omnitalker/)
-|2024  |ICCV|InfU|[InfiniteYou: Flexible Photo Recrafting While Preserving Your Identity](https://arxiv.org/abs/2503.16418)|Identity-preserving subject guidance|[Project](https://bytedance.github.io/InfiniteYou/)|
+|2025  |ICCV|InfU|[InfiniteYou: Flexible Photo Recrafting While Preserving Your Identity](https://arxiv.org/abs/2503.16418)|Identity-preserving subject guidance|[Project](https://bytedance.github.io/InfiniteYou/)|
 |2025  |ArXiv|XVerse |[XVerse: Consistent Multi-Subject Control of Identity and Semantic Attributes via DiT Modulation](https://arxiv.org/abs/2506.21416)|Multi-subject,controllable image synthesis|[Project](https://bytedance.github.io/XVerse/)|
 |2025  |ICCV|UNO |[Less-to-More Generalization: Unlocking More Controllability by In-Context Generation](https://arxiv.org/abs/2504.02160)|One-to-many subject-text-driven image generation|[Project](https://bytedance.github.io/UNO/)|
 |2025  |ICCV|UniCombine |[UniCombine: Unified Multi-Conditional Combination with Diffusion Transformer](https://arxiv.org/abs/2503.09277)|Unified DiT for compositional synthesis|[Code](https://github.com/Xuan-World/UniCombine)|
