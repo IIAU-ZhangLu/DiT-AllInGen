@@ -203,43 +203,56 @@ In this sections, we categorize DiT-based video generation methods into several 
 
 In this chapter, we categorize DiT-based Audio generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
-### Cross-modal generation
+### General Audio generation
+#### Uni-modal Condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-|2024  |InterSpeech|EzAudio |[EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer](https://arxiv.org/abs/2409.10819)|A text-to-audio(T2A) generation framework based DiTs|❌|
-|2024  |ArXiv|SILA |[SILA: Signal-to-Language Augmentation for Enhanced Control in Text-to-Audio Generation](https://arxiv.org/abs/2412.09789)|Signal-to-language for text-to-audio generation|[Project](https://sonalkum.github.io/SILA/)|
-|2024  |ICLR|SpatialSonic |[Both Ears Wide Open: Towards Language-Driven Spatial Audio Generation](https://arxiv.org/abs/2410.10676)|A model for controllable spatial audio generation|[Project](https://peiwensun2000.github.io/bewo/)|
-|2025  |AAAI|Tri-Ergon |[Tri-Ergon: Fine-grained Video-to-Audio Generation with Multi-modal Conditions and LUFS Control](https://arxiv.org/abs/2412.20378)|A framework for video-to-audio(V2A) generation|[Project](https://tri-ergon.github.io/Tri-Ergon/)|
-|2025  |ICASSP|SAP |[Stable Audio Open](https://arxiv.org/abs/2407.14358)|A open weights text-to-audio model trained with Creative Commons data|[Code](https://github.com/Stability-AI/stable-audio-tools)|
-|2025  |ICASSP|AudioComposer |[AudioComposer: Towards Fine-grained Audio Generation with Natural Language Descriptions](https://arxiv.org/abs/2409.12560)|Only using natural language descriptions to control audio generation|[Project](https://lavendery.github.io/AudioComposer/)|
-|2025  |ArXiv|CAFA |[CAFA: a Controllable Automatic Foley Artist](https://arxiv.org/abs/2504.06778)|A controllable automatic foley artist for video-and-text-to-audio task|[Project](https://cafa-vt2a.github.io/CAFA/)|
-|2025  |ICASSP|MSN |[Make Some Noise: Towards LLM audio reasoning and generation using sound tokens](https://arxiv.org/abs/2503.22275)|Audio inference and generation based on pre-trained LLMS|❌|
-|2025  |CVPR|MultiFoley |[Video-Guided Foley Sound Generation with Multimodal Controls](https://arxiv.org/abs/2411.17698)|A model for video-guided sound generation supporting multimodal condition|[Project](https://ificl.github.io/MultiFoley/)|
-|2025  |ICASSP|VoiceDiT |[VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/abs/2412.19259)|Producing environment-aware speech and audio from text and visual prompts|[Project](https://mm.kaist.ac.kr/projects/voicedit/)|
+|2024  |InterSpeech|EzAudio |[EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer](https://arxiv.org/abs/2409.10819)|Latent DiT with waveform tokenization for efficient T2A|❌|
+|2024  |ArXiv|SILA |[SILA: Signal-to-Language Augmentation for Enhanced Control in Text-to-Audio Generation](https://arxiv.org/abs/2412.09789)|Text-to-audio with explicit acoustic parameter control|[Project](https://sonalkum.github.io/SILA/)|
+|2024  |InterSpeech|CIGDTN |[Complex Image-Generative Diffusion Transformer for Audio Denoising](https://arxiv.org/abs/2406.09161)|Complex-valued DiT for spectrogram-based audio denoising|❌|
+|2025  |ICASSP|SoloAudio |[SoloAudio: Target Sound Extraction with Language-oriented Audio Diffusion Transformer](https://arxiv.org/abs/2409.08425v2)|Single-stage efficient DiT framework for audio generation|[Project](https://wanghelin1997.github.io/SoloAudio-Demo/)|
+|2025  |AAAI|Tri-Ergon |[Tri-Ergon: Fine-grained Video-to-Audio Generation with Multi-modal Conditions and LUFS Control](https://arxiv.org/abs/2412.20378)|Video-to-audio with LUFS-based loudness control|[Project](https://tri-ergon.github.io/Tri-Ergon/)|
+|2025  |ICASSP|SAP |[Stable Audio Open](https://arxiv.org/abs/2407.14358)|Open-weight T2A model trained on CC data|[Code](https://github.com/Stability-AI/stable-audio-tools)|
+|2025  |ICASSP|AudioComposer |[AudioComposer: Towards Fine-grained Audio Generation with Natural Language Descriptions](https://arxiv.org/abs/2409.12560)|Text-only controllable audio generation|[Project](https://lavendery.github.io/AudioComposer/)|
 
-### Audio Enhancement
+#### Multi-modal Condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-|2024  |InterSpeech|CIGDTN |[Complex Image-Generative Diffusion Transformer for Audio Denoising](https://arxiv.org/abs/2406.09161)|A image-generative diffusion transformer network model for audio denoising|❌|
+|2024  |ICLR|SpatialSonic |[Both Ears Wide Open: Towards Language-Driven Spatial Audio Generation](https://arxiv.org/abs/2410.10676)|Spatial encoders for controllable spatial audio|[Project](https://peiwensun2000.github.io/bewo/)|
+|2025  |ArXiv|CAFA |[CAFA: a Controllable Automatic Foley Artist](https://arxiv.org/abs/2504.06778)|Video-and-text guided controllable foley|[Project](https://cafa-vt2a.github.io/CAFA/)|
+|2025  |ICASSP|MSN |[Make Some Noise: Towards LLM audio reasoning and generation using sound tokens](https://arxiv.org/abs/2503.22275)|LLM-guided audio inference and generation|❌|
+|2025  |CVPR|MultiFoley |[Video-Guided Foley Sound Generation with Multimodal Controls](https://arxiv.org/abs/2411.17698)|Multimodal video-guided sound synthesis|[Project](https://ificl.github.io/MultiFoley/)|
+|2025  |ICASSP|VoiceDiT |[VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/abs/2412.19259)|Text–audio–visual fusion for environment-aware speech|[Project](https://mm.kaist.ac.kr/projects/voicedit/)|
 
-### Voice Conversion
+#### Voice Conversion
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-|2025  |AAAI|StableVC |[StableVC: Style Controllable Zero-Shot Voice Conversion with Conditional Flow Matching](https://arxiv.org/abs/2412.04724)|A style-controllable zero-shot voice conversion model|[Project](https://yaoxunji.github.io/stablevc/)|
-|2025  |ICASSP|VoicePrompter |[VoicePrompter: Robust Zero-Shot Voice Conversion with Voice Prompt and Conditional Flow Matching](https://arxiv.org/abs/2501.17612)|A zero-shot voice conversion model based DiT|[Project](https://hayeong0.github.io/VoicePrompter-demo/)|
+|2025  |AAAI|StableVC |[StableVC: Style Controllable Zero-Shot Voice Conversion with Conditional Flow Matching](https://arxiv.org/abs/2412.04724)|Style-controllable zero-shot voice conversion with DiT|[Project](https://yaoxunji.github.io/stablevc/)|
+|2025  |ICASSP|VoicePrompter |[VoicePrompter: Robust Zero-Shot Voice Conversion with Voice Prompt and Conditional Flow Matching](https://arxiv.org/abs/2501.17612)|Prompt-based DiT for robust zero-shot VC|[Project](https://hayeong0.github.io/VoicePrompter-demo/)|
 
 ### Text-to-Speech
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
-|2023  |EMNLP|ViT-TTS |[ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer](https://arxiv.org/abs/2305.12708)|The first visual text-to-speech model with vision-text fusion|[Project](https://vit-tts.github.io/)|
-|2023  |ArXiv|U-DiT |[U-DiT TTS: U-Diffusion Vision Transformer for Text-to-Speech](https://arxiv.org/abs/2305.13195)|A mel spectrogram-based acoustic model|[Project](https://eihw.github.io/u-dit-tts/)|
-|2023  |ArXiv|Adaptive TTS |[Diffusion Transformer for Adaptive Text-to-Speech](https://openreview.net/pdf?id=hRHX6XW9_Gu)|Diffusion transformer for TTS integrated with adaptive layer norm|[Project](https://recherchetts.github.io/dit/)|
-|2024  |ArXiv|F5-TTS |[F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching](https://arxiv.org/abs/2410.06885)|A fully non-autoregressive text-to-speech model based on flow matching with DiT|[Project](https://swivid.github.io/F5-TTS/)|
-|2024  |ICLR|DiTTo-TTS |[DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors](https://arxiv.org/abs/2406.11427)|A latent diffusion model(LDM) based-DiT for text-to-speech|[Project](https://ditto-tts.github.io/)|
-|2024  |InterSpeech|SimpleSpeech |[SimpleSpeech: Towards Simple and Efficient Text-to-Speech with Scalar Latent Transformer Diffusion Models](https://arxiv.org/abs/2406.02328)|A non-autoregressive text-to-speech model integrated with LLMs|[Project](https://simplespeech.github.io/simplespeechDemo/)|
-|2024  |ArXiv|ARDiT |[Autoregressive Diffusion Transformer for Text-to-Speech Synthesis](https://arxiv.org/abs/2406.05551)|A decoder-only autoregressive difussion transformer for TTS|[Project](https://zjlww.github.io/ardit-web/)|
-|2024  |InterSpeech|DualSpeech |[DualSpeech: Enhancing Speaker-Fidelity and Text-Intelligibility Through Dual Classifier-Free Guidance](https://arxiv.org/abs/2408.14423)|A text-to-speech model combined a phoneme-level latent diffusion model with dual CFG|[Project](https://bit.ly/48Ewoib.)|
-|2025  |ICML|DiTAR |[DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation](https://arxiv.org/abs/2502.03930)|A patch-based autoregressive model integrated with LM and DiT for TTS|[Project](https://spicyresearch.github.io/ditar/)|
+|2023  |EMNLP|ViT-TTS |[ViT-TTS: Visual Text-to-Speech with Scalable Diffusion Transformer](https://arxiv.org/abs/2305.12708)|Visual-conditioned DiT for image-aware TTS|[Project](https://vit-tts.github.io/)|
+|2023  |ArXiv|U-DiT |[U-DiT TTS: U-Diffusion Vision Transformer for Text-to-Speech](https://arxiv.org/abs/2305.13195)|Mel-spectrogram acoustic model for scalable speech|[Project](https://eihw.github.io/u-dit-tts/)|
+|2023  |ArXiv|Adaptive TTS |[Diffusion Transformer for Adaptive Text-to-Speech](https://openreview.net/pdf?id=hRHX6XW9_Gu)|Adaptive layer normalization for efficient synthesis|[Project](https://recherchetts.github.io/dit/)|
+|2024  |ArXiv|F5-TTS |[F5-TTS: A Fairytaler that Fakes Fluent and Faithful Speech with Flow Matching](https://arxiv.org/abs/2410.06885)|Fast non-autoregressive TTS via flow matching|[Project](https://swivid.github.io/F5-TTS/)|
+|2024  |ICLR|DiTTo-TTS |[DiTTo-TTS: Diffusion Transformers for Scalable Text-to-Speech without Domain-Specific Factors](https://arxiv.org/abs/2406.11427)|Latent-diffusion TTS without phoneme or duration priors|[Project](https://ditto-tts.github.io/)|
+|2024  |InterSpeech|SimpleSpeech |[SimpleSpeech: Towards Simple and Efficient Text-to-Speech with Scalar Latent Transformer Diffusion Models](https://arxiv.org/abs/2406.02328)|Lightweight non-autoregressive TTS with LLM integration|[Project](https://simplespeech.github.io/simplespeechDemo/)|
+|2024  |ArXiv|ARDiT |[Autoregressive Diffusion Transformer for Text-to-Speech Synthesis](https://arxiv.org/abs/2406.05551)|Autoregressive decoder for continuous speech representations|[Project](https://zjlww.github.io/ardit-web/)|
+|2024  |InterSpeech|DualSpeech |[DualSpeech: Enhancing Speaker-Fidelity and Text-Intelligibility Through Dual Classifier-Free Guidance](https://arxiv.org/abs/2408.14423)|Dual CFG with phoneme-level latent modeling|[Project](https://bit.ly/48Ewoib.)|
+|2025  |ICML|DiTAR |[DiTAR: Diffusion Transformer Autoregressive Modeling for Speech Generation](https://arxiv.org/abs/2502.03930)|Patch-wise autoregressive model for long-form speech|[Project](https://spicyresearch.github.io/ditar/)|
+
+### Text-to-Music
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
+|2024  |ArXiv|LFM |[Long-form music generation with latent diffusion](https://arxiv.org/abs/2404.10301)|Generates coherent full-length music via latent diffusion|❌|
+|2024  |ICML|SCG |[Symbolic Music Generation with Non-Differentiable Rule Guided Diffusio](https://arxiv.org/abs/2402.14285v4)|Rule-guided diffusion enabling symbolic music generation|[Project](https://scg-rule-guided-music.github.io/)|
+|2024  |ArXiv|MuDiT/MuSiT |[MuDiT & MuSiT: Alignment with Colloquial Expression in Description-to-Song Generation](https://arxiv.org/abs/2407.03188)|Aligns colloquial text with expressive song generation|❌|
+|2024  |ArXiv|MuCodec |[MuCodec: Ultra Low-Bitrate Music Codec](https://arxiv.org/abs/2409.13216v3)|DiT-based ultra low-bitrate music compression and decoding|[Project](https://xuyaoxun.github.io/MuCodec_demo/)|
+|2024  |ArXiv|MuVi |[MuVi: Video-to-Music Generation with Semantic Alignment and Rhythmic Synchronization](https://arxiv.org/abs/2410.12957)|Video-to-music with rhythm–semantic consistency|[Project](https://muvi-v2m.github.io/)|
+|2024  |ArXiv|VMB |[Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation](https://arxiv.org/abs/2412.09428)|Multimodal music with explicit bridges and retrieval|[Project](https://github.com/wbs2788/VMB)|
+|2025  |AAAI|SongEditor |[SongEditor: Adapting Zero-Shot Song Generation Language Model as a Multi-Task Editor](https://arxiv.org/abs/2412.13786)|Language-model-driven editor for vocals and accompaniment|[Project](https://cypress-yang.github.io/SongEditor_demo/)|
 
 ##  🎈 Unified DiTs
 
