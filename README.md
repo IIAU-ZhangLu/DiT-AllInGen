@@ -316,18 +316,27 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|DiT-μP |[Scaling Diffusion Transformers Efficiently via μP](https://arxiv.org/abs/2505.15270)|Applies maximal update parametrization to accelerate scalable DiT training|[Code](https://github.com/ML-GSAI/Scaling-Diffusion-Transformers-muP)|
 
 ### Test-efficient
+#### 💜Sampling-Efficient
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |NeurIPS|GET |[One-Step Diffusion Distillation via Deep Equilibrium Models](https://arxiv.org/abs/2401.08639)|One-step distillation with deep equilibrium model for fast sampling|[Code](https://github.com/locuslab/get)|
 |2024  |ICML|ASE |[A Simple Early Exiting Framework for Accelerated Sampling in Diffusion Models](https://arxiv.org/abs/2408.05927v1)|Adaptive early exiting to skip redundant denoising blocks during inference|[Code](https://github.com/taehong-moon/ee-diffusion)|
 |2024  |CVPR|CausVid |[From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](https://arxiv.org/abs/2412.07772v3)|Autoregressive generation with DMD distillation \& asymmetric teacher-student learning|[Project](https://causvid.github.io/)|
 |2025  |ACM/SIGDA|FlightVGM |[FlightVGM: Efficient Video Generation Model Inference with Online Sparsification and Hybrid Precision on FPGAs](https://dai.sjtu.edu.cn/my_file/pdf/83b404ee-15a2-456f-a173-9d260ad2409f.pdf)|Distills bidirectional model into 4-step autoregressive generator via DMD framework|❌|
+
+#### 💜Attention Optimization
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
 |2024  |ICML|AsymRnR |[AsymRnR: Video Diffusion Transformers Acceleration with Asymmetric Reduction and Restoration](https://arxiv.org/abs/2412.11706v3)|Improved head compression for high-dimensional multi-modal DiT attention|[Code](https://github.com/wenhao728/AsymRnR)|
 |2024  |ICLR|PAB |[Real-Time Video Generation with Pyramid Attention Broadcast](https://arxiv.org/abs/2408.12588)|Asymmetric sequence reduction-restoration for efficient attention computation|[Code](https://github.com/NUS-HPC-AI-Lab/VideoSys)|
 |2024  |NeurIPS|DiTFastAttn |[DiTFastAttn: Attention Compression for Diffusion Transformer Models](https://arxiv.org/abs/2406.08552v2)|Compresses spatial, temporal, and conditional heads for efficient attention|[Project](https://nics-effalg.com/DiTFastAttn)|
 |2025  |ArXiv|DiTFastAttnV2 |[DiTFastAttnV2: Head-wise Attention Compression for Multi-Modality Diffusion Transformers](https://arxiv.org/abs/2503.22796)|Training-free sparse attention with profiling and inference optimization|[Code](https://github.com/thu-nics/DiTFastAttnV2)|
 |2025  |ICML|SVG |[Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity](https://arxiv.org/abs/2502.01776v2)|Sliding tile attention with hardware-aware scheduling to lower FLOPs|[Code](https://github.com/svg-project/Sparse-VideoGen)|
 |2025  |ICML|STA |[Fast Video Generation with Sliding Tile Attention](https://arxiv.org/abs/2502.04507v3)|Sliding tile attention to accelerate video generation in DiTs|[Project](https://github.com/hao-ai-lab/FastVideo)|
+
+#### 💜Caching and Reuse
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
 |2024  |NeurIPS |L2C |[Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching](https://arxiv.org/abs/2406.01733)|Learns routing to cache and reuse redundant layers dynamically|[Code](https://github.com/horseee/learning-to-cache)|
 |2024  |ArXiv|Δ-DiT: |[Δ-DiT: A Training-Free Acceleration Method Tailored for Diffusion Transformers](https://arxiv.org/abs/2406.01125)|Caches and accelerates DiT blocks based on sampling stage|❌|
 |2024  |ICCV|Skip-DiT |[Towards Stabilized and Efficient Diffusion Transformers through Long-Skip-Connections with Spectral Constraints](https://arxiv.org/abs/2411.17616v4)|Reuses features across time steps via skip-branch mechanism|[Code](https://github.com/OpenSparseLLMs/Skip-DiT)|
@@ -337,6 +346,10 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |AAAI|LazyDiT |[LazyDiT: Lazy Learning for the Acceleration of Diffusion Transformers](https://arxiv.org/abs/2412.12444v3)|Skips redundant computation with intermediate result caching|[Code](https://github.com/shawnricecake/lazydit)|
 |2025  |ICCV|QuantCache |[QuantCache: Adaptive Importance-Guided Quantization with Hierarchical Latent and Layer Caching for Video Generation](https://arxiv.org/abs/2503.06545)|Combines quantization and hierarchical caching for faster inference|[Code](https://github.com/JunyiWuCode/QuantCache)|
 |2025  |ArXiv|UniCP |[UniCP: A Unified Caching and Pruning Framework for Efficient Video Generation](https://arxiv.org/abs/2502.04393)|Unified caching and pruning to enhance DiT video generation|❌|
+
+#### 💜Quantization & Compression
+| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
+|------|-------|------------|-------------|-----------|--------------|
 |2024  |AAAI|VQ4DiT |[VQ4DiT: Efficient Post-Training Vector Quantization for Diffusion Transformers](https://arxiv.org/abs/2408.17131)|Vector quantization method to reduce DiT bit-width post-training|❌|
 |2024  |NeurIPS|PTQ4DiT |[PTQ4DiT: Post-training Quantization for Diffusion Transformers](https://arxiv.org/abs/2405.16005v3)|Performs post-training quantization on DiTs without retraining overhead|[Code](https://github.com/adreamwu/PTQ4DiT)|
 |2024  |ArXiv|HQ-DiT |[HQ-DiT: Efficient Diffusion Transformer with FP4 Hybrid Quantization](https://arxiv.org/abs/2405.19751v2)|Uses 4-bit floating-point quantization for weights and activations|❌|
