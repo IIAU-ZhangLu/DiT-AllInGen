@@ -533,6 +533,11 @@ In this section, we provide a comprehensive overview of these developments by gr
 |Astrophysics|2025  |ArXiv|DiTSNe-Ia |[Variational diffusion transformers for conditional sampling of supernovae spectra](https://arxiv.org/abs/2505.03063)|A variational diffusion transformer for SN Ia spectra generation|❌|
 |Target Sound Extraction|2025  |ICASSP|SoloAudio |[SoloAudio: Target Sound Extraction with Language-oriented Audio Diffusion Transformer](https://arxiv.org/abs/2409.08425v2)|A diffusion-based generative model for target sound extraction (TSE)|[Project](https://wanghelin1997.github.io/SoloAudio-Demo/)|
 
+## 🚀 Expansion
+
+The scalability of DiT has driven the development of many latest fundamental models and platforms, as shown in the following figure.
+
+
 ## 🎡 Related Survey
 
 [Personalized Image Generation with Deep Generative Models: A Decade Survey](https://arxiv.org/abs/2502.13081)
