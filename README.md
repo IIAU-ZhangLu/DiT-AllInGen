@@ -2,11 +2,6 @@
 <p align="center">
      <strong>Lu Zhang</strong> · <strong>Runhao Yang</strong> · <strong>Yunzhi Zhuge</strong> · <strong>Ping Hu</strong> · <strong>Xu Jia</strong> · <strong>Pingping Zhang</strong> · <strong>Dong Wang</strong> · <strong>Huchuan Lu</strong> · <strong>You He</strong>
     </p>
-  <p align="center">
-    <a href="">
-      <img src='https://img.shields.io/badge/Paper-PDF-green?style=flat&logo=arXiv&' alt='arXiv PDF'>
-    </a>
-  </p>
 
 ⭐ Welcome to the official repository of our survey paper. 
 
@@ -21,7 +16,7 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
   <img src="figs/contents.png" width="100%">
 </p>
 
-## 📷 DiT for Image Generation
+## 🖼️ DiT for Image Generation
 
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
@@ -37,7 +32,7 @@ This part can be categorized into (1) Class-conditioned generation where discret
 |2024  |ICML   |HDiT    |[Scalable High-Resolution Pixel-Space Image Synthesis with Hourglass Diffusion Transformers](https://arxiv.org/abs/2401.11605)|Hourglass DiT for multi-scale context aggregation|[Project](https://github.com/crowsonkb/k-diffusion)|
 |2025  | ArXiv  |D²iT      |[D²iT: Dynamic Diffusion Transformer for Accurate Image Generation](https://arxiv.org/abs/2504.09454)|Dynamic VAE-DiT for multi-grained latent codes|❌|
 
-#### 💜Class-condition
+#### 💜Free-form Text
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  | ICML   |SD3     |[Scaling rectified flow transformers for high-resolution image synthesis](https://arxiv.org/abs/2403.03206)|Scalable DiT framework for prompt-aligned image generation|❌|
@@ -88,7 +83,7 @@ This part can be categorized into (1) Class-conditioned generation where discret
 |2025  |ICCV|UNO |[Less-to-More Generalization: Unlocking More Controllability by In-Context Generation](https://arxiv.org/abs/2504.02160)|One-to-many subject-text-driven image generation|[Project](https://bytedance.github.io/UNO/)|
 |2025  |ICCV|UniCombine |[UniCombine: Unified Multi-Conditional Combination with Diffusion Transformer](https://arxiv.org/abs/2503.09277)|Unified DiT for compositional synthesis|[Code](https://github.com/Xuan-World/UniCombine)|
 
-## 📽️ DiT for Video Generation
+## 🎬 DiT for Video Generation
 
 In this sections, we categorize DiT-based video generation methods into several subgroups based on their input conditions and generative goals, including Text-to-video generation, Image-to-video generation, and Multi-modal controllable video generation.
 
@@ -204,7 +199,7 @@ In this sections, we categorize DiT-based video generation methods into several 
 |2025  |ArXiv|DiffTF++ |[DiffTF++: 3D-aware Diffusion Transformer for Large-Vocabulary 3D Generation](https://arxiv.org/abs/2405.08055)|Coarse-to-fine DiT with enhanced structural 3D attention|❌|
 |2025  |ArXiv|Hunyuan3D 2.0 |[Hunyuan3D 2.0: Scaling Diffusion Models for High Resolution Textured 3D Assets Generation](https://arxiv.org/abs/2501.12202v3)|Large-scale 3D shape and texture generation platform|[Code](https://github.com/Tencent-Hunyuan/Hunyuan3D-2)|
 
-## 🔊 DiT for Audio Generation
+## 🎶 DiT for Audio Generation
 
 In this chapter, we categorize DiT-based Audio generation methods into three representative task types based on the nature of their input conditions and transformation goals，including General Audio Generation，Text-to-Speech and Text-to-Music.
 
@@ -262,7 +257,7 @@ This part can be categorized into (1) Uni-modal Condition Generation ，(2) Mult
 |2024  |ArXiv|VMB |[Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation](https://arxiv.org/abs/2412.09428)|Multimodal music with explicit bridges and retrieval|[Project](https://github.com/wbs2788/VMB)|
 |2025  |AAAI|SongEditor |[SongEditor: Adapting Zero-Shot Song Generation Language Model as a Multi-Task Editor](https://arxiv.org/abs/2412.13786)|Language-model-driven editor for vocals and accompaniment|[Project](https://cypress-yang.github.io/SongEditor_demo/)|
 
-##  🎈 Unified DiTs
+## 🎈 Unified DiTs
 
 In this chapter, we categorize DiT-based unified models, which can simultaneously accept multimodal inputs and support generating multiple types of outputs within a single model.
 
