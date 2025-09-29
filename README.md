@@ -26,6 +26,9 @@ Our survey provides a comprehensive overview of recent advances in DiT, with a f
 In this chapter, we categorize DiT-based image generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### Text-to-Image
+
+This part can be categorized into (1) Class-conditioned generation where discrete category labels guide image syn-thesis; and (2) Free-form text-to-image generation where models interpret natural language prompts and translate them into coherent and semantically faithful images.
+
 #### 💜Class-condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
@@ -206,9 +209,12 @@ In this sections, we categorize DiT-based video generation methods into several 
 
 ## 🔊 DiT for Audio Generation
 
-In this chapter, we categorize DiT-based Audio generation methods into four representative task types based on the nature of their input conditions and transformation goals.
+In this chapter, we categorize DiT-based Audio generation methods into three representative task types based on the nature of their input conditions and transformation goals，including General Audio Generation，Text-to-Speech and Text-to-Music.
 
-### General Audio generation
+### General Audio Generation
+
+This part can be categorized into (1) Uni-modal Condition Generation ，(2) Multi-modal Condition Generation and (3) Voice Conversion.
+
 #### 🦄Uni-modal Condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
@@ -291,19 +297,9 @@ In this chapter, we categorize DiT-based unified models, which can simultaneousl
 |2025  |ArXiv|Lumina-OmniLV |[Lumina-OmniLV: A Unified Multimodal Framework for General Low-Level Vision](https://arxiv.org/abs/2504.04903)|Multimodal LLV restoration with RGB-IR-depth fusion|[Project](https://andrew0613.github.io/OmniLV_page/)|
 |2025  |ArXiv|UniForm |[UniForm: A Unified Multi-Task Diffusion Transformer for Audio-Video Generation](https://arxiv.org/abs/2502.03897)|Multimodal DiT for synchronized audio-video generation and editing|[Project](https://uniform-t2av.github.io/)|
 
-
-|2023  |ArXiv|T1 |[T1: Scaling Diffusion Probabilistic Fields to High-Resolution on Unified Visual Modalities](https://arxiv.org/abs/2305.14674)|Generation images,videos,and 3D via DiT-based unified visual modality handling|[Project](https://t1-diffusion-model.github.io/)|
-|2024  |ArXiv|ControlNeXt |[ControlNeXt: Powerful and Efficient Control for Image and Video Generation](https://arxiv.org/abs/2408.06070v3)|Controllable and unified image and video generation|[Project](https://pbihao.github.io/projects/controlnext/index.html)|
-|2024  |NeurIPS|OmniTokenizer |[OmniTokenizer: A Joint Image-Video Tokenizer for Visual Generation](https://arxiv.org/abs/2406.09399)|A joint image-video tokenizer for visual generation|[Code](https://github.com/FoundationVision/OmniTokenizer)|
-|2024  |ICCV|OminiControl |[OminiControl: Minimal and Universal Control for Diffusion Transformer](https://arxiv.org/abs/2411.15098)|A unified image-conditional control generation framework|[Code](https://github.com/Yuanshi9815/OminiControl)|
-|2025  |CVPR|OmniGen |[OmniGen: Unified Image Generation](https://arxiv.org/abs/2409.11340v2)|A diffusion model for unified image generation|[Code](https://github.com/VectorSpaceLab/OmniGen)|
-|2025  |ICCV|UNO |[Less-to-More Generalization: Unlocking More Controllability by In-Context Generation](https://arxiv.org/abs/2504.02160)|A unified customization framework for multi-subject image generation|[Project](https://bytedance.github.io/UNO/)|
-
-
-
 ##  🚴‍♂️ Efficient DiTs
 
-In this section, we provide a comprehensive overview of these developments by grouping efficient DiT-based methods into three major categories:training-efficient DiTs, inference-efficient DiTs, and joint training-inference optimization.
+In this section, we provide a comprehensive overview of these developments by grouping efficient DiT-based methods into three major categories:Training-efficient DiTs, Test-efficient DiTs, and Joint training-inference optimization.
 
 ### Training-efficient
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
@@ -316,6 +312,9 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|DiT-μP |[Scaling Diffusion Transformers Efficiently via μP](https://arxiv.org/abs/2505.15270)|Applies maximal update parametrization to accelerate scalable DiT training|[Code](https://github.com/ML-GSAI/Scaling-Diffusion-Transformers-muP)|
 
 ### Test-efficient
+
+In this section, we categorize recent advancements into four technical directions: sampling-efficient architectures, attention optimization, caching and reuse mechanisms, and quantization and model compression.
+
 #### 🟣Sampling-Efficient
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
@@ -372,14 +371,42 @@ In this section, we provide a comprehensive overview of these developments by gr
 
 ##  🎊 Other Application Tasks
 
-### Design aesthetics
-| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|------|-------|------------|-------------|-----------|--------------|
+With the rapid evolution of Diffusion Transformers (DiTs),their influence has extended far beyond core domains such as image, audio, and video generation. An increasing number of studies highlight their interdisciplinary impact, where DiTs are adapted to address domain-specific challenges in science, engineering, healthcare, and creative industries.In this section, we outline representative interdisciplinary directions, grouped by research domain,together with exemplary methods in each category.
+
+
+| Task Setting | Method |
+|--------------|--------|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|🎮 Game Generation|[PlayGen](https://arxiv.org/abs/2412.00887),[Maag](https://arxiv.org/abs/2503.21172),[GameFactory](https://arxiv.org/abs/2501.08325)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+|👗 Design aesthetics|[SewingLDM](https://arxiv.org/abs/2412.14453v2)|
+
+
+
+
+
+
+
 |2024  |CVPR|M&M VTO |[M&M VTO: Multi-Garment Virtual Try-On and Editing](https://arxiv.org/abs/2406.04542)|A model for multi-garment virtual try-on and editing|[Project](https://mmvto.github.io/)|
 |2024  |SIGGRAPH|Fashion-VDM |[Fashion-VDM: Video Diffusion Model for Virtual Try-On](https://arxiv.org/abs/2411.00225v2)|Video virtual try-on based DiT|[Project](https://johannakarras.github.io/Fashion-VDM/)|
 |2024  |ArXiv|VITON-DiT |[VITON-DiT: Learning In-the-Wild Video Try-On from Human Dance Videos via Diffusion Transformers](https://arxiv.org/abs/2405.18326)|The first DiT-based video try-on network|[Project](https://zhengjun-ai.github.io/viton-dit-page/)|
 |2024  |ArXiv|FitDiT |[FitDiT: Advancing the Authentic Garment Details for High-fidelity Virtual Try-on](https://arxiv.org/abs/2503.06545)|Virtual try-on based on customized diffusion transformer|[Project](https://byjiang.com/FitDiT/)|
-|2024  |ICCV|SewingLDM |[Multimodal Latent Diffusion Model for Complex Sewing Pattern Generation](https://arxiv.org/abs/2412.14453v2)|Generate complex sewing patterns via text, garment sketches and body shapes|[Project](https://shengqiliu1.github.io/SewingLDM/)|
 |2025  |ArXiv|ITVTON |[ITVTON: Virtual Try-On Diffusion Transformer Based on Integrated Image and Text](https://arxiv.org/abs/2501.16757v2)|A virtual try-on diffusion transformer model|❌|
 |2025  |CVPR|CatV²TON |[CatV²TON: Taming Diffusion Transformers for Vision-Based Virtual Try-On with Temporal Concatenation](https://arxiv.org/abs/2501.11325)|A diffusion transformer framework for both image and video virtual try-on tasks|[Code](https://github.com/Zheng-Chong/CatV2TON)|
 |2025  |ArXiv|MC-VTON |[MC-VTON: Minimal Control Virtual Try-On Diffusion Transformer](https://arxiv.org/abs/2501.03630)|Integrate minimal condition inputs by leveraging DiT backbone|❌|
@@ -396,12 +423,6 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |ArXiv|VMB |[Multimodal Music Generation with Explicit Bridges and Retrieval Augmentation](https://arxiv.org/abs/2412.09428)|A multi-modal music generation system|[Project](https://github.com/wbs2788/VMB)|
 |2025  |AAAI|SongEditor |[SongEditor: Adapting Zero-Shot Song Generation Language Model as a Multi-Task Editor](https://arxiv.org/abs/2412.13786)|A multi - task song editor based on language models|[Project](https://cypress-yang.github.io/SongEditor_demo/)|
 
-### Game Generation
-| Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
-|------|-------|------------|-------------|-----------|--------------|
-|2024  |ArXiv|PlayGen |[Playable Game Generation](https://arxiv.org/abs/2412.00887)|Interaction-driven playable game generation|[Code](https://github.com/GreatX3/Playable-Game-Generation)|
-|2025  |ArXiv|MaaG |[Model as a Game: On Numerical and Spatial Consistency for Generative Games](https://arxiv.org/abs/2503.21172)|A framework for generative games to enhance numerical and spatial consistency|❌|
-|2025  |ICCV|GameFactory |[GameFactory: Creating New Games with Generative Interactive Videos](https://arxiv.org/abs/2501.08325)|A framework using generative interactive videos to create new games|[Project](https://yujiwen.github.io/gamefactory/)|
 
 ### Intelligent Traffic
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
