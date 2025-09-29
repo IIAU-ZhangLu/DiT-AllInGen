@@ -1,4 +1,4 @@
-#  🔍 A Survey on Diffusion Transformers: Models, Applications, and Advances
+#  🔍 Survey on Diffusion Transformers: Models,Applications, and Advances
 <p align="center">
      <strong>Lu Zhang</strong> · <strong>Runhao Yang</strong> · <strong>Yunzhi Zhuge</strong> · <strong>Ping Hu</strong> · <strong>Xu Jia</strong> · <strong>Pingping Zhang</strong> · <strong>Dong Wang</strong> · <strong>Huchuan Lu</strong> · <strong>You He</strong>
     </p>
@@ -209,7 +209,7 @@ In this sections, we categorize DiT-based video generation methods into several 
 In this chapter, we categorize DiT-based Audio generation methods into four representative task types based on the nature of their input conditions and transformation goals.
 
 ### General Audio generation
-#### 💜Uni-modal Condition
+#### 🦄Uni-modal Condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |InterSpeech|EzAudio |[EzAudio: Enhancing Text-to-Audio Generation with Efficient Diffusion Transformer](https://arxiv.org/abs/2409.10819)|Latent DiT with waveform tokenization for efficient T2A|❌|
@@ -220,7 +220,7 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 |2025  |ICASSP|SAP |[Stable Audio Open](https://arxiv.org/abs/2407.14358)|Open-weight T2A model trained on CC data|[Code](https://github.com/Stability-AI/stable-audio-tools)|
 |2025  |ICASSP|AudioComposer |[AudioComposer: Towards Fine-grained Audio Generation with Natural Language Descriptions](https://arxiv.org/abs/2409.12560)|Text-only controllable audio generation|[Project](https://lavendery.github.io/AudioComposer/)|
 
-#### 💜Multi-modal Condition
+#### 🦄Multi-modal Condition
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |ICLR|SpatialSonic |[Both Ears Wide Open: Towards Language-Driven Spatial Audio Generation](https://arxiv.org/abs/2410.10676)|Spatial encoders for controllable spatial audio|[Project](https://peiwensun2000.github.io/bewo/)|
@@ -229,7 +229,7 @@ In this chapter, we categorize DiT-based Audio generation methods into four repr
 |2025  |CVPR|MultiFoley |[Video-Guided Foley Sound Generation with Multimodal Controls](https://arxiv.org/abs/2411.17698)|Multimodal video-guided sound synthesis|[Project](https://ificl.github.io/MultiFoley/)|
 |2025  |ICASSP|VoiceDiT |[VoiceDiT: Dual-Condition Diffusion Transformer for Environment-Aware Speech Synthesis](https://arxiv.org/abs/2412.19259)|Text–audio–visual fusion for environment-aware speech|[Project](https://mm.kaist.ac.kr/projects/voicedit/)|
 
-#### 💜Voice Conversion
+#### 🦄Voice Conversion
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2025  |AAAI|StableVC |[StableVC: Style Controllable Zero-Shot Voice Conversion with Conditional Flow Matching](https://arxiv.org/abs/2412.04724)|Style-controllable zero-shot voice conversion with DiT|[Project](https://yaoxunji.github.io/stablevc/)|
@@ -316,7 +316,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ArXiv|DiT-μP |[Scaling Diffusion Transformers Efficiently via μP](https://arxiv.org/abs/2505.15270)|Applies maximal update parametrization to accelerate scalable DiT training|[Code](https://github.com/ML-GSAI/Scaling-Diffusion-Transformers-muP)|
 
 ### Test-efficient
-#### 💜Sampling-Efficient
+#### 🟣Sampling-Efficient
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2023  |NeurIPS|GET |[One-Step Diffusion Distillation via Deep Equilibrium Models](https://arxiv.org/abs/2401.08639)|One-step distillation with deep equilibrium model for fast sampling|[Code](https://github.com/locuslab/get)|
@@ -324,17 +324,17 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2024  |CVPR|CausVid |[From Slow Bidirectional to Fast Autoregressive Video Diffusion Models](https://arxiv.org/abs/2412.07772v3)|Autoregressive generation with DMD distillation \& asymmetric teacher-student learning|[Project](https://causvid.github.io/)|
 |2025  |ACM/SIGDA|FlightVGM |[FlightVGM: Efficient Video Generation Model Inference with Online Sparsification and Hybrid Precision on FPGAs](https://dai.sjtu.edu.cn/my_file/pdf/83b404ee-15a2-456f-a173-9d260ad2409f.pdf)|Distills bidirectional model into 4-step autoregressive generator via DMD framework|❌|
 
-#### 💜Attention Optimization
+#### 🟣Attention Optimization
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
+|2024  |NeurIPS|DiTFastAttn |[DiTFastAttn: Attention Compression for Diffusion Transformer Models](https://arxiv.org/abs/2406.08552v2)|Compresses spatial, temporal, and conditional heads for efficient attention|[Project](https://nics-effalg.com/DiTFastAttn)|
 |2024  |ICML|AsymRnR |[AsymRnR: Video Diffusion Transformers Acceleration with Asymmetric Reduction and Restoration](https://arxiv.org/abs/2412.11706v3)|Improved head compression for high-dimensional multi-modal DiT attention|[Code](https://github.com/wenhao728/AsymRnR)|
 |2024  |ICLR|PAB |[Real-Time Video Generation with Pyramid Attention Broadcast](https://arxiv.org/abs/2408.12588)|Asymmetric sequence reduction-restoration for efficient attention computation|[Code](https://github.com/NUS-HPC-AI-Lab/VideoSys)|
-|2024  |NeurIPS|DiTFastAttn |[DiTFastAttn: Attention Compression for Diffusion Transformer Models](https://arxiv.org/abs/2406.08552v2)|Compresses spatial, temporal, and conditional heads for efficient attention|[Project](https://nics-effalg.com/DiTFastAttn)|
 |2025  |ArXiv|DiTFastAttnV2 |[DiTFastAttnV2: Head-wise Attention Compression for Multi-Modality Diffusion Transformers](https://arxiv.org/abs/2503.22796)|Training-free sparse attention with profiling and inference optimization|[Code](https://github.com/thu-nics/DiTFastAttnV2)|
 |2025  |ICML|SVG |[Sparse VideoGen: Accelerating Video Diffusion Transformers with Spatial-Temporal Sparsity](https://arxiv.org/abs/2502.01776v2)|Sliding tile attention with hardware-aware scheduling to lower FLOPs|[Code](https://github.com/svg-project/Sparse-VideoGen)|
 |2025  |ICML|STA |[Fast Video Generation with Sliding Tile Attention](https://arxiv.org/abs/2502.04507v3)|Sliding tile attention to accelerate video generation in DiTs|[Project](https://github.com/hao-ai-lab/FastVideo)|
 
-#### 💜Caching and Reuse
+#### 🟣Caching and Reuse
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |NeurIPS |L2C |[Learning-to-Cache: Accelerating Diffusion Transformer via Layer Caching](https://arxiv.org/abs/2406.01733)|Learns routing to cache and reuse redundant layers dynamically|[Code](https://github.com/horseee/learning-to-cache)|
@@ -347,7 +347,7 @@ In this section, we provide a comprehensive overview of these developments by gr
 |2025  |ICCV|QuantCache |[QuantCache: Adaptive Importance-Guided Quantization with Hierarchical Latent and Layer Caching for Video Generation](https://arxiv.org/abs/2503.06545)|Combines quantization and hierarchical caching for faster inference|[Code](https://github.com/JunyiWuCode/QuantCache)|
 |2025  |ArXiv|UniCP |[UniCP: A Unified Caching and Pruning Framework for Efficient Video Generation](https://arxiv.org/abs/2502.04393)|Unified caching and pruning to enhance DiT video generation|❌|
 
-#### 💜Quantization & Compression
+#### 🟣Quantization & Compression
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
 |------|-------|------------|-------------|-----------|--------------|
 |2024  |AAAI|VQ4DiT |[VQ4DiT: Efficient Post-Training Vector Quantization for Diffusion Transformers](https://arxiv.org/abs/2408.17131)|Vector quantization method to reduce DiT bit-width post-training|❌|
