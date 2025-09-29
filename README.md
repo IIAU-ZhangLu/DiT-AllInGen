@@ -536,7 +536,9 @@ In this section, we provide a comprehensive overview of these developments by gr
 ## 🚀 Expansion
 
 The scalability of DiT has driven the development of many latest fundamental models and platforms, as shown in the following figure.
-
+<p align="center">
+  <img src="figs/foundation.png" width="100%">
+</p>
 
 ## 🎡 Related Survey
 
