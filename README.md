@@ -50,6 +50,11 @@ This part can be categorized into (1) Class-conditioned generation where discret
 |2025  | ArXiv |Zuo et al. |[Zero-Shot Subject-Centric Generation for Creative Application Using Entropy Fusion](https://arxiv.org/abs/2503.10697)|Entropy-based fusion for zero-shot subject-centric generation|❌|
 |2025  |ICASSP  |DiTPipe   |[Enhancing Image Generation Fidelity via Progressive Prompts](https://arxiv.org/abs/2501.07070)|Region-aware prompt-following without finetuning|[Code](https://github.com/ZhenXiong-dl/ICASSP2025-RCAC)
 |2025  |ArXiv  |LDGen   |[LDGen: Enhancing Text-to-Image Synthesis via Large Language Model-Driven Language Representation](https://arxiv.org/abs/2502.18302)|Multilingual T2I via hierarchical text reps|[Project](https://zrealli.github.io/LDGen/)
+|2024  | ECCV | DiffiT | [DiffiT: Diffusion Vision Transformers for Image Generation](https://arxiv.org/abs/2312.02139) | Time-dependent self-attention (TMSA) as an alternative DiT design for image synthesis | [Code](https://github.com/NVlabs/DiffiT) |
+|2025  | ICLR | SANA | [SANA: Efficient High-Resolution Image Synthesis with Linear Diffusion Transformers](https://arxiv.org/abs/2410.10629) | Linear DiT with deep compression autoencoder for efficient 4K text-to-image synthesis | [Project](https://nvlabs.github.io/Sana/) |
+|2025  | ArXiv | SANA-1.5 | [SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer](https://arxiv.org/abs/2501.18427) | Training-time and inference-time compute scaling for efficient linear diffusion transformers | [Project](https://nvlabs.github.io/Sana/) |
+|2025  | ICCV | SANA-Sprint | [SANA-Sprint: One-Step Diffusion with Continuous-Time Consistency Distillation](https://arxiv.org/abs/2503.09641) | One-step / few-step generation via continuous-time consistency distillation on top of SANA | [Project](https://nvlabs.github.io/Sana/) |
+
 
 ### Image-to-Image
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
@@ -108,6 +113,9 @@ In this sections, we categorize DiT-based video generation methods into several 
 |2025  |CVPR|HumanDreamer |[HumanDreamer: Generating Controllable Human-Motion Videos via Decoupled Generation](https://arxiv.org/abs/2503.24026)|DiT-based human-centric T2V with pose-aware modeling|[Project](https://humandreamer.github.io/)|
 |2025  |CVPR|Mask²DiT |[Mask²DiT: Dual Mask-based Diffusion Transformer for Multi-Scene Long Video Generation](https://arxiv.org/abs/2503.19881)|Dual masked-DiT for multi-scene long video generation|[Project](https://tianhao-qi.github.io/Mask2DiTProject/)|
 |2025  |ArXiv|Vchitect-2.0 |[Vchitect-2.0: Parallel Transformer for Scaling Up Video Diffusion Models](https://arxiv.org/abs/2501.08453)|Parallel transformer architecture for efficient T2V generation|[Code](https://github.com/Vchitect/Vchitect-2.0)|
+|2024  | ArXiv | HunyuanVideo | [HunyuanVideo: A Systematic Framework For Large Video Generative Models](https://arxiv.org/abs/2412.03603) | Large-scale open video generation framework with dual-stream to single-stream hybrid design | [Code](https://github.com/Tencent/HunyuanVideo) |
+|2025  | ArXiv | Wan | [Wan: Open and Advanced Large-Scale Video Generative Models](https://arxiv.org/abs/2503.20314) | Open large-scale video generative model family widely adopted in the open-source community | [Code](https://github.com/Wan-Video/Wan2.1) |
+
 
 ### Image-to-Video
 | Year | Venue | Paper Abbr | Paper Title | Highlight | Project/Code |
@@ -288,6 +296,17 @@ In this chapter, we categorize DiT-based unified models, which can simultaneousl
 |2025  |CVPR|LaVin-DiT |[LaVin-DiT: Large Vision Diffusion Transformer](https://arxiv.org/abs/2411.11505)|A unified foundation model for vision understanding|[Project](https://derrickwang005.github.io/LaVin-DiT/)|
 |2024  |ICCV|AV-Link |[AV-Link: Temporally-Aligned Diffusion Features for Cross-Modal Audio-Video Generation](https://arxiv.org/abs/2412.15191)|Bidirectional A2V/V2A generation with mutual conditioning|[Project](https://snap-research.github.io/AVLink/)|
 |2024  |ICLR|Show-o |[Show-o: One Single Transformer to Unify Multimodal Understanding and Generation](https://arxiv.org/abs/2408.12528v6)|Autoregressive-diffusion hybrid for universal vision-language tasks|[Code](https://github.com/showlab/Show-o)|
+|2024  | ArXiv | Chameleon | [Chameleon: Mixed-Modal Early-Fusion Foundation Models](https://arxiv.org/abs/2405.09818) | Early-fusion mixed-modal foundation model for unified generation and understanding | ❌ |
+|2024  | ArXiv | Emu3 | [Emu3: Next-Token Prediction is All You Need](https://arxiv.org/abs/2409.18869) | Pure next-token prediction for unified text-image-video generation and perception | [Code](https://github.com/baaivision/Emu3) |
+|2024  | ArXiv | MonoFormer | [MonoFormer: One Transformer for Both Diffusion and Autoregression](https://arxiv.org/abs/2409.16280) | A single transformer unifying diffusion and autoregressive generation | ❌ |
+|2025  | ICLR | Transfusion | [Transfusion: Predict the Next Token and Diffuse Images with One Multi-Modal Model](https://arxiv.org/abs/2408.11039) | Unifies next-token prediction and diffusion in one transformer for mixed-modality sequences | ❌ |
+|2025  | ICLR | VILA-U | [VILA-U: a Unified Foundation Model Integrating Visual Understanding and Generation](https://arxiv.org/abs/2409.04429) | Unified foundation model for visual understanding and image generation | [Code](https://github.com/NVlabs/VILA-U) |
+|2025  | CVPR | Janus | [Janus: Decoupling Visual Encoding for Unified Multimodal Understanding and Generation](https://arxiv.org/abs/2410.13848) | Decoupled visual encoding for unified multimodal understanding and generation | [Code](https://github.com/deepseek-ai/Janus) |
+|2025  | ArXiv | Janus-Pro | [Janus-Pro: Unified Multimodal Understanding and Generation with Data and Model Scaling](https://arxiv.org/abs/2501.17811) | Scaled-up Janus family with stronger unified multimodal performance | [Code](https://github.com/deepseek-ai/Janus) |
+|2025  | CVPR | JanusFlow | [JanusFlow: Harmonizing Autoregression and Rectified Flow for Unified Multimodal Understanding and Generation](https://arxiv.org/abs/2411.07975) | Combines autoregression and rectified flow for unified multimodal modeling | [Code](https://github.com/deepseek-ai/Janus) |
+|2025  | ArXiv | BLIP3-o | [BLIP3-o: A Family of Fully Open Unified Multimodal Models—Architecture, Training and Dataset](https://arxiv.org/abs/2505.09568) | Fully open unified multimodal model family with strong understanding and generation performance | [Code](https://github.com/salesforce/LAVIS) |
+|2025  | ArXiv | BAGEL | [Emerging Properties in Unified Multimodal Pretraining (BAGEL)](https://arxiv.org/abs/2505.14683) | Studies emergent capabilities in unified multimodal pretraining | ❌ |
+
 |2025  |ArXiv|OminiControl2 |[OminiControl2: Efficient Conditioning for Diffusion Transformers](https://arxiv.org/abs/2503.08280)|Multi-granularity control via conditional reuse and compression|[Code](https://github.com/Yuanshi9815/OminiControl)|
 |2025  |ArXiv|D-DiT |[Dual Diffusion for Unified Image Generation and Understanding](https://arxiv.org/pdf/2501.00289v2)|Dual-pathway DiT for joint vision understanding and generation|[Project](https://zijieli-jlee.github.io/dualdiff.github.io/)|
 |2025  |ArXiv|DICEPTION |[DICEPTION: A Generalist Diffusion Model for Visual Perceptual Tasks](https://arxiv.org/abs/2502.17157)|A unified model for classification, segmentation, and generation|[Project](https://aim-uofa.github.io/Diception/)|
