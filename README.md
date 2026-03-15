@@ -2,7 +2,7 @@
 <h1 align="center">🔍 Survey on Diffusion Transformers: Models, Applications, and Advances</h1>
 
 <p align="center">
-     <strong>Lu Zhang</strong> ● <strong>Runhao Yang</strong> ● <strong>Peiyu Lyu</strong> ● <strong>Xu Jia</strong> ● <strong>Ping Hu</strong> ● <strong>Yunzhi Zhuge</strong> ● <strong>Pingping Zhang</strong> <br> 
+     <strong>Lu Zhang</strong> ● <strong>Peiyu Lyu</strong> ● <strong>Runhao Yang</strong> ● <strong>Xu Jia</strong> ● <strong>Ping Hu</strong> ● <strong>Yunzhi Zhuge</strong> ● <strong>Pingping Zhang</strong> <br> 
      <strong>You He</strong> ● <strong>Huchuan Lu，Fellow，IEEE</strong>
     </p>
 
